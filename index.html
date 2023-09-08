@@ -66,8 +66,15 @@
     ></script>
     <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/arrive@2.4.1/minified/arrive.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
     <script>
+      const { createClient } = supabase;
+      const instance = createClient(
+        'https://fknaduhwlncmftbzsjbm.supabase.co',
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZrbmFkdWh3bG5jbWZ0YnpzamJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQxMDI3ODYsImV4cCI6MjAwOTY3ODc4Nn0.gj1_3Ec3elLBxfq24p7OClFCUtgHYQI3Vfvxwl7Qyqg'
+      );
+
       const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
       function setOpacity(element) {
         const rowElement = element.parentNode.parentNode;
