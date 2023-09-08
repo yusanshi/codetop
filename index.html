@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>CodeTop</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css"
+    />
+
+    <style>
+      .easy {
+        color: #15bd66;
+      }
+
+      .medium {
+        color: #ffb800;
+      }
+
+      .hard {
+        color: #ff334b;
+      }
+
+      .table {
+        --bs-table-striped-bg: rgba(0, 0, 0, 0.03);
+        text-align: center;
+      }
+
+      .container {
+        max-width: 900px;
+      }
+
+      @media (max-width: 767.98px) {
+        body {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <table id="table"></table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/arrive@2.4.1/minified/arrive.min.js"></script>
+
+    <script>
+      const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
+      function setOpacity(element) {
+        const rowElement = element.parentNode.parentNode;
+        rowElement.querySelectorAll('td').forEach((td) => {
+          if (td.querySelectorAll('input').length == 0) {
+            td.style.opacity = element.checked ? 0.25 : 1;
+          }
+        });
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        let storage = localStorage.getItem('storage');
+        if (storage === null) {
+          storage = {};
+          console.log('No storage found');
+        } else {
+          storage = JSON.parse(storage);
+          console.log('Load storage', storage);
+        }
+
+        document
+          .querySelector('#table')
+          .arrive('input.form-check-input', (element) => {
+            // load and set status from storage
+            const key = element.getAttribute('data-key');
+            element.checked = storage[key] ? true : false;
+            setOpacity(element);
+            element.addEventListener('change', () => {
+              // save status change into storage
+              storage[key] = element.checked;
+              console.log(`Set ${key} to ${element.checked}`);
+              localStorage.setItem('storage', JSON.stringify(storage));
+              setOpacity(element);
+            });
+          });
+
+        fetch('data.json')
+          .then((r) => r.json())
+          .then((d) => {
+            const data = d.map((e) => ({
+              ...e,
+              levelHTML: `<span class="${e.level}">${levelMap[e.level]}</span>`,
+              titleHTML:
+                e.url !== null
+                  ? `<a target="_blank" class="link-dark" href="${e.url}">${e.leetcode_id}. ${e.title}</a>`
+                  : `<span class="link-dark">${e.leetcode_id}. ${e.title}</span>`,
+              // set the status of checkboxes in `arrive('input.form-check-input')....`
+              doneHTML: `<input class="form-check-input" type="checkbox" data-key="${e.leetcode_id}. ${e.title}">`,
+            }));
+
+            $('#table').bootstrapTable({
+              pagination: true,
+              search: true,
+              pageSize: 50,
+              pageList: [20, 50, 100, 200, 'all'],
+              classes: 'table table-bordered table-hover table-striped',
+              searchHighlight: true,
+              columns: [
+                {
+                  field: 'id',
+                  title: '序号',
+                },
+                {
+                  field: 'titleHTML',
+                  title: '题目',
+                },
+                {
+                  field: 'levelHTML',
+                  title: '难度',
+                },
+                {
+                  field: 'frequency',
+                  title: '次数',
+                },
+                {
+                  field: 'doneHTML',
+                  title: '完成',
+                },
+              ],
+              data: data,
+            });
+          });
+      });
+
+      window.addEventListener('keydown', (event) => {
+        if (
+          event.code === 'F3' ||
+          ((event.ctrlKey || event.metaKey) && event.code === 'KeyF')
+        ) {
+          const input = document.querySelector(
+            'div.bootstrap-table div.fixed-table-toolbar input.search-input'
+          );
+          input.focus();
+          input.select();
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
