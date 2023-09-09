@@ -133,11 +133,17 @@
       }
       const saveStorageDebounced = _.debounce(saveStorage, 1000);
 
-      function setOpacity(element) {
+      function setStyle(element, status) {
+        const indeterminateMap = { 0: false, 1: true, 2: false };
+        const checkedMap = { 0: false, 1: false, 2: true };
+        const opacityMap = { 0: 1, 1: 0.4, 2: 0.15 };
+
+        element.indeterminate = indeterminateMap[status];
+        element.checked = checkedMap[status];
         const rowElement = element.parentNode.parentNode;
         rowElement.querySelectorAll('td').forEach((td) => {
           if (td.querySelectorAll('input').length == 0) {
-            td.style.opacity = element.checked ? 0.25 : 1;
+            td.style.opacity = opacityMap[status];
           }
         });
       }
@@ -154,14 +160,17 @@
           .arrive('input.form-check-input', (element) => {
             // load and set status from storage
             const key = element.getAttribute('data-key');
-            element.checked = storage[key] ? true : false;
-            setOpacity(element);
-            element.addEventListener('change', () => {
+            setStyle(element, storage[key] === undefined ? 0 : storage[key]);
+
+            element.addEventListener('click', () => {
               // save status change into storage
-              storage[key] = element.checked;
-              console.log(`Set ${key} to ${element.checked}`);
+              if (storage[key] === undefined) {
+                storage[key] = 0;
+              }
+              storage[key] = (storage[key] + 1) % 3;
+              console.log(`Set ${key} to ${storage[key]}`);
+              setStyle(element, storage[key]);
               saveStorageDebounced(storage);
-              setOpacity(element);
             });
           });
 
