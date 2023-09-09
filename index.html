@@ -20,7 +20,9 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.1/dist/bootstrap-table.min.css"
+      integrity="sha256-7Oajx7nIkYTg7DngGkbQPeZYOGF2y0Q3R24+vhzH/2M="
+      crossorigin="anonymous"
     />
 
     <style>
@@ -64,18 +66,73 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"
+      integrity="sha256-lbFlaLNwCuK7kAmwDyvE47sfL7Qd8Jz1w8ubDRQKgag="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/arrive@2.4.1/minified/arrive.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-min.min.js"></script>
 
     <script>
-      const { createClient } = supabase;
-      const instance = createClient(
-        'https://fknaduhwlncmftbzsjbm.supabase.co',
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZrbmFkdWh3bG5jbWZ0YnpzamJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQxMDI3ODYsImV4cCI6MjAwOTY3ODc4Nn0.gj1_3Ec3elLBxfq24p7OClFCUtgHYQI3Vfvxwl7Qyqg'
-      );
+      const params = new URL(document.location).searchParams;
+      const endpoint = params.get('endpoint');
+      const bearer = params.get('bearer');
 
-      const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
+      async function loadStorage() {
+        let storage;
+        if (endpoint === null || bearer == null) {
+          console.log(
+            'Endpoint or bearer not provided. Use local storage instead.'
+          );
+          storage = localStorage.getItem('storage');
+        } else {
+          console.log('Endpoint or bearer provided. Use online storage.');
+          const response = await fetch(
+            `https://${endpoint}.kv.vercel-storage.com/get/storage`,
+            {
+              headers: {
+                Authorization: `Bearer ${bearer}`,
+              },
+            }
+          )
+            .then((response) => {
+              if (response.ok) {
+                return response.json();
+              }
+              throw new Error(response.status);
+            })
+            .catch((error) => {
+              alert('Error fetching online storage ' + error);
+            });
+          storage = response['result'];
+        }
+
+        if (storage === null) {
+          storage = {};
+          console.log('Storage empty');
+        } else {
+          storage = JSON.parse(storage);
+          console.log('Load storage', storage);
+        }
+        return storage;
+      }
+
+      function saveStorage(storage) {
+        if (endpoint === null || bearer == null) {
+          localStorage.setItem('storage', JSON.stringify(storage));
+        } else {
+          fetch(`https://${endpoint}.kv.vercel-storage.com/set/storage`, {
+            headers: {
+              Authorization: `Bearer ${bearer}`,
+            },
+            body: JSON.stringify(storage),
+            method: 'POST',
+          });
+        }
+      }
+      const saveStorageDebounced = _.debounce(saveStorage, 1000);
+
       function setOpacity(element) {
         const rowElement = element.parentNode.parentNode;
         rowElement.querySelectorAll('td').forEach((td) => {
@@ -85,15 +142,12 @@
         });
       }
 
-      window.addEventListener('DOMContentLoaded', () => {
-        let storage = localStorage.getItem('storage');
-        if (storage === null) {
-          storage = {};
-          console.log('No storage found');
-        } else {
-          storage = JSON.parse(storage);
-          console.log('Load storage', storage);
-        }
+      const loadStoragePromise = loadStorage();
+      const loadDataPromise = fetch('data.json').then((r) => r.json());
+
+      window.addEventListener('DOMContentLoaded', async () => {
+        const storage = await loadStoragePromise;
+        const data = await loadDataPromise;
 
         document
           .querySelector('#table')
@@ -106,57 +160,53 @@
               // save status change into storage
               storage[key] = element.checked;
               console.log(`Set ${key} to ${element.checked}`);
-              localStorage.setItem('storage', JSON.stringify(storage));
+              saveStorageDebounced(storage);
               setOpacity(element);
             });
           });
 
-        fetch('data.json')
-          .then((r) => r.json())
-          .then((d) => {
-            const data = d.map((e) => ({
-              ...e,
-              levelHTML: `<span class="${e.level}">${levelMap[e.level]}</span>`,
-              titleHTML:
-                e.url !== null
-                  ? `<a target="_blank" class="link-dark" href="${e.url}">${e.leetcode_id}. ${e.title}</a>`
-                  : `<span class="link-dark">${e.leetcode_id}. ${e.title}</span>`,
-              // set the status of checkboxes in `arrive('input.form-check-input')....`
-              doneHTML: `<input class="form-check-input" type="checkbox" data-key="${e.leetcode_id}. ${e.title}">`,
-            }));
+        const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
 
-            $('#table').bootstrapTable({
-              pagination: true,
-              search: true,
-              pageSize: 50,
-              pageList: [20, 50, 100, 200, 'all'],
-              classes: 'table table-bordered table-hover table-striped',
-              searchHighlight: true,
-              columns: [
-                {
-                  field: 'id',
-                  title: '序号',
-                },
-                {
-                  field: 'titleHTML',
-                  title: '题目',
-                },
-                {
-                  field: 'levelHTML',
-                  title: '难度',
-                },
-                {
-                  field: 'frequency',
-                  title: '次数',
-                },
-                {
-                  field: 'doneHTML',
-                  title: '完成',
-                },
-              ],
-              data: data,
-            });
-          });
+        $('#table').bootstrapTable({
+          pagination: true,
+          search: true,
+          pageSize: 50,
+          pageList: [20, 50, 100, 200, 'all'],
+          classes: 'table table-bordered table-hover table-striped',
+          searchHighlight: true,
+          columns: [
+            {
+              field: 'id',
+              title: '序号',
+            },
+            {
+              field: 'titleHTML',
+              title: '题目',
+            },
+            {
+              field: 'levelHTML',
+              title: '难度',
+            },
+            {
+              field: 'frequency',
+              title: '次数',
+            },
+            {
+              field: 'doneHTML',
+              title: '完成',
+            },
+          ],
+          data: data.map((e) => ({
+            ...e,
+            levelHTML: `<span class="${e.level}">${levelMap[e.level]}</span>`,
+            titleHTML:
+              e.url !== null
+                ? `<a target="_blank" class="link-dark" href="${e.url}">${e.leetcode_id}. ${e.title}</a>`
+                : `<span class="link-dark">${e.leetcode_id}. ${e.title}</span>`,
+            // set the status of checkboxes in `arrive('input.form-check-input', ....`
+            doneHTML: `<input class="form-check-input" type="checkbox" data-key="${e.leetcode_id}. ${e.title}">`,
+          })),
+        });
       });
 
       window.addEventListener('keydown', (event) => {
@@ -164,12 +214,12 @@
           event.code === 'F3' ||
           ((event.ctrlKey || event.metaKey) && event.code === 'KeyF')
         ) {
+          event.preventDefault();
           const input = document.querySelector(
             'div.bootstrap-table div.fixed-table-toolbar input.search-input'
           );
           input.focus();
           input.select();
-          event.preventDefault();
         }
       });
     </script>

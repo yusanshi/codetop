@@ -5,7 +5,7 @@
         "title": "无重复字符的最长子串",
         "url": "https://leetcode.cn/problems/longest-substring-without-repeating-characters/",
         "level": "medium",
-        "frequency": 627
+        "frequency": 630
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "title": "反转链表",
         "url": "https://leetcode.cn/problems/reverse-linked-list/",
         "level": "easy",
-        "frequency": 565
+        "frequency": 568
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "title": "LRU缓存机制",
         "url": "https://leetcode.cn/problems/lru-cache/",
         "level": "medium",
-        "frequency": 511
+        "frequency": 516
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "title": "数组中的第K个最大元素",
         "url": "https://leetcode.cn/problems/kth-largest-element-in-an-array/",
         "level": "medium",
-        "frequency": 414
+        "frequency": 415
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "title": "K 个一组翻转链表",
         "url": "https://leetcode.cn/problems/reverse-nodes-in-k-group/",
         "level": "hard",
-        "frequency": 321
+        "frequency": 322
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "title": "三数之和",
         "url": "https://leetcode.cn/problems/3sum/",
         "level": "medium",
-        "frequency": 301
+        "frequency": 303
     },
     {
         "id": 7,
@@ -61,7 +61,7 @@
         "title": "手撕快速排序",
         "url": "https://leetcode.cn/problems/sort-an-array/",
         "level": "medium",
-        "frequency": 253
+        "frequency": 254
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "title": "合并两个有序链表",
         "url": "https://leetcode.cn/problems/merge-two-sorted-lists/",
         "level": "easy",
-        "frequency": 239
+        "frequency": 240
     },
     {
         "id": 10,
@@ -77,10 +77,18 @@
         "title": "两数之和",
         "url": "https://leetcode.cn/problems/two-sum/",
         "level": "easy",
-        "frequency": 228
+        "frequency": 229
     },
     {
         "id": 11,
+        "leetcode_id": "5",
+        "title": "最长回文子串",
+        "url": "https://leetcode.cn/problems/longest-palindromic-substring/",
+        "level": "medium",
+        "frequency": 218
+    },
+    {
+        "id": 12,
         "leetcode_id": "102",
         "title": "二叉树的层序遍历",
         "url": "https://leetcode.cn/problems/binary-tree-level-order-traversal/",
@@ -88,23 +96,23 @@
         "frequency": 218
     },
     {
-        "id": 12,
-        "leetcode_id": "5",
-        "title": "最长回文子串",
-        "url": "https://leetcode.cn/problems/longest-palindromic-substring/",
-        "level": "medium",
-        "frequency": 217
-    },
-    {
         "id": 13,
         "leetcode_id": "33",
         "title": "搜索旋转排序数组",
         "url": "https://leetcode.cn/problems/search-in-rotated-sorted-array/",
         "level": "medium",
-        "frequency": 215
+        "frequency": 216
     },
     {
         "id": 14,
+        "leetcode_id": "121",
+        "title": "买卖股票的最佳时机",
+        "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/",
+        "level": "easy",
+        "frequency": 207
+    },
+    {
+        "id": 15,
         "leetcode_id": "20",
         "title": "有效的括号",
         "url": "https://leetcode.cn/problems/valid-parentheses/",
@@ -112,20 +120,12 @@
         "frequency": 207
     },
     {
-        "id": 15,
+        "id": 16,
         "leetcode_id": "141",
         "title": "环形链表",
         "url": "https://leetcode.cn/problems/linked-list-cycle/",
         "level": "easy",
-        "frequency": 205
-    },
-    {
-        "id": 16,
-        "leetcode_id": "121",
-        "title": "买卖股票的最佳时机",
-        "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/",
-        "level": "easy",
-        "frequency": 205
+        "frequency": 206
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "title": "岛屿数量",
         "url": "https://leetcode.cn/problems/number-of-islands/",
         "level": "medium",
-        "frequency": 203
+        "frequency": 205
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "title": "合并两个有序数组",
         "url": "https://leetcode.cn/problems/merge-sorted-array/",
         "level": "easy",
-        "frequency": 201
+        "frequency": 203
     },
     {
         "id": 19,
@@ -153,17 +153,17 @@
     },
     {
         "id": 20,
-        "leetcode_id": "236",
-        "title": "二叉树的最近公共祖先",
-        "url": "https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/",
-        "level": "medium",
-        "frequency": 197
-    },
-    {
-        "id": 21,
         "leetcode_id": "103",
         "title": "二叉树的锯齿形层次遍历",
         "url": "https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/",
+        "level": "medium",
+        "frequency": 198
+    },
+    {
+        "id": 21,
+        "leetcode_id": "236",
+        "title": "二叉树的最近公共祖先",
+        "url": "https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/",
         "level": "medium",
         "frequency": 197
     },
@@ -181,7 +181,7 @@
         "title": "反转链表 II",
         "url": "https://leetcode.cn/problems/reverse-linked-list-ii/",
         "level": "medium",
-        "frequency": 174
+        "frequency": 177
     },
     {
         "id": 24,
@@ -197,7 +197,7 @@
         "title": "合并K个排序链表",
         "url": "https://leetcode.cn/problems/merge-k-sorted-lists/",
         "level": "hard",
-        "frequency": 172
+        "frequency": 173
     },
     {
         "id": 26,
@@ -205,7 +205,7 @@
         "title": "字符串相加",
         "url": "https://leetcode.cn/problems/add-strings/",
         "level": "easy",
-        "frequency": 161
+        "frequency": 163
     },
     {
         "id": 27,
@@ -213,7 +213,7 @@
         "title": "最长上升子序列",
         "url": "https://leetcode.cn/problems/longest-increasing-subsequence/",
         "level": "medium",
-        "frequency": 158
+        "frequency": 159
     },
     {
         "id": 28,
@@ -237,7 +237,7 @@
         "title": "重排链表",
         "url": "https://leetcode.cn/problems/reorder-list/",
         "level": "medium",
-        "frequency": 141
+        "frequency": 145
     },
     {
         "id": 31,
@@ -245,7 +245,7 @@
         "title": "二叉树中的最大路径和",
         "url": "https://leetcode.cn/problems/binary-tree-maximum-path-sum/",
         "level": "hard",
-        "frequency": 126
+        "frequency": 128
     },
     {
         "id": 32,
@@ -253,10 +253,18 @@
         "title": "删除链表的倒数第N个节点",
         "url": "https://leetcode.cn/problems/remove-nth-node-from-end-of-list/",
         "level": "medium",
-        "frequency": 125
+        "frequency": 126
     },
     {
         "id": 33,
+        "leetcode_id": "56",
+        "title": "合并区间",
+        "url": "https://leetcode.cn/problems/merge-intervals/",
+        "level": "medium",
+        "frequency": 122
+    },
+    {
+        "id": 34,
         "leetcode_id": "94",
         "title": "二叉树的中序遍历",
         "url": "https://leetcode.cn/problems/binary-tree-inorder-traversal/",
@@ -264,20 +272,12 @@
         "frequency": 122
     },
     {
-        "id": 34,
+        "id": 35,
         "leetcode_id": "72",
         "title": "编辑距离",
         "url": "https://leetcode.cn/problems/edit-distance/",
         "level": "hard",
         "frequency": 121
-    },
-    {
-        "id": 35,
-        "leetcode_id": "56",
-        "title": "合并区间",
-        "url": "https://leetcode.cn/problems/merge-intervals/",
-        "level": "medium",
-        "frequency": 120
     },
     {
         "id": 36,
@@ -337,19 +337,19 @@
     },
     {
         "id": 43,
-        "leetcode_id": "31",
-        "title": "下一个排列",
-        "url": "https://leetcode.cn/problems/next-permutation/",
+        "leetcode_id": "148",
+        "title": "排序链表",
+        "url": "https://leetcode.cn/problems/sort-list/",
         "level": "medium",
         "frequency": 111
     },
     {
         "id": 44,
-        "leetcode_id": "148",
-        "title": "排序链表",
-        "url": "https://leetcode.cn/problems/sort-list/",
+        "leetcode_id": "31",
+        "title": "下一个排列",
+        "url": "https://leetcode.cn/problems/next-permutation/",
         "level": "medium",
-        "frequency": 110
+        "frequency": 111
     },
     {
         "id": 45,
@@ -393,19 +393,19 @@
     },
     {
         "id": 50,
-        "leetcode_id": "41",
-        "title": "缺失的第一个正数",
-        "url": "https://leetcode.cn/problems/first-missing-positive/",
+        "leetcode_id": "239",
+        "title": "滑动窗口最大值",
+        "url": "https://leetcode.cn/problems/sliding-window-maximum/",
         "level": "hard",
         "frequency": 97
     },
     {
         "id": 51,
-        "leetcode_id": "239",
-        "title": "滑动窗口最大值",
-        "url": "https://leetcode.cn/problems/sliding-window-maximum/",
+        "leetcode_id": "41",
+        "title": "缺失的第一个正数",
+        "url": "https://leetcode.cn/problems/first-missing-positive/",
         "level": "hard",
-        "frequency": 96
+        "frequency": 97
     },
     {
         "id": 52,
@@ -421,7 +421,7 @@
         "title": "比较版本号",
         "url": "https://leetcode.cn/problems/compare-version-numbers/",
         "level": "medium",
-        "frequency": 91
+        "frequency": 92
     },
     {
         "id": 54,
@@ -449,6 +449,14 @@
     },
     {
         "id": 57,
+        "leetcode_id": "155",
+        "title": "最小栈",
+        "url": "https://leetcode.cn/problems/min-stack/",
+        "level": "easy",
+        "frequency": 83
+    },
+    {
+        "id": 58,
         "leetcode_id": "322",
         "title": "零钱兑换",
         "url": "https://leetcode.cn/problems/coin-change/",
@@ -456,26 +464,18 @@
         "frequency": 83
     },
     {
-        "id": 58,
-        "leetcode_id": "155",
-        "title": "最小栈",
-        "url": "https://leetcode.cn/problems/min-stack/",
-        "level": "easy",
-        "frequency": 82
-    },
-    {
         "id": 59,
-        "leetcode_id": "151",
-        "title": "翻转字符串里的单词",
-        "url": "https://leetcode.cn/problems/reverse-words-in-a-string/",
-        "level": "medium",
-        "frequency": 81
-    },
-    {
-        "id": 60,
         "leetcode_id": "43",
         "title": "字符串相乘",
         "url": "https://leetcode.cn/problems/multiply-strings/",
+        "level": "medium",
+        "frequency": 82
+    },
+    {
+        "id": 60,
+        "leetcode_id": "151",
+        "title": "翻转字符串里的单词",
+        "url": "https://leetcode.cn/problems/reverse-words-in-a-string/",
         "level": "medium",
         "frequency": 81
     },
@@ -497,6 +497,14 @@
     },
     {
         "id": 63,
+        "leetcode_id": "104",
+        "title": "二叉树的最大深度",
+        "url": "https://leetcode.cn/problems/maximum-depth-of-binary-tree/",
+        "level": "easy",
+        "frequency": 77
+    },
+    {
+        "id": 64,
         "leetcode_id": "110",
         "title": "平衡二叉树",
         "url": "https://leetcode.cn/problems/balanced-binary-tree/",
@@ -504,18 +512,10 @@
         "frequency": 77
     },
     {
-        "id": 64,
+        "id": 65,
         "leetcode_id": "101",
         "title": "对称二叉树",
         "url": "https://leetcode.cn/problems/symmetric-tree/",
-        "level": "easy",
-        "frequency": 76
-    },
-    {
-        "id": 65,
-        "leetcode_id": "104",
-        "title": "二叉树的最大深度",
-        "url": "https://leetcode.cn/problems/maximum-depth-of-binary-tree/",
         "level": "easy",
         "frequency": 76
     },
@@ -545,17 +545,17 @@
     },
     {
         "id": 69,
-        "leetcode_id": "470",
-        "title": "用 Rand7() 实现 Rand10()",
-        "url": "https://leetcode.cn/problems/implement-rand10-using-rand7/",
-        "level": "medium",
-        "frequency": 68
-    },
-    {
-        "id": 70,
         "leetcode_id": "113",
         "title": "路径总和 II",
         "url": "https://leetcode.cn/problems/path-sum-ii/",
+        "level": "medium",
+        "frequency": 69
+    },
+    {
+        "id": 70,
+        "leetcode_id": "470",
+        "title": "用 Rand7() 实现 Rand10()",
+        "url": "https://leetcode.cn/problems/implement-rand10-using-rand7/",
         "level": "medium",
         "frequency": 68
     },
@@ -573,10 +573,18 @@
         "title": "组合总和",
         "url": "https://leetcode.cn/problems/combination-sum/",
         "level": "medium",
-        "frequency": 66
+        "frequency": 67
     },
     {
         "id": 73,
+        "leetcode_id": "394",
+        "title": "字符串解码",
+        "url": "https://leetcode.cn/problems/decode-string/",
+        "level": "medium",
+        "frequency": 66
+    },
+    {
+        "id": 74,
         "leetcode_id": "48",
         "title": "旋转图像",
         "url": "https://leetcode.cn/problems/rotate-image/",
@@ -584,7 +592,7 @@
         "frequency": 66
     },
     {
-        "id": 74,
+        "id": 75,
         "leetcode_id": "234",
         "title": "回文链表",
         "url": "https://leetcode.cn/problems/palindrome-linked-list/",
@@ -592,20 +600,12 @@
         "frequency": 65
     },
     {
-        "id": 75,
+        "id": 76,
         "leetcode_id": "112",
         "title": "路径总和",
         "url": "https://leetcode.cn/problems/path-sum/",
         "level": "easy",
         "frequency": 65
-    },
-    {
-        "id": 76,
-        "leetcode_id": "394",
-        "title": "字符串解码",
-        "url": "https://leetcode.cn/problems/decode-string/",
-        "level": "medium",
-        "frequency": 64
     },
     {
         "id": 77,
@@ -673,6 +673,14 @@
     },
     {
         "id": 85,
+        "leetcode_id": "695",
+        "title": "岛屿的最大面积",
+        "url": "https://leetcode.cn/problems/max-area-of-island/",
+        "level": "medium",
+        "frequency": 56
+    },
+    {
+        "id": 86,
         "leetcode_id": "128",
         "title": "最长连续序列",
         "url": "https://leetcode.cn/problems/longest-consecutive-sequence/",
@@ -680,15 +688,15 @@
         "frequency": 56
     },
     {
-        "id": 86,
-        "leetcode_id": "695",
-        "title": "岛屿的最大面积",
-        "url": "https://leetcode.cn/problems/max-area-of-island/",
+        "id": 87,
+        "leetcode_id": "662",
+        "title": "二叉树最大宽度",
+        "url": "https://leetcode.cn/problems/maximum-width-of-binary-tree/",
         "level": "medium",
         "frequency": 55
     },
     {
-        "id": 87,
+        "id": 88,
         "leetcode_id": "62",
         "title": "不同路径",
         "url": "https://leetcode.cn/problems/unique-paths/",
@@ -696,28 +704,20 @@
         "frequency": 55
     },
     {
-        "id": 88,
-        "leetcode_id": "227",
-        "title": "基本计算器 II",
-        "url": "https://leetcode.cn/problems/basic-calculator-ii/",
-        "level": "medium",
-        "frequency": 54
-    },
-    {
         "id": 89,
         "leetcode_id": "122",
         "title": "买卖股票的最佳时机 II",
         "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/",
         "level": "easy",
-        "frequency": 53
+        "frequency": 54
     },
     {
         "id": 90,
-        "leetcode_id": "662",
-        "title": "二叉树最大宽度",
-        "url": "https://leetcode.cn/problems/maximum-width-of-binary-tree/",
+        "leetcode_id": "227",
+        "title": "基本计算器 II",
+        "url": "https://leetcode.cn/problems/basic-calculator-ii/",
         "level": "medium",
-        "frequency": 53
+        "frequency": 54
     },
     {
         "id": 91,
@@ -905,6 +905,22 @@
     },
     {
         "id": 114,
+        "leetcode_id": "958",
+        "title": "二叉树的完全性检验",
+        "url": "https://leetcode.cn/problems/check-completeness-of-a-binary-tree/",
+        "level": "medium",
+        "frequency": 41
+    },
+    {
+        "id": 115,
+        "leetcode_id": "11",
+        "title": "盛最多水的容器",
+        "url": "https://leetcode.cn/problems/container-with-most-water/",
+        "level": "medium",
+        "frequency": 41
+    },
+    {
+        "id": 116,
         "leetcode_id": "补充题5",
         "title": "手撕归并排序",
         "url": "https://leetcode.cn/problems/sort-an-array/",
@@ -912,36 +928,20 @@
         "frequency": 41
     },
     {
-        "id": 115,
-        "leetcode_id": "958",
-        "title": "二叉树的完全性检验",
-        "url": "https://leetcode.cn/problems/check-completeness-of-a-binary-tree/",
-        "level": "medium",
-        "frequency": 40
-    },
-    {
-        "id": 116,
-        "leetcode_id": "11",
-        "title": "盛最多水的容器",
-        "url": "https://leetcode.cn/problems/container-with-most-water/",
-        "level": "medium",
-        "frequency": 40
-    },
-    {
         "id": 117,
-        "leetcode_id": "补充题23",
-        "title": "检测循环依赖",
-        "url": "https://mp.weixin.qq.com/s/pCRscwKqQdYYN7M1Sia7xA",
+        "leetcode_id": "47",
+        "title": "全排列 II",
+        "url": "https://leetcode.cn/problems/permutations-ii/",
         "level": "medium",
         "frequency": 40
     },
     {
         "id": 118,
-        "leetcode_id": "47",
-        "title": "全排列 II",
-        "url": "https://leetcode.cn/problems/permutations-ii/",
+        "leetcode_id": "补充题23",
+        "title": "检测循环依赖",
+        "url": "https://mp.weixin.qq.com/s/pCRscwKqQdYYN7M1Sia7xA",
         "level": "medium",
-        "frequency": 39
+        "frequency": 40
     },
     {
         "id": 119,
@@ -961,6 +961,22 @@
     },
     {
         "id": 121,
+        "leetcode_id": "7",
+        "title": "整数反转",
+        "url": "https://leetcode.cn/problems/reverse-integer/",
+        "level": "easy",
+        "frequency": 37
+    },
+    {
+        "id": 122,
+        "leetcode_id": "123",
+        "title": "买卖股票的最佳时机 III",
+        "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/",
+        "level": "hard",
+        "frequency": 37
+    },
+    {
+        "id": 123,
         "leetcode_id": "55",
         "title": "跳跃游戏",
         "url": "https://leetcode.cn/problems/jump-game/",
@@ -968,7 +984,7 @@
         "frequency": 37
     },
     {
-        "id": 122,
+        "id": 124,
         "leetcode_id": "剑指 Offer 54",
         "title": "二叉搜索树的第k大节点",
         "url": "https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/",
@@ -976,15 +992,15 @@
         "frequency": 37
     },
     {
-        "id": 123,
-        "leetcode_id": "123",
-        "title": "买卖股票的最佳时机 III",
-        "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/",
-        "level": "hard",
+        "id": 125,
+        "leetcode_id": "145",
+        "title": "二叉树的后序遍历",
+        "url": "https://leetcode.cn/problems/binary-tree-postorder-traversal/",
+        "level": "medium",
         "frequency": 36
     },
     {
-        "id": 124,
+        "id": 126,
         "leetcode_id": "剑指 Offer 51",
         "title": "数组中的逆序对",
         "url": "https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/",
@@ -992,7 +1008,7 @@
         "frequency": 36
     },
     {
-        "id": 125,
+        "id": 127,
         "leetcode_id": "剑指 Offer 10- II",
         "title": "青蛙跳台阶问题",
         "url": "https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/",
@@ -1000,7 +1016,7 @@
         "frequency": 36
     },
     {
-        "id": 126,
+        "id": 128,
         "leetcode_id": "79",
         "title": "单词搜索",
         "url": "https://leetcode.cn/problems/word-search/",
@@ -1008,23 +1024,15 @@
         "frequency": 36
     },
     {
-        "id": 127,
-        "leetcode_id": "145",
-        "title": "二叉树的后序遍历",
-        "url": "https://leetcode.cn/problems/binary-tree-postorder-traversal/",
-        "level": "medium",
-        "frequency": 35
-    },
-    {
-        "id": 128,
-        "leetcode_id": "7",
-        "title": "整数反转",
-        "url": "https://leetcode.cn/problems/reverse-integer/",
+        "id": 129,
+        "leetcode_id": "26",
+        "title": "删除排序数组中的重复项",
+        "url": "https://leetcode.cn/problems/remove-duplicates-from-sorted-array/",
         "level": "easy",
         "frequency": 35
     },
     {
-        "id": 129,
+        "id": 130,
         "leetcode_id": "518",
         "title": "零钱兑换 II",
         "url": "https://leetcode.cn/problems/coin-change-2/",
@@ -1032,7 +1040,7 @@
         "frequency": 35
     },
     {
-        "id": 130,
+        "id": 131,
         "leetcode_id": "50",
         "title": "Pow(x, n)",
         "url": "https://leetcode.cn/problems/powx-n/",
@@ -1040,7 +1048,7 @@
         "frequency": 35
     },
     {
-        "id": 131,
+        "id": 132,
         "leetcode_id": "剑指 Offer 42",
         "title": "连续子数组的最大和",
         "url": "https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/",
@@ -1048,7 +1056,7 @@
         "frequency": 35
     },
     {
-        "id": 132,
+        "id": 133,
         "leetcode_id": "59",
         "title": "螺旋矩阵 II",
         "url": "https://leetcode.cn/problems/spiral-matrix-ii/",
@@ -1056,7 +1064,7 @@
         "frequency": 35
     },
     {
-        "id": 133,
+        "id": 134,
         "leetcode_id": "40",
         "title": "组合总和 II",
         "url": "https://leetcode.cn/problems/combination-sum-ii/",
@@ -1064,7 +1072,7 @@
         "frequency": 35
     },
     {
-        "id": 134,
+        "id": 135,
         "leetcode_id": "剑指 Offer 04",
         "title": "二维数组中的查找",
         "url": "https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/",
@@ -1072,7 +1080,7 @@
         "frequency": 34
     },
     {
-        "id": 135,
+        "id": 136,
         "leetcode_id": "74",
         "title": "搜索二维矩阵",
         "url": "https://leetcode.cn/problems/search-a-2d-matrix/",
@@ -1080,18 +1088,10 @@
         "frequency": 34
     },
     {
-        "id": 136,
+        "id": 137,
         "leetcode_id": "剑指 Offer 40",
         "title": "最小的k个数",
         "url": "https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/",
-        "level": "easy",
-        "frequency": 34
-    },
-    {
-        "id": 137,
-        "leetcode_id": "26",
-        "title": "删除排序数组中的重复项",
-        "url": "https://leetcode.cn/problems/remove-duplicates-from-sorted-array/",
         "level": "easy",
         "frequency": 34
     },
@@ -1145,6 +1145,22 @@
     },
     {
         "id": 144,
+        "leetcode_id": "剑指 Offer 62",
+        "title": "圆圈中最后剩下的数字",
+        "url": "https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/",
+        "level": "easy",
+        "frequency": 30
+    },
+    {
+        "id": 145,
+        "leetcode_id": "剑指 Offer 26",
+        "title": "树的子结构",
+        "url": "https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/",
+        "level": "medium",
+        "frequency": 30
+    },
+    {
+        "id": 146,
         "leetcode_id": "45",
         "title": "跳跃游戏 II",
         "url": "https://leetcode.cn/problems/jump-game-ii/",
@@ -1152,7 +1168,7 @@
         "frequency": 30
     },
     {
-        "id": 145,
+        "id": 147,
         "leetcode_id": "剑指 Offer 21",
         "title": "调整数组顺序使奇数位于偶数前面",
         "url": "https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/",
@@ -1160,15 +1176,7 @@
         "frequency": 30
     },
     {
-        "id": 146,
-        "leetcode_id": "剑指 Offer 26",
-        "title": "树的子结构",
-        "url": "https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/",
-        "level": "medium",
-        "frequency": 29
-    },
-    {
-        "id": 147,
+        "id": 148,
         "leetcode_id": "225",
         "title": "用队列实现栈",
         "url": "https://leetcode.cn/problems/implement-stack-using-queues/",
@@ -1176,7 +1184,7 @@
         "frequency": 29
     },
     {
-        "id": 148,
+        "id": 149,
         "leetcode_id": "135",
         "title": "分发糖果",
         "url": "https://leetcode.cn/problems/candy/",
@@ -1184,15 +1192,15 @@
         "frequency": 29
     },
     {
-        "id": 149,
-        "leetcode_id": "剑指 Offer 62",
-        "title": "圆圈中最后剩下的数字",
-        "url": "https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/",
-        "level": "easy",
-        "frequency": 29
+        "id": 150,
+        "leetcode_id": "445",
+        "title": "两数相加 II",
+        "url": "https://leetcode.cn/problems/add-two-numbers-ii/",
+        "level": "medium",
+        "frequency": 28
     },
     {
-        "id": 150,
+        "id": 151,
         "leetcode_id": "114",
         "title": "二叉树展开为链表",
         "url": "https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/",
@@ -1200,7 +1208,7 @@
         "frequency": 28
     },
     {
-        "id": 151,
+        "id": 152,
         "leetcode_id": "384",
         "title": "打乱数组",
         "url": "https://leetcode.cn/problems/shuffle-an-array/",
@@ -1208,7 +1216,7 @@
         "frequency": 28
     },
     {
-        "id": 152,
+        "id": 153,
         "leetcode_id": "328",
         "title": "奇偶链表",
         "url": "https://leetcode.cn/problems/odd-even-linked-list/",
@@ -1216,7 +1224,7 @@
         "frequency": 28
     },
     {
-        "id": 153,
+        "id": 154,
         "leetcode_id": "16",
         "title": "最接近的三数之和",
         "url": "https://leetcode.cn/problems/3sum-closest/",
@@ -1224,7 +1232,7 @@
         "frequency": 28
     },
     {
-        "id": 154,
+        "id": 155,
         "leetcode_id": "125",
         "title": "验证回文串",
         "url": "https://leetcode.cn/problems/valid-palindrome/",
@@ -1232,7 +1240,7 @@
         "frequency": 28
     },
     {
-        "id": 155,
+        "id": 156,
         "leetcode_id": "91",
         "title": "解码方法",
         "url": "https://leetcode.cn/problems/decode-ways/",
@@ -1240,7 +1248,7 @@
         "frequency": 28
     },
     {
-        "id": 156,
+        "id": 157,
         "leetcode_id": "329",
         "title": "矩阵中的最长递增路径",
         "url": "https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/",
@@ -1248,7 +1256,7 @@
         "frequency": 28
     },
     {
-        "id": 157,
+        "id": 158,
         "leetcode_id": "208",
         "title": "实现 Trie (前缀树)",
         "url": "https://leetcode.cn/problems/implement-trie-prefix-tree/",
@@ -1256,19 +1264,11 @@
         "frequency": 27
     },
     {
-        "id": 158,
+        "id": 159,
         "leetcode_id": "9",
         "title": "回文数",
         "url": "https://leetcode.cn/problems/palindrome-number/",
         "level": "easy",
-        "frequency": 27
-    },
-    {
-        "id": 159,
-        "leetcode_id": "445",
-        "title": "两数相加 II",
-        "url": "https://leetcode.cn/problems/add-two-numbers-ii/",
-        "level": "medium",
         "frequency": 27
     },
     {
@@ -1401,6 +1401,14 @@
     },
     {
         "id": 176,
+        "leetcode_id": "补充题14",
+        "title": "阿拉伯数字转中文数字",
+        "url": null,
+        "level": "medium",
+        "frequency": 21
+    },
+    {
+        "id": 177,
         "leetcode_id": "面试题 02.05",
         "title": "链表求和",
         "url": "https://leetcode.cn/problems/sum-lists-lcci/",
@@ -1408,7 +1416,7 @@
         "frequency": 21
     },
     {
-        "id": 177,
+        "id": 178,
         "leetcode_id": "85",
         "title": "最大矩形",
         "url": "https://leetcode.cn/problems/maximal-rectangle/",
@@ -1416,7 +1424,7 @@
         "frequency": 21
     },
     {
-        "id": 178,
+        "id": 179,
         "leetcode_id": "1047",
         "title": "删除字符串中的所有相邻重复项",
         "url": "https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/",
@@ -1424,7 +1432,7 @@
         "frequency": 21
     },
     {
-        "id": 179,
+        "id": 180,
         "leetcode_id": "71",
         "title": "简化路径",
         "url": "https://leetcode.cn/problems/simplify-path/",
@@ -1432,7 +1440,7 @@
         "frequency": 21
     },
     {
-        "id": 180,
+        "id": 181,
         "leetcode_id": "679",
         "title": "24 点游戏",
         "url": "https://leetcode.cn/problems/24-game/",
@@ -1440,7 +1448,7 @@
         "frequency": 21
     },
     {
-        "id": 181,
+        "id": 182,
         "leetcode_id": "678",
         "title": "有效的括号字符串",
         "url": "https://leetcode.cn/problems/valid-parenthesis-string/",
@@ -1448,7 +1456,7 @@
         "frequency": 21
     },
     {
-        "id": 182,
+        "id": 183,
         "leetcode_id": "剑指 Offer 52",
         "title": "两个链表的第一个公共节点",
         "url": "https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/",
@@ -1456,20 +1464,12 @@
         "frequency": 21
     },
     {
-        "id": 183,
+        "id": 184,
         "leetcode_id": "887",
         "title": "鸡蛋掉落",
         "url": "https://leetcode.cn/problems/super-egg-drop/",
         "level": "hard",
         "frequency": 21
-    },
-    {
-        "id": 184,
-        "leetcode_id": "补充题14",
-        "title": "阿拉伯数字转中文数字",
-        "url": null,
-        "level": "medium",
-        "frequency": 20
     },
     {
         "id": 185,
@@ -1649,6 +1649,14 @@
     },
     {
         "id": 207,
+        "leetcode_id": "494",
+        "title": "目标和",
+        "url": "https://leetcode.cn/problems/target-sum/",
+        "level": "medium",
+        "frequency": 17
+    },
+    {
+        "id": 208,
         "leetcode_id": "516",
         "title": "最长回文子序列",
         "url": "https://leetcode.cn/problems/longest-palindromic-subsequence/",
@@ -1656,7 +1664,7 @@
         "frequency": 17
     },
     {
-        "id": 208,
+        "id": 209,
         "leetcode_id": "115",
         "title": "不同的子序列",
         "url": "https://leetcode.cn/problems/distinct-subsequences/",
@@ -1664,7 +1672,7 @@
         "frequency": 17
     },
     {
-        "id": 209,
+        "id": 210,
         "leetcode_id": "84",
         "title": "柱状图中最大的矩形",
         "url": "https://leetcode.cn/problems/largest-rectangle-in-histogram/",
@@ -1672,7 +1680,7 @@
         "frequency": 17
     },
     {
-        "id": 210,
+        "id": 211,
         "leetcode_id": "97",
         "title": "交错字符串",
         "url": "https://leetcode.cn/problems/interleaving-string/",
@@ -1680,7 +1688,7 @@
         "frequency": 17
     },
     {
-        "id": 211,
+        "id": 212,
         "leetcode_id": "264",
         "title": "丑数 II",
         "url": "https://leetcode.cn/problems/ugly-number-ii/",
@@ -1688,7 +1696,7 @@
         "frequency": 17
     },
     {
-        "id": 212,
+        "id": 213,
         "leetcode_id": "剑指 Offer 48",
         "title": "最长不含重复字符的子字符串",
         "url": "https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/",
@@ -1696,7 +1704,7 @@
         "frequency": 17
     },
     {
-        "id": 213,
+        "id": 214,
         "leetcode_id": "395",
         "title": "至少有K个重复字符的最长子串",
         "url": "https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/",
@@ -1704,7 +1712,7 @@
         "frequency": 17
     },
     {
-        "id": 214,
+        "id": 215,
         "leetcode_id": "242",
         "title": "有效的字母异位词",
         "url": "https://leetcode.cn/problems/valid-anagram/",
@@ -1712,7 +1720,7 @@
         "frequency": 17
     },
     {
-        "id": 215,
+        "id": 216,
         "leetcode_id": "344",
         "title": "反转字符串",
         "url": "https://leetcode.cn/problems/reverse-string/",
@@ -1720,7 +1728,7 @@
         "frequency": 17
     },
     {
-        "id": 216,
+        "id": 217,
         "leetcode_id": "557",
         "title": "反转字符串中的单词 III",
         "url": "https://leetcode.cn/problems/reverse-words-in-a-string-iii/",
@@ -1728,7 +1736,7 @@
         "frequency": 17
     },
     {
-        "id": 217,
+        "id": 218,
         "leetcode_id": "670",
         "title": "最大交换",
         "url": "https://leetcode.cn/problems/maximum-swap/",
@@ -1736,7 +1744,7 @@
         "frequency": 17
     },
     {
-        "id": 218,
+        "id": 219,
         "leetcode_id": "剑指 Offer 11",
         "title": "旋转数组的最小数字",
         "url": "https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/",
@@ -1744,7 +1752,7 @@
         "frequency": 17
     },
     {
-        "id": 219,
+        "id": 220,
         "leetcode_id": "191",
         "title": "位1的个数",
         "url": "https://leetcode.cn/problems/number-of-1-bits/",
@@ -1752,7 +1760,15 @@
         "frequency": 17
     },
     {
-        "id": 220,
+        "id": 221,
+        "leetcode_id": "222",
+        "title": "完全二叉树的节点个数",
+        "url": "https://leetcode.cn/problems/count-complete-tree-nodes/",
+        "level": "medium",
+        "frequency": 16
+    },
+    {
+        "id": 222,
         "leetcode_id": "268",
         "title": "缺失数字",
         "url": "https://leetcode.cn/problems/missing-number/",
@@ -1760,7 +1776,7 @@
         "frequency": 16
     },
     {
-        "id": 221,
+        "id": 223,
         "leetcode_id": "154",
         "title": "寻找旋转排序数组中的最小值 II",
         "url": "https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/",
@@ -1768,7 +1784,7 @@
         "frequency": 16
     },
     {
-        "id": 222,
+        "id": 224,
         "leetcode_id": "343",
         "title": "整数拆分",
         "url": "https://leetcode.cn/problems/integer-break/",
@@ -1776,7 +1792,7 @@
         "frequency": 16
     },
     {
-        "id": 223,
+        "id": 225,
         "leetcode_id": "316",
         "title": "去除重复字母",
         "url": "https://leetcode.cn/problems/remove-duplicate-letters/",
@@ -1784,7 +1800,7 @@
         "frequency": 16
     },
     {
-        "id": 224,
+        "id": 226,
         "leetcode_id": "253",
         "title": "会议室 II",
         "url": "https://leetcode.cn/problems/meeting-rooms-ii/",
@@ -1792,15 +1808,7 @@
         "frequency": 16
     },
     {
-        "id": 225,
-        "leetcode_id": "494",
-        "title": "目标和",
-        "url": "https://leetcode.cn/problems/target-sum/",
-        "level": "medium",
-        "frequency": 16
-    },
-    {
-        "id": 226,
+        "id": 227,
         "leetcode_id": "18",
         "title": "四数之和",
         "url": "https://leetcode.cn/problems/4sum/",
@@ -1808,7 +1816,7 @@
         "frequency": 16
     },
     {
-        "id": 227,
+        "id": 228,
         "leetcode_id": "260",
         "title": "只出现一次的数字 III",
         "url": "https://leetcode.cn/problems/single-number-iii/",
@@ -1816,7 +1824,7 @@
         "frequency": 16
     },
     {
-        "id": 228,
+        "id": 229,
         "leetcode_id": "面试题 17.24",
         "title": "最大子矩阵",
         "url": "https://leetcode.cn/problems/max-submatrix-lcci/",
@@ -1824,7 +1832,7 @@
         "frequency": 16
     },
     {
-        "id": 229,
+        "id": 230,
         "leetcode_id": "503",
         "title": "下一个更大元素 II",
         "url": "https://leetcode.cn/problems/next-greater-element-ii/",
@@ -1832,7 +1840,7 @@
         "frequency": 16
     },
     {
-        "id": 230,
+        "id": 231,
         "leetcode_id": "100",
         "title": "相同的树",
         "url": "https://leetcode.cn/problems/same-tree/",
@@ -1840,7 +1848,15 @@
         "frequency": 16
     },
     {
-        "id": 231,
+        "id": 232,
+        "leetcode_id": "863",
+        "title": "二叉树中所有距离为 K 的结点",
+        "url": "https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/",
+        "level": "medium",
+        "frequency": 15
+    },
+    {
+        "id": 233,
         "leetcode_id": "257",
         "title": "二叉树的所有路径",
         "url": "https://leetcode.cn/problems/binary-tree-paths/",
@@ -1848,7 +1864,7 @@
         "frequency": 15
     },
     {
-        "id": 232,
+        "id": 234,
         "leetcode_id": "554",
         "title": "砖墙",
         "url": "https://leetcode.cn/problems/brick-wall/",
@@ -1856,7 +1872,7 @@
         "frequency": 15
     },
     {
-        "id": 233,
+        "id": 235,
         "leetcode_id": "108",
         "title": "将有序数组转换为二叉搜索树",
         "url": "https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/",
@@ -1864,7 +1880,7 @@
         "frequency": 15
     },
     {
-        "id": 234,
+        "id": 236,
         "leetcode_id": "剑指 Offer 03",
         "title": "数组中重复的数字",
         "url": "https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/",
@@ -1872,15 +1888,7 @@
         "frequency": 15
     },
     {
-        "id": 235,
-        "leetcode_id": "222",
-        "title": "完全二叉树的节点个数",
-        "url": "https://leetcode.cn/problems/count-complete-tree-nodes/",
-        "level": "medium",
-        "frequency": 15
-    },
-    {
-        "id": 236,
+        "id": 237,
         "leetcode_id": "167",
         "title": "两数之和 II - 输入有序数组",
         "url": "https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/",
@@ -1888,7 +1896,7 @@
         "frequency": 15
     },
     {
-        "id": 237,
+        "id": 238,
         "leetcode_id": "剑指 Offer 33",
         "title": "二叉搜索树的后序遍历序列",
         "url": "https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/",
@@ -1896,7 +1904,7 @@
         "frequency": 15
     },
     {
-        "id": 238,
+        "id": 239,
         "leetcode_id": "51",
         "title": "N皇后",
         "url": "https://leetcode.cn/problems/n-queens/",
@@ -1904,7 +1912,15 @@
         "frequency": 15
     },
     {
-        "id": 239,
+        "id": 240,
+        "leetcode_id": "622",
+        "title": "设计循环队列",
+        "url": "https://leetcode.cn/problems/design-circular-queue/",
+        "level": "medium",
+        "frequency": 14
+    },
+    {
+        "id": 241,
         "leetcode_id": "380",
         "title": "常数时间插入、删除和获取随机元素",
         "url": "https://leetcode.cn/problems/insert-delete-getrandom-o1/",
@@ -1912,7 +1928,7 @@
         "frequency": 14
     },
     {
-        "id": 240,
+        "id": 242,
         "leetcode_id": "130",
         "title": "被围绕的区域",
         "url": "https://leetcode.cn/problems/surrounded-regions/",
@@ -1920,7 +1936,7 @@
         "frequency": 14
     },
     {
-        "id": 241,
+        "id": 243,
         "leetcode_id": "426",
         "title": "将二叉搜索树转化为排序的双向链表",
         "url": "https://leetcode.cn/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/",
@@ -1928,7 +1944,7 @@
         "frequency": 14
     },
     {
-        "id": 242,
+        "id": 244,
         "leetcode_id": "763",
         "title": "划分字母区间",
         "url": "https://leetcode.cn/problems/partition-labels/",
@@ -1936,7 +1952,7 @@
         "frequency": 14
     },
     {
-        "id": 243,
+        "id": 245,
         "leetcode_id": "77",
         "title": "组合",
         "url": "https://leetcode.cn/problems/combinations/",
@@ -1944,15 +1960,7 @@
         "frequency": 14
     },
     {
-        "id": 244,
-        "leetcode_id": "863",
-        "title": "二叉树中所有距离为 K 的结点",
-        "url": "https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/",
-        "level": "medium",
-        "frequency": 14
-    },
-    {
-        "id": 245,
+        "id": 246,
         "leetcode_id": "剑指 Offer 32 - III",
         "title": "从上到下打印二叉树 III",
         "url": "https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/",
@@ -1960,7 +1968,7 @@
         "frequency": 14
     },
     {
-        "id": 246,
+        "id": 247,
         "leetcode_id": "862",
         "title": "和至少为 K 的最短子数组",
         "url": "https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/",
@@ -1968,7 +1976,7 @@
         "frequency": 14
     },
     {
-        "id": 247,
+        "id": 248,
         "leetcode_id": "416",
         "title": "分割等和子集",
         "url": "https://leetcode.cn/problems/partition-equal-subset-sum/",
@@ -1976,7 +1984,7 @@
         "frequency": 13
     },
     {
-        "id": 248,
+        "id": 249,
         "leetcode_id": "12",
         "title": "整数转罗马数字",
         "url": "https://leetcode.cn/problems/integer-to-roman/",
@@ -1984,7 +1992,7 @@
         "frequency": 13
     },
     {
-        "id": 249,
+        "id": 250,
         "leetcode_id": "647",
         "title": "回文子串",
         "url": "https://leetcode.cn/problems/palindromic-substrings/",
@@ -1992,7 +2000,7 @@
         "frequency": 13
     },
     {
-        "id": 250,
+        "id": 251,
         "leetcode_id": "剑指 Offer 07",
         "title": "重建二叉树",
         "url": "https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/",
@@ -2000,7 +2008,7 @@
         "frequency": 13
     },
     {
-        "id": 251,
+        "id": 252,
         "leetcode_id": "337",
         "title": "打家劫舍 III",
         "url": "https://leetcode.cn/problems/house-robber-iii/",
@@ -2008,7 +2016,7 @@
         "frequency": 13
     },
     {
-        "id": 252,
+        "id": 253,
         "leetcode_id": "188",
         "title": "买卖股票的最佳时机 IV",
         "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/",
@@ -2016,18 +2024,10 @@
         "frequency": 13
     },
     {
-        "id": 253,
+        "id": 254,
         "leetcode_id": "剑指 Offer 35",
         "title": "复杂链表的复制",
         "url": "https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/",
-        "level": "medium",
-        "frequency": 13
-    },
-    {
-        "id": 254,
-        "leetcode_id": "622",
-        "title": "设计循环队列",
-        "url": "https://leetcode.cn/problems/design-circular-queue/",
         "level": "medium",
         "frequency": 13
     },
@@ -2097,6 +2097,14 @@
     },
     {
         "id": 263,
+        "leetcode_id": "28",
+        "title": "实现 strStr()",
+        "url": "https://leetcode.cn/problems/implement-strstr/",
+        "level": "easy",
+        "frequency": 12
+    },
+    {
+        "id": 264,
         "leetcode_id": "301",
         "title": "删除无效的括号",
         "url": "https://leetcode.cn/problems/remove-invalid-parentheses/",
@@ -2104,7 +2112,7 @@
         "frequency": 12
     },
     {
-        "id": 264,
+        "id": 265,
         "leetcode_id": "437",
         "title": "路径总和 III",
         "url": "https://leetcode.cn/problems/path-sum-iii/",
@@ -2112,7 +2120,7 @@
         "frequency": 12
     },
     {
-        "id": 265,
+        "id": 266,
         "leetcode_id": "378",
         "title": "有序矩阵中第K小的元素",
         "url": "https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/",
@@ -2120,7 +2128,7 @@
         "frequency": 12
     },
     {
-        "id": 266,
+        "id": 267,
         "leetcode_id": "剑指 Offer 31",
         "title": "栈的压入、弹出序列",
         "url": "https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/",
@@ -2128,7 +2136,7 @@
         "frequency": 12
     },
     {
-        "id": 267,
+        "id": 268,
         "leetcode_id": "204",
         "title": "计数质数",
         "url": "https://leetcode.cn/problems/count-primes/",
@@ -2136,7 +2144,7 @@
         "frequency": 12
     },
     {
-        "id": 268,
+        "id": 269,
         "leetcode_id": "528",
         "title": "按权重随机选择",
         "url": "https://leetcode.cn/problems/random-pick-with-weight/",
@@ -2144,7 +2152,7 @@
         "frequency": 12
     },
     {
-        "id": 269,
+        "id": 270,
         "leetcode_id": "面试题 10.03",
         "title": "搜索旋转数组",
         "url": "https://leetcode.cn/problems/search-rotate-array-lcci/",
@@ -2152,7 +2160,7 @@
         "frequency": 12
     },
     {
-        "id": 270,
+        "id": 271,
         "leetcode_id": "补充题21",
         "title": "字符串相减",
         "url": "https://mp.weixin.qq.com/s/RtAoA1hdf0h1PaVxRj_fzA",
@@ -2160,7 +2168,7 @@
         "frequency": 12
     },
     {
-        "id": 271,
+        "id": 272,
         "leetcode_id": "674",
         "title": "最长连续递增序列",
         "url": "https://leetcode.cn/problems/longest-continuous-increasing-subsequence/",
@@ -2168,7 +2176,7 @@
         "frequency": 12
     },
     {
-        "id": 272,
+        "id": 273,
         "leetcode_id": "617",
         "title": "合并二叉树",
         "url": "https://leetcode.cn/problems/merge-two-binary-trees/",
@@ -2176,7 +2184,7 @@
         "frequency": 12
     },
     {
-        "id": 273,
+        "id": 274,
         "leetcode_id": "706",
         "title": "设计哈希映射",
         "url": "https://leetcode.cn/problems/design-hashmap/",
@@ -2184,7 +2192,7 @@
         "frequency": 12
     },
     {
-        "id": 274,
+        "id": 275,
         "leetcode_id": "567",
         "title": "字符串的排列",
         "url": "https://leetcode.cn/problems/permutation-in-string/",
@@ -2192,7 +2200,7 @@
         "frequency": 12
     },
     {
-        "id": 275,
+        "id": 276,
         "leetcode_id": "剑指 Offer 38",
         "title": "字符串的排列",
         "url": "https://leetcode.cn/problems/zi-fu-chuan-de-pai-lie-lcof/",
@@ -2200,7 +2208,7 @@
         "frequency": 12
     },
     {
-        "id": 276,
+        "id": 277,
         "leetcode_id": "剑指 Offer 46",
         "title": "把数字翻译成字符串",
         "url": "https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/",
@@ -2208,7 +2216,7 @@
         "frequency": 12
     },
     {
-        "id": 277,
+        "id": 278,
         "leetcode_id": "面试题 08.12",
         "title": "八皇后",
         "url": "https://leetcode.cn/problems/eight-queens-lcci/",
@@ -2216,7 +2224,7 @@
         "frequency": 12
     },
     {
-        "id": 278,
+        "id": 279,
         "leetcode_id": "171",
         "title": "Excel表列序号",
         "url": "https://leetcode.cn/problems/excel-sheet-column-number/",
@@ -2224,7 +2232,7 @@
         "frequency": 12
     },
     {
-        "id": 279,
+        "id": 280,
         "leetcode_id": "525",
         "title": "连续数组",
         "url": "https://leetcode.cn/problems/contiguous-array/",
@@ -2232,7 +2240,7 @@
         "frequency": 12
     },
     {
-        "id": 280,
+        "id": 281,
         "leetcode_id": "1044",
         "title": "最长重复子串",
         "url": "https://leetcode.cn/problems/longest-duplicate-substring/",
@@ -2240,19 +2248,11 @@
         "frequency": 11
     },
     {
-        "id": 281,
+        "id": 282,
         "leetcode_id": "438",
         "title": "找到字符串中所有字母异位词",
         "url": "https://leetcode.cn/problems/find-all-anagrams-in-a-string/",
         "level": "medium",
-        "frequency": 11
-    },
-    {
-        "id": 282,
-        "leetcode_id": "28",
-        "title": "实现 strStr()",
-        "url": "https://leetcode.cn/problems/implement-strstr/",
-        "level": "easy",
         "frequency": 11
     },
     {
@@ -4545,6 +4545,30 @@
     },
     {
         "id": 569,
+        "leetcode_id": "256",
+        "title": "粉刷房子",
+        "url": "https://leetcode.cn/problems/paint-house/",
+        "level": "easy",
+        "frequency": 2
+    },
+    {
+        "id": 570,
+        "leetcode_id": "1219",
+        "title": "黄金矿工",
+        "url": "https://leetcode.cn/problems/path-with-maximum-gold/",
+        "level": "medium",
+        "frequency": 2
+    },
+    {
+        "id": 571,
+        "leetcode_id": "1490",
+        "title": "克隆 N 叉树",
+        "url": "https://leetcode.cn/problems/clone-n-ary-tree/",
+        "level": "medium",
+        "frequency": 2
+    },
+    {
+        "id": 572,
         "leetcode_id": "712",
         "title": "两个字符串的最小ASCII删除和",
         "url": "https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/",
@@ -4552,7 +4576,7 @@
         "frequency": 2
     },
     {
-        "id": 570,
+        "id": 573,
         "leetcode_id": "430",
         "title": "扁平化多级双向链表",
         "url": "https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/",
@@ -4560,7 +4584,7 @@
         "frequency": 2
     },
     {
-        "id": 571,
+        "id": 574,
         "leetcode_id": "1267",
         "title": "统计参与通信的服务器",
         "url": "https://leetcode.cn/problems/count-servers-that-communicate/",
@@ -4568,7 +4592,7 @@
         "frequency": 2
     },
     {
-        "id": 572,
+        "id": 575,
         "leetcode_id": "983",
         "title": "最低票价",
         "url": "https://leetcode.cn/problems/minimum-cost-for-tickets/",
@@ -4576,7 +4600,7 @@
         "frequency": 2
     },
     {
-        "id": 573,
+        "id": 576,
         "leetcode_id": "面试题 17.19",
         "title": "消失的两个数字",
         "url": "https://leetcode.cn/problems/missing-two-lcci/",
@@ -4584,7 +4608,7 @@
         "frequency": 2
     },
     {
-        "id": 574,
+        "id": 577,
         "leetcode_id": "1231",
         "title": "分享巧克力",
         "url": "https://leetcode.cn/problems/divide-chocolate/",
@@ -4592,7 +4616,7 @@
         "frequency": 2
     },
     {
-        "id": 575,
+        "id": 578,
         "leetcode_id": "538",
         "title": "把二叉搜索树转换为累加树",
         "url": "https://leetcode.cn/problems/convert-bst-to-greater-tree/",
@@ -4600,7 +4624,7 @@
         "frequency": 2
     },
     {
-        "id": 576,
+        "id": 579,
         "leetcode_id": "455",
         "title": "分发饼干",
         "url": "https://leetcode.cn/problems/assign-cookies/",
@@ -4608,7 +4632,7 @@
         "frequency": 2
     },
     {
-        "id": 577,
+        "id": 580,
         "leetcode_id": "38",
         "title": "外观数列",
         "url": "https://leetcode.cn/problems/count-and-say/",
@@ -4616,7 +4640,7 @@
         "frequency": 2
     },
     {
-        "id": 578,
+        "id": 581,
         "leetcode_id": "面试题 01.01",
         "title": "判定字符是否唯一",
         "url": "https://leetcode.cn/problems/is-unique-lcci/",
@@ -4624,7 +4648,7 @@
         "frequency": 2
     },
     {
-        "id": 579,
+        "id": 582,
         "leetcode_id": "186",
         "title": "翻转字符串里的单词 II",
         "url": "https://leetcode.cn/problems/reverse-words-in-a-string-ii/",
@@ -4632,7 +4656,7 @@
         "frequency": 2
     },
     {
-        "id": 580,
+        "id": 583,
         "leetcode_id": "1091",
         "title": "二进制矩阵中的最短路径",
         "url": "https://leetcode.cn/problems/shortest-path-in-binary-matrix/",
@@ -4640,7 +4664,7 @@
         "frequency": 2
     },
     {
-        "id": 581,
+        "id": 584,
         "leetcode_id": "1090",
         "title": "受标签影响的最大值",
         "url": "https://leetcode.cn/problems/largest-values-from-labels/",
@@ -4648,7 +4672,7 @@
         "frequency": 2
     },
     {
-        "id": 582,
+        "id": 585,
         "leetcode_id": "783",
         "title": "二叉搜索树节点最小距离",
         "url": "https://leetcode.cn/problems/minimum-distance-between-bst-nodes/",
@@ -4656,7 +4680,7 @@
         "frequency": 2
     },
     {
-        "id": 583,
+        "id": 586,
         "leetcode_id": "969",
         "title": "煎饼排序",
         "url": "https://leetcode.cn/problems/pancake-sorting/",
@@ -4664,7 +4688,7 @@
         "frequency": 2
     },
     {
-        "id": 584,
+        "id": 587,
         "leetcode_id": "1099",
         "title": "小于 K 的两数之和",
         "url": "https://leetcode.cn/problems/two-sum-less-than-k/",
@@ -4672,7 +4696,7 @@
         "frequency": 2
     },
     {
-        "id": 585,
+        "id": 588,
         "leetcode_id": "265",
         "title": "粉刷房子 II",
         "url": "https://leetcode.cn/problems/paint-house-ii/",
@@ -4680,7 +4704,7 @@
         "frequency": 2
     },
     {
-        "id": 586,
+        "id": 589,
         "leetcode_id": "462",
         "title": "最少移动次数使数组元素相等 II",
         "url": "https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/",
@@ -4688,7 +4712,7 @@
         "frequency": 2
     },
     {
-        "id": 587,
+        "id": 590,
         "leetcode_id": "960",
         "title": "删列造序 III",
         "url": "https://leetcode.cn/problems/delete-columns-to-make-sorted-iii/",
@@ -4696,7 +4720,7 @@
         "frequency": 2
     },
     {
-        "id": 588,
+        "id": 591,
         "leetcode_id": "面试题 08.13",
         "title": "堆箱子",
         "url": "https://leetcode.cn/problems/pile-box-lcci/",
@@ -4704,7 +4728,7 @@
         "frequency": 2
     },
     {
-        "id": 589,
+        "id": 592,
         "leetcode_id": "1614",
         "title": "括号的最大嵌套深度",
         "url": "https://leetcode.cn/problems/maximum-nesting-depth-of-the-parentheses/",
@@ -4712,7 +4736,7 @@
         "frequency": 2
     },
     {
-        "id": 590,
+        "id": 593,
         "leetcode_id": "1172",
         "title": "餐盘栈",
         "url": "https://leetcode.cn/problems/dinner-plate-stacks/",
@@ -4720,7 +4744,7 @@
         "frequency": 2
     },
     {
-        "id": 591,
+        "id": 594,
         "leetcode_id": "707",
         "title": "设计链表",
         "url": "https://leetcode.cn/problems/design-linked-list/",
@@ -4728,7 +4752,7 @@
         "frequency": 2
     },
     {
-        "id": 592,
+        "id": 595,
         "leetcode_id": "1268",
         "title": "搜索推荐系统",
         "url": "https://leetcode.cn/problems/search-suggestions-system/",
@@ -4736,7 +4760,7 @@
         "frequency": 2
     },
     {
-        "id": 593,
+        "id": 596,
         "leetcode_id": "353",
         "title": "贪吃蛇",
         "url": "https://leetcode.cn/problems/design-snake-game/",
@@ -4744,7 +4768,7 @@
         "frequency": 2
     },
     {
-        "id": 594,
+        "id": 597,
         "leetcode_id": "984",
         "title": "不含 AAA 或 BBB 的字符串",
         "url": "https://leetcode.cn/problems/string-without-aaa-or-bbb/",
@@ -4752,7 +4776,7 @@
         "frequency": 2
     },
     {
-        "id": 595,
+        "id": 598,
         "leetcode_id": "791",
         "title": "自定义字符串排序",
         "url": "https://leetcode.cn/problems/custom-sort-string/",
@@ -4760,7 +4784,7 @@
         "frequency": 2
     },
     {
-        "id": 596,
+        "id": 599,
         "leetcode_id": "1124",
         "title": "表现良好的最长时间段",
         "url": "https://leetcode.cn/problems/longest-well-performing-interval/",
@@ -4768,7 +4792,7 @@
         "frequency": 2
     },
     {
-        "id": 597,
+        "id": 600,
         "leetcode_id": "1345",
         "title": "跳跃游戏 IV",
         "url": "https://leetcode.cn/problems/jump-game-iv/",
@@ -4776,7 +4800,7 @@
         "frequency": 2
     },
     {
-        "id": 598,
+        "id": 601,
         "leetcode_id": "1375",
         "title": "灯泡开关 III",
         "url": "https://leetcode.cn/problems/bulb-switcher-iii/",
@@ -4784,7 +4808,7 @@
         "frequency": 2
     },
     {
-        "id": 599,
+        "id": 602,
         "leetcode_id": "1483",
         "title": "树节点的第 K 个祖先",
         "url": "https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/",
@@ -4792,7 +4816,7 @@
         "frequency": 2
     },
     {
-        "id": 600,
+        "id": 603,
         "leetcode_id": "1262",
         "title": "可被三整除的最大和",
         "url": "https://leetcode.cn/problems/greatest-sum-divisible-by-three/",
@@ -4800,7 +4824,7 @@
         "frequency": 2
     },
     {
-        "id": 601,
+        "id": 604,
         "leetcode_id": "290",
         "title": "单词规律",
         "url": "https://leetcode.cn/problems/word-pattern/",
@@ -4808,7 +4832,7 @@
         "frequency": 2
     },
     {
-        "id": 602,
+        "id": 605,
         "leetcode_id": "754",
         "title": "到达终点数字",
         "url": "https://leetcode.cn/problems/reach-a-number/",
@@ -4816,7 +4840,7 @@
         "frequency": 2
     },
     {
-        "id": 603,
+        "id": 606,
         "leetcode_id": "341",
         "title": "扁平化嵌套列表迭代器",
         "url": "https://leetcode.cn/problems/flatten-nested-list-iterator/",
@@ -4824,7 +4848,7 @@
         "frequency": 2
     },
     {
-        "id": 604,
+        "id": 607,
         "leetcode_id": "420",
         "title": "强密码检验器",
         "url": "https://leetcode.cn/problems/strong-password-checker/",
@@ -4832,7 +4856,7 @@
         "frequency": 2
     },
     {
-        "id": 605,
+        "id": 608,
         "leetcode_id": "269",
         "title": "火星词典",
         "url": "https://leetcode.cn/problems/alien-dictionary/",
@@ -4840,7 +4864,7 @@
         "frequency": 2
     },
     {
-        "id": 606,
+        "id": 609,
         "leetcode_id": "873",
         "title": "最长的斐波那契子序列的长度",
         "url": "https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/",
@@ -4848,7 +4872,7 @@
         "frequency": 2
     },
     {
-        "id": 607,
+        "id": 610,
         "leetcode_id": "剑指 Offer 68 - II",
         "title": "二叉树的最近公共祖先",
         "url": "https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/",
@@ -4856,7 +4880,7 @@
         "frequency": 2
     },
     {
-        "id": 608,
+        "id": 611,
         "leetcode_id": "318",
         "title": "最大单词长度乘积",
         "url": "https://leetcode.cn/problems/maximum-product-of-word-lengths/",
@@ -4864,7 +4888,7 @@
         "frequency": 2
     },
     {
-        "id": 609,
+        "id": 612,
         "leetcode_id": "211",
         "title": "添加与搜索单词 - 数据结构设计",
         "url": "https://leetcode.cn/problems/design-add-and-search-words-data-structure/",
@@ -4872,7 +4896,7 @@
         "frequency": 2
     },
     {
-        "id": 610,
+        "id": 613,
         "leetcode_id": "403",
         "title": "青蛙过河",
         "url": "https://leetcode.cn/problems/frog-jump/",
@@ -4880,7 +4904,7 @@
         "frequency": 2
     },
     {
-        "id": 611,
+        "id": 614,
         "leetcode_id": "705",
         "title": "设计哈希集合",
         "url": "https://leetcode.cn/problems/design-hashset/",
@@ -4888,7 +4912,7 @@
         "frequency": 2
     },
     {
-        "id": 612,
+        "id": 615,
         "leetcode_id": "1089",
         "title": "复写零",
         "url": "https://leetcode.cn/problems/duplicate-zeros/",
@@ -4896,7 +4920,7 @@
         "frequency": 2
     },
     {
-        "id": 613,
+        "id": 616,
         "leetcode_id": "1240",
         "title": "铺瓷砖",
         "url": "https://leetcode.cn/problems/tiling-a-rectangle-with-the-fewest-squares/",
@@ -4904,7 +4928,7 @@
         "frequency": 2
     },
     {
-        "id": 614,
+        "id": 617,
         "leetcode_id": "696",
         "title": "计数二进制子串",
         "url": "https://leetcode.cn/problems/count-binary-substrings/",
@@ -4912,7 +4936,7 @@
         "frequency": 2
     },
     {
-        "id": 615,
+        "id": 618,
         "leetcode_id": "351",
         "title": "安卓系统手势解锁",
         "url": "https://leetcode.cn/problems/android-unlock-patterns/",
@@ -4920,7 +4944,7 @@
         "frequency": 2
     },
     {
-        "id": 616,
+        "id": 619,
         "leetcode_id": "432",
         "title": "全 O(1) 的数据结构",
         "url": "https://leetcode.cn/problems/all-oone-data-structure/",
@@ -4928,7 +4952,7 @@
         "frequency": 2
     },
     {
-        "id": 617,
+        "id": 620,
         "leetcode_id": "1208",
         "title": "尽可能使字符串相等",
         "url": "https://leetcode.cn/problems/get-equal-substrings-within-budget/",
@@ -4936,7 +4960,7 @@
         "frequency": 2
     },
     {
-        "id": 618,
+        "id": 621,
         "leetcode_id": "1505",
         "title": "最多 K 次交换相邻数位后得到的最小整数",
         "url": "https://leetcode.cn/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
@@ -4944,7 +4968,7 @@
         "frequency": 2
     },
     {
-        "id": 619,
+        "id": 622,
         "leetcode_id": "593",
         "title": "有效的正方形",
         "url": "https://leetcode.cn/problems/valid-square/",
@@ -4952,7 +4976,7 @@
         "frequency": 2
     },
     {
-        "id": 620,
+        "id": 623,
         "leetcode_id": "1151",
         "title": "最少交换次数来组合所有的 1",
         "url": "https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/",
@@ -4960,7 +4984,7 @@
         "frequency": 2
     },
     {
-        "id": 621,
+        "id": 624,
         "leetcode_id": "991",
         "title": "坏了的计算器",
         "url": "https://leetcode.cn/problems/broken-calculator/",
@@ -4968,7 +4992,7 @@
         "frequency": 2
     },
     {
-        "id": 622,
+        "id": 625,
         "leetcode_id": "面试题 17.07",
         "title": "婴儿名字",
         "url": "https://leetcode.cn/problems/baby-names-lcci/",
@@ -4976,7 +5000,7 @@
         "frequency": 2
     },
     {
-        "id": 623,
+        "id": 626,
         "leetcode_id": "501",
         "title": "二叉搜索树中的众数",
         "url": "https://leetcode.cn/problems/find-mode-in-binary-search-tree/",
@@ -4984,7 +5008,7 @@
         "frequency": 2
     },
     {
-        "id": 624,
+        "id": 627,
         "leetcode_id": "1115",
         "title": "交替打印FooBar",
         "url": "https://leetcode.cn/problems/print-foobar-alternately/",
@@ -4992,7 +5016,7 @@
         "frequency": 2
     },
     {
-        "id": 625,
+        "id": 628,
         "leetcode_id": "229",
         "title": "求众数 II",
         "url": "https://leetcode.cn/problems/majority-element-ii/",
@@ -5000,7 +5024,7 @@
         "frequency": 2
     },
     {
-        "id": 626,
+        "id": 629,
         "leetcode_id": "583",
         "title": "两个字符串的删除操作",
         "url": "https://leetcode.cn/problems/delete-operation-for-two-strings/",
@@ -5008,7 +5032,7 @@
         "frequency": 2
     },
     {
-        "id": 627,
+        "id": 630,
         "leetcode_id": "剑指 Offer 14- II",
         "title": "剪绳子 II",
         "url": "https://leetcode.cn/problems/jian-sheng-zi-ii-lcof/",
@@ -5016,7 +5040,7 @@
         "frequency": 2
     },
     {
-        "id": 628,
+        "id": 631,
         "leetcode_id": "面试题 08.01",
         "title": "三步问题",
         "url": "https://leetcode.cn/problems/three-steps-problem-lcci/",
@@ -5024,7 +5048,7 @@
         "frequency": 2
     },
     {
-        "id": 629,
+        "id": 632,
         "leetcode_id": "259",
         "title": "较小的三数之和",
         "url": "https://leetcode.cn/problems/3sum-smaller/",
@@ -5032,7 +5056,7 @@
         "frequency": 2
     },
     {
-        "id": 630,
+        "id": 633,
         "leetcode_id": "779",
         "title": "第K个语法符号",
         "url": "https://leetcode.cn/problems/k-th-symbol-in-grammar/",
@@ -5040,7 +5064,7 @@
         "frequency": 2
     },
     {
-        "id": 631,
+        "id": 634,
         "leetcode_id": "413",
         "title": "等差数列划分",
         "url": "https://leetcode.cn/problems/arithmetic-slices/",
@@ -5048,7 +5072,7 @@
         "frequency": 2
     },
     {
-        "id": 632,
+        "id": 635,
         "leetcode_id": "1002",
         "title": "查找常用字符",
         "url": "https://leetcode.cn/problems/find-common-characters/",
@@ -5056,7 +5080,7 @@
         "frequency": 2
     },
     {
-        "id": 633,
+        "id": 636,
         "leetcode_id": "697",
         "title": "数组的度",
         "url": "https://leetcode.cn/problems/degree-of-an-array/",
@@ -5064,7 +5088,7 @@
         "frequency": 2
     },
     {
-        "id": 634,
+        "id": 637,
         "leetcode_id": "474",
         "title": "一和零",
         "url": "https://leetcode.cn/problems/ones-and-zeroes/",
@@ -5072,7 +5096,7 @@
         "frequency": 2
     },
     {
-        "id": 635,
+        "id": 638,
         "leetcode_id": "827",
         "title": "最大人工岛",
         "url": "https://leetcode.cn/problems/making-a-large-island/",
@@ -5080,7 +5104,7 @@
         "frequency": 2
     },
     {
-        "id": 636,
+        "id": 639,
         "leetcode_id": "1110",
         "title": "删点成林",
         "url": "https://leetcode.cn/problems/delete-nodes-and-return-forest/",
@@ -5088,7 +5112,7 @@
         "frequency": 2
     },
     {
-        "id": 637,
+        "id": 640,
         "leetcode_id": "1129",
         "title": "颜色交替的最短路径",
         "url": "https://leetcode.cn/problems/shortest-path-with-alternating-colors/",
@@ -5096,7 +5120,7 @@
         "frequency": 2
     },
     {
-        "id": 638,
+        "id": 641,
         "leetcode_id": "688",
         "title": "“马”在棋盘上的概率",
         "url": "https://leetcode.cn/problems/knight-probability-in-chessboard/",
@@ -5104,7 +5128,7 @@
         "frequency": 2
     },
     {
-        "id": 639,
+        "id": 642,
         "leetcode_id": "1494",
         "title": "并行课程 II",
         "url": "https://leetcode.cn/problems/parallel-courses-ii/",
@@ -5112,7 +5136,7 @@
         "frequency": 2
     },
     {
-        "id": 640,
+        "id": 643,
         "leetcode_id": "1162",
         "title": "地图分析",
         "url": "https://leetcode.cn/problems/as-far-from-land-as-possible/",
@@ -5120,7 +5144,7 @@
         "frequency": 2
     },
     {
-        "id": 641,
+        "id": 644,
         "leetcode_id": "482",
         "title": "密钥格式化",
         "url": "https://leetcode.cn/problems/license-key-formatting/",
@@ -5128,7 +5152,7 @@
         "frequency": 2
     },
     {
-        "id": 642,
+        "id": 645,
         "leetcode_id": "524",
         "title": "通过删除字母匹配到字典里最长单词",
         "url": "https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/",
@@ -5136,7 +5160,7 @@
         "frequency": 2
     },
     {
-        "id": 643,
+        "id": 646,
         "leetcode_id": "剑指 Offer 20",
         "title": "表示数值的字符串",
         "url": "https://leetcode.cn/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/",
@@ -5144,7 +5168,7 @@
         "frequency": 2
     },
     {
-        "id": 644,
+        "id": 647,
         "leetcode_id": "396",
         "title": "旋转函数",
         "url": "https://leetcode.cn/problems/rotate-function/",
@@ -5152,7 +5176,7 @@
         "frequency": 2
     },
     {
-        "id": 645,
+        "id": 648,
         "leetcode_id": "1358",
         "title": "包含所有三种字符的子字符串数目",
         "url": "https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/",
@@ -5160,7 +5184,7 @@
         "frequency": 2
     },
     {
-        "id": 646,
+        "id": 649,
         "leetcode_id": "740",
         "title": "删除与获得点数",
         "url": "https://leetcode.cn/problems/delete-and-earn/",
@@ -5168,7 +5192,7 @@
         "frequency": 2
     },
     {
-        "id": 647,
+        "id": 650,
         "leetcode_id": "485",
         "title": "最大连续1的个数",
         "url": "https://leetcode.cn/problems/max-consecutive-ones/",
@@ -5176,7 +5200,7 @@
         "frequency": 2
     },
     {
-        "id": 648,
+        "id": 651,
         "leetcode_id": "剑指 Offer 68 - I",
         "title": "二叉搜索树的最近公共祖先",
         "url": "https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/",
@@ -5184,7 +5208,7 @@
         "frequency": 2
     },
     {
-        "id": 649,
+        "id": 652,
         "leetcode_id": "542",
         "title": "01 矩阵",
         "url": "https://leetcode.cn/problems/01-matrix/",
@@ -5192,7 +5216,7 @@
         "frequency": 2
     },
     {
-        "id": 650,
+        "id": 653,
         "leetcode_id": "383",
         "title": "赎金信",
         "url": "https://leetcode.cn/problems/ransom-note/",
@@ -5200,7 +5224,7 @@
         "frequency": 2
     },
     {
-        "id": 651,
+        "id": 654,
         "leetcode_id": "面试题 17.05",
         "title": " 字母与数字",
         "url": "https://leetcode.cn/problems/find-longest-subarray-lcci/",
@@ -5208,7 +5232,7 @@
         "frequency": 2
     },
     {
-        "id": 652,
+        "id": 655,
         "leetcode_id": "剑指 Offer 32 - I",
         "title": "从上到下打印二叉树",
         "url": "https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/",
@@ -5216,7 +5240,7 @@
         "frequency": 2
     },
     {
-        "id": 653,
+        "id": 656,
         "leetcode_id": "987",
         "title": "二叉树的垂序遍历",
         "url": "https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/",
@@ -5224,7 +5248,7 @@
         "frequency": 2
     },
     {
-        "id": 654,
+        "id": 657,
         "leetcode_id": "1059",
         "title": "从始点到终点的所有路径",
         "url": "https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/",
@@ -5232,7 +5256,7 @@
         "frequency": 2
     },
     {
-        "id": 655,
+        "id": 658,
         "leetcode_id": "剑指 Offer 55 - II",
         "title": "平衡二叉树",
         "url": "https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof/",
@@ -5240,7 +5264,7 @@
         "frequency": 2
     },
     {
-        "id": 656,
+        "id": 659,
         "leetcode_id": "541",
         "title": "反转字符串 II",
         "url": "https://leetcode.cn/problems/reverse-string-ii/",
@@ -5248,7 +5272,7 @@
         "frequency": 2
     },
     {
-        "id": 657,
+        "id": 660,
         "leetcode_id": "799",
         "title": "香槟塔",
         "url": "https://leetcode.cn/problems/champagne-tower/",
@@ -5256,7 +5280,7 @@
         "frequency": 2
     },
     {
-        "id": 658,
+        "id": 661,
         "leetcode_id": "1574",
         "title": "删除最短的子数组使剩余数组有序",
         "url": "https://leetcode.cn/problems/shortest-subarray-to-be-removed-to-make-array-sorted/",
@@ -5264,7 +5288,7 @@
         "frequency": 2
     },
     {
-        "id": 659,
+        "id": 662,
         "leetcode_id": "1539",
         "title": "第 k 个缺失的正整数",
         "url": "https://leetcode.cn/problems/kth-missing-positive-number/",
@@ -5272,7 +5296,7 @@
         "frequency": 2
     },
     {
-        "id": 660,
+        "id": 663,
         "leetcode_id": "1094",
         "title": "拼车",
         "url": "https://leetcode.cn/problems/car-pooling/",
@@ -5280,7 +5304,7 @@
         "frequency": 2
     },
     {
-        "id": 661,
+        "id": 664,
         "leetcode_id": "669",
         "title": "修剪二叉搜索树",
         "url": "https://leetcode.cn/problems/trim-a-binary-search-tree/",
@@ -5288,7 +5312,7 @@
         "frequency": 2
     },
     {
-        "id": 662,
+        "id": 665,
         "leetcode_id": "653",
         "title": "两数之和 IV - 输入 BST",
         "url": "https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/",
@@ -5296,7 +5320,7 @@
         "frequency": 2
     },
     {
-        "id": 663,
+        "id": 666,
         "leetcode_id": "773",
         "title": "滑动谜题",
         "url": "https://leetcode.cn/problems/sliding-puzzle/",
@@ -5304,7 +5328,7 @@
         "frequency": 2
     },
     {
-        "id": 664,
+        "id": 667,
         "leetcode_id": "58",
         "title": "最后一个单词的长度",
         "url": "https://leetcode.cn/problems/length-of-last-word/",
@@ -5312,7 +5336,7 @@
         "frequency": 2
     },
     {
-        "id": 665,
+        "id": 668,
         "leetcode_id": "510",
         "title": "二叉搜索树中的中序后继 II",
         "url": "https://leetcode.cn/problems/inorder-successor-in-bst-ii/",
@@ -5320,7 +5344,7 @@
         "frequency": 2
     },
     {
-        "id": 666,
+        "id": 669,
         "leetcode_id": "382",
         "title": "链表随机节点",
         "url": "https://leetcode.cn/problems/linked-list-random-node/",
@@ -5328,7 +5352,7 @@
         "frequency": 2
     },
     {
-        "id": 667,
+        "id": 670,
         "leetcode_id": "剑指 Offer 06",
         "title": "从尾到头打印链表",
         "url": "https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/",
@@ -5336,7 +5360,7 @@
         "frequency": 2
     },
     {
-        "id": 668,
+        "id": 671,
         "leetcode_id": "391",
         "title": "完美矩形",
         "url": "https://leetcode.cn/problems/perfect-rectangle/",
@@ -5344,7 +5368,7 @@
         "frequency": 2
     },
     {
-        "id": 669,
+        "id": 672,
         "leetcode_id": "292",
         "title": "Nim 游戏",
         "url": "https://leetcode.cn/problems/nim-game/",
@@ -5352,7 +5376,7 @@
         "frequency": 2
     },
     {
-        "id": 670,
+        "id": 673,
         "leetcode_id": "310",
         "title": "最小高度树",
         "url": "https://leetcode.cn/problems/minimum-height-trees/",
@@ -5360,7 +5384,7 @@
         "frequency": 2
     },
     {
-        "id": 671,
+        "id": 674,
         "leetcode_id": "880",
         "title": "索引处的解码字符串",
         "url": "https://leetcode.cn/problems/decoded-string-at-index/",
@@ -5368,7 +5392,7 @@
         "frequency": 2
     },
     {
-        "id": 672,
+        "id": 675,
         "leetcode_id": "727",
         "title": "最小窗口子序列",
         "url": "https://leetcode.cn/problems/minimum-window-subsequence/",
@@ -5376,7 +5400,7 @@
         "frequency": 2
     },
     {
-        "id": 673,
+        "id": 676,
         "leetcode_id": "剑指 Offer 44",
         "title": "数字序列中某一位的数字",
         "url": "https://leetcode.cn/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/",
@@ -5384,7 +5408,7 @@
         "frequency": 2
     },
     {
-        "id": 674,
+        "id": 677,
         "leetcode_id": "342",
         "title": "4的幂",
         "url": "https://leetcode.cn/problems/power-of-four/",
@@ -5392,7 +5416,7 @@
         "frequency": 2
     },
     {
-        "id": 675,
+        "id": 678,
         "leetcode_id": "989",
         "title": "数组形式的整数加法",
         "url": "https://leetcode.cn/problems/add-to-array-form-of-integer/",
@@ -5400,7 +5424,7 @@
         "frequency": 2
     },
     {
-        "id": 676,
+        "id": 679,
         "leetcode_id": "201",
         "title": "数字范围按位与",
         "url": "https://leetcode.cn/problems/bitwise-and-of-numbers-range/",
@@ -5408,7 +5432,7 @@
         "frequency": 2
     },
     {
-        "id": 677,
+        "id": 680,
         "leetcode_id": "1081",
         "title": "不同字符的最小子序列",
         "url": "https://leetcode.cn/problems/smallest-subsequence-of-distinct-characters/",
@@ -5416,7 +5440,7 @@
         "frequency": 2
     },
     {
-        "id": 678,
+        "id": 681,
         "leetcode_id": "1195",
         "title": "交替打印字符串",
         "url": "https://leetcode.cn/problems/fizz-buzz-multithreaded/",
@@ -5424,7 +5448,7 @@
         "frequency": 2
     },
     {
-        "id": 679,
+        "id": 682,
         "leetcode_id": "319",
         "title": "灯泡开关",
         "url": "https://leetcode.cn/problems/bulb-switcher/",
@@ -5432,7 +5456,7 @@
         "frequency": 2
     },
     {
-        "id": 680,
+        "id": 683,
         "leetcode_id": "1100",
         "title": "长度为 K 的无重复字符子串",
         "url": "https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/",
@@ -5440,7 +5464,7 @@
         "frequency": 2
     },
     {
-        "id": 681,
+        "id": 684,
         "leetcode_id": "1154",
         "title": "一年中的第几天",
         "url": "https://leetcode.cn/problems/day-of-the-year/",
@@ -5448,7 +5472,7 @@
         "frequency": 2
     },
     {
-        "id": 682,
+        "id": 685,
         "leetcode_id": "剑指 Offer 57",
         "title": "和为s的两个数字",
         "url": "https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/",
@@ -5456,7 +5480,7 @@
         "frequency": 2
     },
     {
-        "id": 683,
+        "id": 686,
         "leetcode_id": "847",
         "title": "访问所有节点的最短路径",
         "url": "https://leetcode.cn/problems/shortest-path-visiting-all-nodes/",
@@ -5464,7 +5488,7 @@
         "frequency": 2
     },
     {
-        "id": 684,
+        "id": 687,
         "leetcode_id": "834",
         "title": "树中距离之和",
         "url": "https://leetcode.cn/problems/sum-of-distances-in-tree/",
@@ -5472,7 +5496,7 @@
         "frequency": 2
     },
     {
-        "id": 685,
+        "id": 688,
         "leetcode_id": "剑指 Offer 64",
         "title": "求1+2+…+n",
         "url": "https://leetcode.cn/problems/qiu-12n-lcof/",
@@ -5480,7 +5504,7 @@
         "frequency": 2
     },
     {
-        "id": 686,
+        "id": 689,
         "leetcode_id": "1139",
         "title": "最大的以 1 为边界的正方形",
         "url": "https://leetcode.cn/problems/largest-1-bordered-square/",
@@ -5488,7 +5512,7 @@
         "frequency": 2
     },
     {
-        "id": 687,
+        "id": 690,
         "leetcode_id": "面试题 17.22",
         "title": "单词转换",
         "url": "https://leetcode.cn/problems/word-transformer-lcci/",
@@ -5496,7 +5520,7 @@
         "frequency": 2
     },
     {
-        "id": 688,
+        "id": 691,
         "leetcode_id": "529",
         "title": "扫雷游戏",
         "url": "https://leetcode.cn/problems/minesweeper/",
@@ -5504,7 +5528,7 @@
         "frequency": 2
     },
     {
-        "id": 689,
+        "id": 692,
         "leetcode_id": "770",
         "title": "基本计算器 IV",
         "url": "https://leetcode.cn/problems/basic-calculator-iv/",
@@ -5512,7 +5536,7 @@
         "frequency": 2
     },
     {
-        "id": 690,
+        "id": 693,
         "leetcode_id": "1669",
         "title": "合并两个链表",
         "url": "https://leetcode.cn/problems/merge-in-between-linked-lists/",
@@ -5520,7 +5544,7 @@
         "frequency": 2
     },
     {
-        "id": 691,
+        "id": 694,
         "leetcode_id": "333",
         "title": "最大 BST 子树",
         "url": "https://leetcode.cn/problems/largest-bst-subtree/",
@@ -5528,7 +5552,7 @@
         "frequency": 2
     },
     {
-        "id": 692,
+        "id": 695,
         "leetcode_id": "990",
         "title": "等式方程的可满足性",
         "url": "https://leetcode.cn/problems/satisfiability-of-equality-equations/",
@@ -5536,7 +5560,7 @@
         "frequency": 2
     },
     {
-        "id": 693,
+        "id": 696,
         "leetcode_id": "879",
         "title": "盈利计划",
         "url": "https://leetcode.cn/problems/profitable-schemes/",
@@ -5544,7 +5568,7 @@
         "frequency": 2
     },
     {
-        "id": 694,
+        "id": 697,
         "leetcode_id": "505",
         "title": "迷宫 II",
         "url": "https://leetcode.cn/problems/the-maze-ii/",
@@ -5552,7 +5576,7 @@
         "frequency": 2
     },
     {
-        "id": 695,
+        "id": 698,
         "leetcode_id": "剑指 Offer 49",
         "title": "丑数",
         "url": "https://leetcode.cn/problems/chou-shu-lcof/",
@@ -5560,7 +5584,7 @@
         "frequency": 2
     },
     {
-        "id": 696,
+        "id": 699,
         "leetcode_id": "931",
         "title": "下降路径最小和",
         "url": "https://leetcode.cn/problems/minimum-falling-path-sum/",
@@ -5568,7 +5592,7 @@
         "frequency": 2
     },
     {
-        "id": 697,
+        "id": 700,
         "leetcode_id": "665",
         "title": "非递减数列",
         "url": "https://leetcode.cn/problems/non-decreasing-array/",
@@ -5576,7 +5600,7 @@
         "frequency": 2
     },
     {
-        "id": 698,
+        "id": 701,
         "leetcode_id": "867",
         "title": "转置矩阵",
         "url": "https://leetcode.cn/problems/transpose-matrix/",
@@ -5584,7 +5608,7 @@
         "frequency": 2
     },
     {
-        "id": 699,
+        "id": 702,
         "leetcode_id": "剑指 Offer 28",
         "title": "对称的二叉树",
         "url": "https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/",
@@ -5592,7 +5616,7 @@
         "frequency": 2
     },
     {
-        "id": 700,
+        "id": 703,
         "leetcode_id": "81",
         "title": "搜索旋转排序数组 II",
         "url": "https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/",
@@ -5600,7 +5624,7 @@
         "frequency": 2
     },
     {
-        "id": 701,
+        "id": 704,
         "leetcode_id": "457",
         "title": "环形数组循环",
         "url": "https://leetcode.cn/problems/circular-array-loop/",
@@ -5608,7 +5632,7 @@
         "frequency": 2
     },
     {
-        "id": 702,
+        "id": 705,
         "leetcode_id": "637",
         "title": "二叉树的层平均值",
         "url": "https://leetcode.cn/problems/average-of-levels-in-binary-tree/",
@@ -5616,7 +5640,7 @@
         "frequency": 2
     },
     {
-        "id": 703,
+        "id": 706,
         "leetcode_id": "949",
         "title": "给定数字能组成的最大时间",
         "url": "https://leetcode.cn/problems/largest-time-for-given-digits/",
@@ -5624,7 +5648,7 @@
         "frequency": 2
     },
     {
-        "id": 704,
+        "id": 707,
         "leetcode_id": "1356",
         "title": "根据数字二进制下 1 的数目排序",
         "url": "https://leetcode.cn/problems/sort-integers-by-the-number-of-1-bits/",
@@ -5632,7 +5656,7 @@
         "frequency": 2
     },
     {
-        "id": 705,
+        "id": 708,
         "leetcode_id": "871",
         "title": "最低加油次数",
         "url": "https://leetcode.cn/problems/minimum-number-of-refueling-stops/",
@@ -5640,7 +5664,7 @@
         "frequency": 2
     },
     {
-        "id": 706,
+        "id": 709,
         "leetcode_id": "1299",
         "title": "将每个元素替换为右侧最大元素",
         "url": "https://leetcode.cn/problems/replace-elements-with-greatest-element-on-right-side/",
@@ -5648,7 +5672,7 @@
         "frequency": 2
     },
     {
-        "id": 707,
+        "id": 710,
         "leetcode_id": "剑指 Offer 56 - I",
         "title": "数组中数字出现的次数",
         "url": "https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/",
@@ -5656,7 +5680,7 @@
         "frequency": 2
     },
     {
-        "id": 708,
+        "id": 711,
         "leetcode_id": "278",
         "title": "第一个错误的版本",
         "url": "https://leetcode.cn/problems/first-bad-version/",
@@ -5664,7 +5688,7 @@
         "frequency": 2
     },
     {
-        "id": 709,
+        "id": 712,
         "leetcode_id": "815",
         "title": "公交路线",
         "url": "https://leetcode.cn/problems/bus-routes/",
@@ -5672,7 +5696,7 @@
         "frequency": 2
     },
     {
-        "id": 710,
+        "id": 713,
         "leetcode_id": "1411",
         "title": "给 N x 3 网格图涂色的方案数",
         "url": "https://leetcode.cn/problems/number-of-ways-to-paint-n-3-grid/",
@@ -5680,7 +5704,7 @@
         "frequency": 2
     },
     {
-        "id": 711,
+        "id": 714,
         "leetcode_id": "362",
         "title": "敲击计数器",
         "url": "https://leetcode.cn/problems/design-hit-counter/",
@@ -5688,7 +5712,7 @@
         "frequency": 2
     },
     {
-        "id": 712,
+        "id": 715,
         "leetcode_id": "面试题 16.03",
         "title": "交点",
         "url": "https://leetcode.cn/problems/intersection-lcci/",
@@ -5696,7 +5720,7 @@
         "frequency": 2
     },
     {
-        "id": 713,
+        "id": 716,
         "leetcode_id": "220",
         "title": "存在重复元素 III",
         "url": "https://leetcode.cn/problems/contains-duplicate-iii/",
@@ -5704,7 +5728,7 @@
         "frequency": 2
     },
     {
-        "id": 714,
+        "id": 717,
         "leetcode_id": "1325",
         "title": "删除给定值的叶子节点",
         "url": "https://leetcode.cn/problems/delete-leaves-with-a-given-value/",
@@ -5712,7 +5736,7 @@
         "frequency": 2
     },
     {
-        "id": 715,
+        "id": 718,
         "leetcode_id": "剑指 Offer 58 - II",
         "title": "左旋转字符串",
         "url": "https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/",
@@ -5720,7 +5744,7 @@
         "frequency": 2
     },
     {
-        "id": 716,
+        "id": 719,
         "leetcode_id": "1026",
         "title": "节点与其祖先之间的最大差值",
         "url": "https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/",
@@ -5728,7 +5752,7 @@
         "frequency": 2
     },
     {
-        "id": 717,
+        "id": 720,
         "leetcode_id": "1201",
         "title": "丑数 III",
         "url": "https://leetcode.cn/problems/ugly-number-iii/",
@@ -5736,7 +5760,15 @@
         "frequency": 2
     },
     {
-        "id": 718,
+        "id": 721,
+        "leetcode_id": "1234",
+        "title": "替换子串得到平衡字符串",
+        "url": "https://leetcode.cn/problems/replace-the-substring-for-balanced-string/",
+        "level": "medium",
+        "frequency": 1
+    },
+    {
+        "id": 722,
         "leetcode_id": "631",
         "title": "设计 Excel 求和公式",
         "url": "https://leetcode.cn/problems/design-excel-sum-formula/",
@@ -5744,7 +5776,7 @@
         "frequency": 1
     },
     {
-        "id": 719,
+        "id": 723,
         "leetcode_id": "1263",
         "title": "推箱子",
         "url": "https://leetcode.cn/problems/minimum-moves-to-move-a-box-to-their-target-location/",
@@ -5752,7 +5784,7 @@
         "frequency": 1
     },
     {
-        "id": 720,
+        "id": 724,
         "leetcode_id": "1177",
         "title": "构建回文串检测",
         "url": "https://leetcode.cn/problems/can-make-palindrome-from-substring/",
@@ -5760,7 +5792,7 @@
         "frequency": 1
     },
     {
-        "id": 721,
+        "id": 725,
         "leetcode_id": "1064",
         "title": "不动点",
         "url": "https://leetcode.cn/problems/fixed-point/",
@@ -5768,7 +5800,7 @@
         "frequency": 1
     },
     {
-        "id": 722,
+        "id": 726,
         "leetcode_id": "813",
         "title": "最大平均值和的分组",
         "url": "https://leetcode.cn/problems/largest-sum-of-averages/",
@@ -5776,7 +5808,7 @@
         "frequency": 1
     },
     {
-        "id": 723,
+        "id": 727,
         "leetcode_id": "853",
         "title": "车队",
         "url": "https://leetcode.cn/problems/car-fleet/",
@@ -5784,7 +5816,7 @@
         "frequency": 1
     },
     {
-        "id": 724,
+        "id": 728,
         "leetcode_id": "982",
         "title": "按位与为零的三元组",
         "url": "https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero/",
@@ -5792,7 +5824,7 @@
         "frequency": 1
     },
     {
-        "id": 725,
+        "id": 729,
         "leetcode_id": "1163",
         "title": "按字典序排在最后的子串",
         "url": "https://leetcode.cn/problems/last-substring-in-lexicographical-order/",
@@ -5800,7 +5832,7 @@
         "frequency": 1
     },
     {
-        "id": 726,
+        "id": 730,
         "leetcode_id": "1472",
         "title": "设计浏览器历史记录",
         "url": "https://leetcode.cn/problems/design-browser-history/",
@@ -5808,7 +5840,7 @@
         "frequency": 1
     },
     {
-        "id": 727,
+        "id": 731,
         "leetcode_id": "1170",
         "title": "比较字符串最小字母出现频次",
         "url": "https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/",
@@ -5816,7 +5848,7 @@
         "frequency": 1
     },
     {
-        "id": 728,
+        "id": 732,
         "leetcode_id": "1239",
         "title": "串联字符串的最大长度",
         "url": "https://leetcode.cn/problems/maximum-length-of-a-concatenated-string-with-unique-characters/",
@@ -5824,7 +5856,7 @@
         "frequency": 1
     },
     {
-        "id": 729,
+        "id": 733,
         "leetcode_id": "1006",
         "title": "笨阶乘",
         "url": "https://leetcode.cn/problems/clumsy-factorial/",
@@ -5832,7 +5864,7 @@
         "frequency": 1
     },
     {
-        "id": 730,
+        "id": 734,
         "leetcode_id": "1396",
         "title": "设计地铁系统",
         "url": "https://leetcode.cn/problems/design-underground-system/",
@@ -5840,7 +5872,15 @@
         "frequency": 1
     },
     {
-        "id": 731,
+        "id": 735,
+        "leetcode_id": "1624",
+        "title": "两个相同字符之间的最长子字符串",
+        "url": "https://leetcode.cn/problems/largest-substring-between-two-equal-characters/",
+        "level": "easy",
+        "frequency": 1
+    },
+    {
+        "id": 736,
         "leetcode_id": "1648",
         "title": "销售价值减少的颜色球",
         "url": "https://leetcode.cn/problems/sell-diminishing-valued-colored-balls/",
@@ -5848,7 +5888,7 @@
         "frequency": 1
     },
     {
-        "id": 732,
+        "id": 737,
         "leetcode_id": "1010",
         "title": "总持续时间可被 60 整除的歌曲",
         "url": "https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/",
@@ -5856,7 +5896,7 @@
         "frequency": 1
     },
     {
-        "id": 733,
+        "id": 738,
         "leetcode_id": "1105",
         "title": "填充书架",
         "url": "https://leetcode.cn/problems/filling-bookcase-shelves/",
@@ -5864,7 +5904,7 @@
         "frequency": 1
     },
     {
-        "id": 734,
+        "id": 739,
         "leetcode_id": "1103",
         "title": "分糖果 II",
         "url": "https://leetcode.cn/problems/distribute-candies-to-people/",
@@ -5872,7 +5912,7 @@
         "frequency": 1
     },
     {
-        "id": 735,
+        "id": 740,
         "leetcode_id": "978",
         "title": "最长湍流子数组",
         "url": "https://leetcode.cn/problems/longest-turbulent-subarray/",
@@ -5880,7 +5920,7 @@
         "frequency": 1
     },
     {
-        "id": 736,
+        "id": 741,
         "leetcode_id": "1473",
         "title": "给房子涂色 III",
         "url": "https://leetcode.cn/problems/paint-house-iii/",
@@ -5888,7 +5928,7 @@
         "frequency": 1
     },
     {
-        "id": 737,
+        "id": 742,
         "leetcode_id": "655",
         "title": "输出二叉树",
         "url": "https://leetcode.cn/problems/print-binary-tree/",
@@ -5896,7 +5936,7 @@
         "frequency": 1
     },
     {
-        "id": 738,
+        "id": 743,
         "leetcode_id": "368",
         "title": "最大整除子集",
         "url": "https://leetcode.cn/problems/largest-divisible-subset/",
@@ -5904,7 +5944,7 @@
         "frequency": 1
     },
     {
-        "id": 739,
+        "id": 744,
         "leetcode_id": "370",
         "title": "区间加法",
         "url": "https://leetcode.cn/problems/range-addition/",
@@ -5912,7 +5952,7 @@
         "frequency": 1
     },
     {
-        "id": 740,
+        "id": 745,
         "leetcode_id": "1551",
         "title": "使数组中所有元素相等的最小操作数",
         "url": "https://leetcode.cn/problems/minimum-operations-to-make-array-equal/",
@@ -5920,7 +5960,7 @@
         "frequency": 1
     },
     {
-        "id": 741,
+        "id": 746,
         "leetcode_id": "453",
         "title": "最小移动次数使数组元素相等",
         "url": "https://leetcode.cn/problems/minimum-moves-to-equal-array-elements/",
@@ -5928,7 +5968,7 @@
         "frequency": 1
     },
     {
-        "id": 742,
+        "id": 747,
         "leetcode_id": "944",
         "title": "删列造序",
         "url": "https://leetcode.cn/problems/delete-columns-to-make-sorted/",
@@ -5936,7 +5976,7 @@
         "frequency": 1
     },
     {
-        "id": 743,
+        "id": 748,
         "leetcode_id": "721",
         "title": "账户合并",
         "url": "https://leetcode.cn/problems/accounts-merge/",
@@ -5944,7 +5984,7 @@
         "frequency": 1
     },
     {
-        "id": 744,
+        "id": 749,
         "leetcode_id": "803",
         "title": "打砖块",
         "url": "https://leetcode.cn/problems/bricks-falling-when-hit/",
@@ -5952,7 +5992,7 @@
         "frequency": 1
     },
     {
-        "id": 745,
+        "id": 750,
         "leetcode_id": "1202",
         "title": "交换字符串中的元素",
         "url": "https://leetcode.cn/problems/smallest-string-with-swaps/",
@@ -5960,7 +6000,7 @@
         "frequency": 1
     },
     {
-        "id": 746,
+        "id": 751,
         "leetcode_id": "1489",
         "title": "找到最小生成树里的关键边和伪关键边",
         "url": "https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/",
@@ -5968,7 +6008,7 @@
         "frequency": 1
     },
     {
-        "id": 747,
+        "id": 752,
         "leetcode_id": "1319",
         "title": "连通网络的操作次数",
         "url": "https://leetcode.cn/problems/number-of-operations-to-make-network-connected/",
@@ -5976,7 +6016,7 @@
         "frequency": 1
     },
     {
-        "id": 748,
+        "id": 753,
         "leetcode_id": "778",
         "title": "水位上升的泳池中游泳",
         "url": "https://leetcode.cn/problems/swim-in-rising-water/",
@@ -5984,7 +6024,7 @@
         "frequency": 1
     },
     {
-        "id": 749,
+        "id": 754,
         "leetcode_id": "995",
         "title": "K 连续位的最小翻转次数",
         "url": "https://leetcode.cn/problems/minimum-number-of-k-consecutive-bit-flips/",
@@ -5992,7 +6032,7 @@
         "frequency": 1
     },
     {
-        "id": 750,
+        "id": 755,
         "leetcode_id": "1588",
         "title": "所有奇数长度子数组的和",
         "url": "https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/",
@@ -6000,7 +6040,7 @@
         "frequency": 1
     },
     {
-        "id": 751,
+        "id": 756,
         "leetcode_id": "170",
         "title": "两数之和 III - 数据结构设计",
         "url": "https://leetcode.cn/problems/two-sum-iii-data-structure-design/",
@@ -6008,7 +6048,7 @@
         "frequency": 1
     },
     {
-        "id": 752,
+        "id": 757,
         "leetcode_id": "1310",
         "title": "子数组异或查询",
         "url": "https://leetcode.cn/problems/xor-queries-of-a-subarray/",
@@ -6016,7 +6056,7 @@
         "frequency": 1
     },
     {
-        "id": 753,
+        "id": 758,
         "leetcode_id": "1442",
         "title": "形成两个异或相等数组的三元组数目",
         "url": "https://leetcode.cn/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/",
@@ -6024,7 +6064,7 @@
         "frequency": 1
     },
     {
-        "id": 754,
+        "id": 759,
         "leetcode_id": "1012",
         "title": "至少有 1 位重复的数字",
         "url": "https://leetcode.cn/problems/numbers-with-repeated-digits/",
@@ -6032,7 +6072,7 @@
         "frequency": 1
     },
     {
-        "id": 755,
+        "id": 760,
         "leetcode_id": "1043",
         "title": "分隔数组以得到最大和",
         "url": "https://leetcode.cn/problems/partition-array-for-maximum-sum/",
@@ -6040,7 +6080,7 @@
         "frequency": 1
     },
     {
-        "id": 756,
+        "id": 761,
         "leetcode_id": "1610",
         "title": "可见点的最大数目",
         "url": "https://leetcode.cn/problems/maximum-number-of-visible-points/",
@@ -6048,7 +6088,7 @@
         "frequency": 1
     },
     {
-        "id": 757,
+        "id": 762,
         "leetcode_id": "1052",
         "title": "爱生气的书店老板",
         "url": "https://leetcode.cn/problems/grumpy-bookstore-owner/",
@@ -6056,7 +6096,7 @@
         "frequency": 1
     },
     {
-        "id": 758,
+        "id": 763,
         "leetcode_id": "644",
         "title": "最大平均子段和 II",
         "url": "https://leetcode.cn/problems/maximum-average-subarray-ii/",
@@ -6064,7 +6104,7 @@
         "frequency": 1
     },
     {
-        "id": 759,
+        "id": 764,
         "leetcode_id": "1178",
         "title": "猜字谜",
         "url": "https://leetcode.cn/problems/number-of-valid-words-for-each-puzzle/",
@@ -6072,7 +6112,7 @@
         "frequency": 1
     },
     {
-        "id": 760,
+        "id": 765,
         "leetcode_id": "1423",
         "title": "可获得的最大点数",
         "url": "https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/",
@@ -6080,7 +6120,7 @@
         "frequency": 1
     },
     {
-        "id": 761,
+        "id": 766,
         "leetcode_id": "901",
         "title": "股票价格跨度",
         "url": "https://leetcode.cn/problems/online-stock-span/",
@@ -6088,7 +6128,7 @@
         "frequency": 1
     },
     {
-        "id": 762,
+        "id": 767,
         "leetcode_id": "850",
         "title": "矩形面积 II",
         "url": "https://leetcode.cn/problems/rectangle-area-ii/",
@@ -6096,7 +6136,7 @@
         "frequency": 1
     },
     {
-        "id": 763,
+        "id": 768,
         "leetcode_id": "363",
         "title": "矩形区域不超过 K 的最大数值和",
         "url": "https://leetcode.cn/problems/max-sum-of-rectangle-no-larger-than-k/",
@@ -6104,7 +6144,7 @@
         "frequency": 1
     },
     {
-        "id": 764,
+        "id": 769,
         "leetcode_id": "1046",
         "title": "最后一块石头的重量",
         "url": "https://leetcode.cn/problems/last-stone-weight/",
@@ -6112,7 +6152,7 @@
         "frequency": 1
     },
     {
-        "id": 765,
+        "id": 770,
         "leetcode_id": "1575",
         "title": "统计所有可行路径",
         "url": "https://leetcode.cn/problems/count-all-possible-routes/",
@@ -6120,7 +6160,7 @@
         "frequency": 1
     },
     {
-        "id": 766,
+        "id": 771,
         "leetcode_id": "576",
         "title": "出界的路径数",
         "url": "https://leetcode.cn/problems/out-of-boundary-paths/",
@@ -6128,7 +6168,7 @@
         "frequency": 1
     },
     {
-        "id": 767,
+        "id": 772,
         "leetcode_id": "1289",
         "title": "下降路径最小和  II",
         "url": "https://leetcode.cn/problems/minimum-falling-path-sum-ii/",
@@ -6136,7 +6176,7 @@
         "frequency": 1
     },
     {
-        "id": 768,
+        "id": 773,
         "leetcode_id": "1301",
         "title": "最大得分的路径数目",
         "url": "https://leetcode.cn/problems/number-of-paths-with-max-score/",
@@ -6144,7 +6184,7 @@
         "frequency": 1
     },
     {
-        "id": 769,
+        "id": 774,
         "leetcode_id": "1048",
         "title": "最长字符串链",
         "url": "https://leetcode.cn/problems/longest-string-chain/",
@@ -6152,7 +6192,7 @@
         "frequency": 1
     },
     {
-        "id": 770,
+        "id": 775,
         "leetcode_id": "1449",
         "title": "数位成本和为目标值的最大数字",
         "url": "https://leetcode.cn/problems/form-largest-integer-with-digits-that-add-up-to-target/",
@@ -6160,7 +6200,7 @@
         "frequency": 1
     },
     {
-        "id": 771,
+        "id": 776,
         "leetcode_id": "1631",
         "title": "最小体力消耗路径",
         "url": "https://leetcode.cn/problems/path-with-minimum-effort/",
@@ -6168,7 +6208,7 @@
         "frequency": 1
     },
     {
-        "id": 772,
+        "id": 777,
         "leetcode_id": "1334",
         "title": "阈值距离内邻居最少的城市",
         "url": "https://leetcode.cn/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
@@ -6176,7 +6216,7 @@
         "frequency": 1
     },
     {
-        "id": 773,
+        "id": 778,
         "leetcode_id": "841",
         "title": "钥匙和房间",
         "url": "https://leetcode.cn/problems/keys-and-rooms/",
@@ -6184,7 +6224,7 @@
         "frequency": 1
     },
     {
-        "id": 774,
+        "id": 779,
         "leetcode_id": "634",
         "title": "寻找数组的错位排列",
         "url": "https://leetcode.cn/problems/find-the-derangement-of-an-array/",
@@ -6192,7 +6232,7 @@
         "frequency": 1
     },
     {
-        "id": 775,
+        "id": 780,
         "leetcode_id": "828",
         "title": "统计子串中的唯一字符",
         "url": "https://leetcode.cn/problems/count-unique-characters-of-all-substrings-of-a-given-string/",
@@ -6200,7 +6240,7 @@
         "frequency": 1
     },
     {
-        "id": 776,
+        "id": 781,
         "leetcode_id": "1594",
         "title": "矩阵的最大非负积",
         "url": "https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/",
@@ -6208,7 +6248,7 @@
         "frequency": 1
     },
     {
-        "id": 777,
+        "id": 782,
         "leetcode_id": "面试题 01.09",
         "title": "字符串轮转",
         "url": "https://leetcode.cn/problems/string-rotation-lcci/",
@@ -6216,7 +6256,7 @@
         "frequency": 1
     },
     {
-        "id": 778,
+        "id": 783,
         "leetcode_id": "645",
         "title": "错误的集合",
         "url": "https://leetcode.cn/problems/set-mismatch/",
@@ -6224,7 +6264,7 @@
         "frequency": 1
     },
     {
-        "id": 779,
+        "id": 784,
         "leetcode_id": "502",
         "title": "IPO",
         "url": "https://leetcode.cn/problems/ipo/",
@@ -6232,7 +6272,7 @@
         "frequency": 1
     },
     {
-        "id": 780,
+        "id": 785,
         "leetcode_id": "面试题 04.05",
         "title": "合法二叉搜索树",
         "url": "https://leetcode.cn/problems/legal-binary-search-tree-lcci/",
@@ -6240,7 +6280,7 @@
         "frequency": 1
     },
     {
-        "id": 781,
+        "id": 786,
         "leetcode_id": "937",
         "title": "重新排列日志文件",
         "url": "https://leetcode.cn/problems/reorder-data-in-log-files/",
@@ -6248,7 +6288,7 @@
         "frequency": 1
     },
     {
-        "id": 782,
+        "id": 787,
         "leetcode_id": "314",
         "title": "二叉树的垂直遍历",
         "url": "https://leetcode.cn/problems/binary-tree-vertical-order-traversal/",
@@ -6256,7 +6296,7 @@
         "frequency": 1
     },
     {
-        "id": 783,
+        "id": 788,
         "leetcode_id": "1381",
         "title": "设计一个支持增量操作的栈",
         "url": "https://leetcode.cn/problems/design-a-stack-with-increment-operation/",
@@ -6264,7 +6304,7 @@
         "frequency": 1
     },
     {
-        "id": 784,
+        "id": 789,
         "leetcode_id": "1204",
         "title": "最后一个能进入电梯的人",
         "url": "https://leetcode.cn/problems/last-person-to-fit-in-the-elevator/",
@@ -6272,7 +6312,7 @@
         "frequency": 1
     },
     {
-        "id": 785,
+        "id": 790,
         "leetcode_id": "面试题 10.01",
         "title": "合并排序的数组",
         "url": "https://leetcode.cn/problems/sorted-merge-lcci/",
@@ -6280,7 +6320,7 @@
         "frequency": 1
     },
     {
-        "id": 786,
+        "id": 791,
         "leetcode_id": "1292",
         "title": "元素和小于等于阈值的正方形的最大边长",
         "url": "https://leetcode.cn/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/",
@@ -6288,7 +6328,7 @@
         "frequency": 1
     },
     {
-        "id": 787,
+        "id": 792,
         "leetcode_id": "1106",
         "title": "解析布尔表达式",
         "url": "https://leetcode.cn/problems/parsing-a-boolean-expression/",
@@ -6296,7 +6336,7 @@
         "frequency": 1
     },
     {
-        "id": 788,
+        "id": 793,
         "leetcode_id": "163",
         "title": "缺失的区间",
         "url": "https://leetcode.cn/problems/missing-ranges/",
@@ -6304,7 +6344,7 @@
         "frequency": 1
     },
     {
-        "id": 789,
+        "id": 794,
         "leetcode_id": "690",
         "title": "员工的重要性",
         "url": "https://leetcode.cn/problems/employee-importance/",
@@ -6312,7 +6352,7 @@
         "frequency": 1
     },
     {
-        "id": 790,
+        "id": 795,
         "leetcode_id": "784",
         "title": "字母大小写全排列",
         "url": "https://leetcode.cn/problems/letter-case-permutation/",
@@ -6320,7 +6360,7 @@
         "frequency": 1
     },
     {
-        "id": 791,
+        "id": 796,
         "leetcode_id": "372",
         "title": "超级次方",
         "url": "https://leetcode.cn/problems/super-pow/",
@@ -6328,7 +6368,7 @@
         "frequency": 1
     },
     {
-        "id": 792,
+        "id": 797,
         "leetcode_id": "1029",
         "title": "两地调度",
         "url": "https://leetcode.cn/problems/two-city-scheduling/",
@@ -6336,7 +6376,7 @@
         "frequency": 1
     },
     {
-        "id": 793,
+        "id": 798,
         "leetcode_id": "720",
         "title": "词典中最长的单词",
         "url": "https://leetcode.cn/problems/longest-word-in-dictionary/",
@@ -6344,7 +6384,7 @@
         "frequency": 1
     },
     {
-        "id": 794,
+        "id": 799,
         "leetcode_id": "面试题 17.18",
         "title": "最短超串",
         "url": "https://leetcode.cn/problems/shortest-supersequence-lcci/",
@@ -6352,7 +6392,7 @@
         "frequency": 1
     },
     {
-        "id": 795,
+        "id": 800,
         "leetcode_id": "590",
         "title": "N叉树的后序遍历",
         "url": "https://leetcode.cn/problems/n-ary-tree-postorder-traversal/",
@@ -6360,7 +6400,7 @@
         "frequency": 1
     },
     {
-        "id": 796,
+        "id": 801,
         "leetcode_id": "719",
         "title": "找出第 k 小的距离对",
         "url": "https://leetcode.cn/problems/find-k-th-smallest-pair-distance/",
@@ -6368,7 +6408,7 @@
         "frequency": 1
     },
     {
-        "id": 797,
+        "id": 802,
         "leetcode_id": "444",
         "title": "序列重建",
         "url": "https://leetcode.cn/problems/sequence-reconstruction/",
@@ -6376,7 +6416,7 @@
         "frequency": 1
     },
     {
-        "id": 798,
+        "id": 803,
         "leetcode_id": "684",
         "title": "冗余连接",
         "url": "https://leetcode.cn/problems/redundant-connection/",
@@ -6384,7 +6424,7 @@
         "frequency": 1
     },
     {
-        "id": 799,
+        "id": 804,
         "leetcode_id": "839",
         "title": "相似字符串组",
         "url": "https://leetcode.cn/problems/similar-string-groups/",
@@ -6392,7 +6432,7 @@
         "frequency": 1
     },
     {
-        "id": 800,
+        "id": 805,
         "leetcode_id": "926",
         "title": "将字符串翻转到单调递增",
         "url": "https://leetcode.cn/problems/flip-string-to-monotone-increasing/",
@@ -6400,7 +6440,7 @@
         "frequency": 1
     },
     {
-        "id": 801,
+        "id": 806,
         "leetcode_id": "536",
         "title": "从字符串生成二叉树",
         "url": "https://leetcode.cn/problems/construct-binary-tree-from-string/",
@@ -6408,7 +6448,7 @@
         "frequency": 1
     },
     {
-        "id": 802,
+        "id": 807,
         "leetcode_id": "1005",
         "title": "K 次取反后最大化的数组和",
         "url": "https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/",
@@ -6416,7 +6456,7 @@
         "frequency": 1
     },
     {
-        "id": 803,
+        "id": 808,
         "leetcode_id": "1123",
         "title": "最深叶节点的最近公共祖先",
         "url": "https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/",
@@ -6424,7 +6464,7 @@
         "frequency": 1
     },
     {
-        "id": 804,
+        "id": 809,
         "leetcode_id": "676",
         "title": "实现一个魔法字典",
         "url": "https://leetcode.cn/problems/implement-magic-dictionary/",
@@ -6432,7 +6472,7 @@
         "frequency": 1
     },
     {
-        "id": 805,
+        "id": 810,
         "leetcode_id": "419",
         "title": "甲板上的战舰",
         "url": "https://leetcode.cn/problems/battleships-in-a-board/",
@@ -6440,7 +6480,7 @@
         "frequency": 1
     },
     {
-        "id": 806,
+        "id": 811,
         "leetcode_id": "1226",
         "title": "哲学家进餐",
         "url": "https://leetcode.cn/problems/the-dining-philosophers/",
@@ -6448,15 +6488,7 @@
         "frequency": 1
     },
     {
-        "id": 807,
-        "leetcode_id": "256",
-        "title": "粉刷房子",
-        "url": "https://leetcode.cn/problems/paint-house/",
-        "level": "easy",
-        "frequency": 1
-    },
-    {
-        "id": 808,
+        "id": 812,
         "leetcode_id": "729",
         "title": "我的日程安排表 I",
         "url": "https://leetcode.cn/problems/my-calendar-i/",
@@ -6464,7 +6496,7 @@
         "frequency": 1
     },
     {
-        "id": 809,
+        "id": 813,
         "leetcode_id": "1228",
         "title": "等差数列中缺失的数字",
         "url": "https://leetcode.cn/problems/missing-number-in-arithmetic-progression/",
@@ -6472,7 +6504,7 @@
         "frequency": 1
     },
     {
-        "id": 810,
+        "id": 814,
         "leetcode_id": "1681",
         "title": "最小不兼容性",
         "url": "https://leetcode.cn/problems/minimum-incompatibility/",
@@ -6480,7 +6512,7 @@
         "frequency": 1
     },
     {
-        "id": 811,
+        "id": 815,
         "leetcode_id": "757",
         "title": " 设置交集大小至少为2",
         "url": "https://leetcode.cn/problems/set-intersection-size-at-least-two/",
@@ -6488,7 +6520,7 @@
         "frequency": 1
     },
     {
-        "id": 812,
+        "id": 816,
         "leetcode_id": "1390",
         "title": "四因数",
         "url": "https://leetcode.cn/problems/four-divisors/",
@@ -6496,7 +6528,7 @@
         "frequency": 1
     },
     {
-        "id": 813,
+        "id": 817,
         "leetcode_id": "629",
         "title": "K个逆序对数组",
         "url": "https://leetcode.cn/problems/k-inverse-pairs-array/",
@@ -6504,7 +6536,7 @@
         "frequency": 1
     },
     {
-        "id": 814,
+        "id": 818,
         "leetcode_id": "1230",
         "title": "抛掷硬币",
         "url": "https://leetcode.cn/problems/toss-strange-coins/",
@@ -6512,7 +6544,7 @@
         "frequency": 1
     },
     {
-        "id": 815,
+        "id": 819,
         "leetcode_id": "1212",
         "title": "查询球队积分",
         "url": "https://leetcode.cn/problems/team-scores-in-football-tournament/",
@@ -6520,7 +6552,7 @@
         "frequency": 1
     },
     {
-        "id": 816,
+        "id": 820,
         "leetcode_id": "289",
         "title": "生命游戏",
         "url": "https://leetcode.cn/problems/game-of-life/",
@@ -6528,7 +6560,7 @@
         "frequency": 1
     },
     {
-        "id": 817,
+        "id": 821,
         "leetcode_id": "741",
         "title": "摘樱桃",
         "url": "https://leetcode.cn/problems/cherry-pickup/",
@@ -6536,7 +6568,7 @@
         "frequency": 1
     },
     {
-        "id": 818,
+        "id": 822,
         "leetcode_id": "276",
         "title": "栅栏涂色",
         "url": "https://leetcode.cn/problems/paint-fence/",
@@ -6544,7 +6576,7 @@
         "frequency": 1
     },
     {
-        "id": 819,
+        "id": 823,
         "leetcode_id": "267",
         "title": "回文排列 II",
         "url": "https://leetcode.cn/problems/palindrome-permutation-ii/",
@@ -6552,7 +6584,7 @@
         "frequency": 1
     },
     {
-        "id": 820,
+        "id": 824,
         "leetcode_id": "1344",
         "title": "时钟指针的夹角",
         "url": "https://leetcode.cn/problems/angle-between-hands-of-a-clock/",
@@ -6560,7 +6592,7 @@
         "frequency": 1
     },
     {
-        "id": 821,
+        "id": 825,
         "leetcode_id": "298",
         "title": "二叉树最长连续序列",
         "url": "https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/",
@@ -6568,7 +6600,7 @@
         "frequency": 1
     },
     {
-        "id": 822,
+        "id": 826,
         "leetcode_id": "174",
         "title": "地下城游戏",
         "url": "https://leetcode.cn/problems/dungeon-game/",
@@ -6576,7 +6608,7 @@
         "frequency": 1
     },
     {
-        "id": 823,
+        "id": 827,
         "leetcode_id": "1673",
         "title": "找出最具竞争力的子序列",
         "url": "https://leetcode.cn/problems/find-the-most-competitive-subsequence/",
@@ -6584,7 +6616,7 @@
         "frequency": 1
     },
     {
-        "id": 824,
+        "id": 828,
         "leetcode_id": "1122",
         "title": "数组的相对排序",
         "url": "https://leetcode.cn/problems/relative-sort-array/",
@@ -6592,7 +6624,7 @@
         "frequency": 1
     },
     {
-        "id": 825,
+        "id": 829,
         "leetcode_id": "466",
         "title": "统计重复个数",
         "url": "https://leetcode.cn/problems/count-the-repetitions/",
@@ -6600,7 +6632,7 @@
         "frequency": 1
     },
     {
-        "id": 826,
+        "id": 830,
         "leetcode_id": "910",
         "title": "最小差值 II",
         "url": "https://leetcode.cn/problems/smallest-range-ii/",
@@ -6608,7 +6640,7 @@
         "frequency": 1
     },
     {
-        "id": 827,
+        "id": 831,
         "leetcode_id": "1462",
         "title": "课程安排 IV",
         "url": "https://leetcode.cn/problems/course-schedule-iv/",
@@ -6616,7 +6648,7 @@
         "frequency": 1
     },
     {
-        "id": 828,
+        "id": 832,
         "leetcode_id": "1041",
         "title": "困于环中的机器人",
         "url": "https://leetcode.cn/problems/robot-bounded-in-circle/",
@@ -6624,7 +6656,7 @@
         "frequency": 1
     },
     {
-        "id": 829,
+        "id": 833,
         "leetcode_id": "LCP 07",
         "title": "传递信息",
         "url": "https://leetcode.cn/problems/chuan-di-xin-xi/",
@@ -6632,7 +6664,7 @@
         "frequency": 1
     },
     {
-        "id": 830,
+        "id": 834,
         "leetcode_id": "面试题 04.01",
         "title": "节点间通路",
         "url": "https://leetcode.cn/problems/route-between-nodes-lcci/",
@@ -6640,7 +6672,7 @@
         "frequency": 1
     },
     {
-        "id": 831,
+        "id": 835,
         "leetcode_id": "1061",
         "title": "按字典序排列最小的等效字符串",
         "url": "https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/",
@@ -6648,7 +6680,7 @@
         "frequency": 1
     },
     {
-        "id": 832,
+        "id": 836,
         "leetcode_id": "860",
         "title": "柠檬水找零",
         "url": "https://leetcode.cn/problems/lemonade-change/",
@@ -6656,7 +6688,7 @@
         "frequency": 1
     },
     {
-        "id": 833,
+        "id": 837,
         "leetcode_id": "212",
         "title": "单词搜索 II",
         "url": "https://leetcode.cn/problems/word-search-ii/",
@@ -6664,15 +6696,7 @@
         "frequency": 1
     },
     {
-        "id": 834,
-        "leetcode_id": "1490",
-        "title": "克隆 N 叉树",
-        "url": "https://leetcode.cn/problems/clone-n-ary-tree/",
-        "level": "medium",
-        "frequency": 1
-    },
-    {
-        "id": 835,
+        "id": 838,
         "leetcode_id": "962",
         "title": "最大宽度坡",
         "url": "https://leetcode.cn/problems/maximum-width-ramp/",
@@ -6680,7 +6704,7 @@
         "frequency": 1
     },
     {
-        "id": 836,
+        "id": 839,
         "leetcode_id": "945",
         "title": "使数组唯一的最小增量",
         "url": "https://leetcode.cn/problems/minimum-increment-to-make-array-unique/",
@@ -6688,7 +6712,7 @@
         "frequency": 1
     },
     {
-        "id": 837,
+        "id": 840,
         "leetcode_id": "1022",
         "title": "从根到叶的二进制数之和",
         "url": "https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/",
@@ -6696,7 +6720,7 @@
         "frequency": 1
     },
     {
-        "id": 838,
+        "id": 841,
         "leetcode_id": "988",
         "title": "从叶结点开始的最小字符串",
         "url": "https://leetcode.cn/problems/smallest-string-starting-from-leaf/",
@@ -6704,7 +6728,7 @@
         "frequency": 1
     },
     {
-        "id": 839,
+        "id": 842,
         "leetcode_id": "859",
         "title": "亲密字符串",
         "url": "https://leetcode.cn/problems/buddy-strings/",
@@ -6712,7 +6736,7 @@
         "frequency": 1
     },
     {
-        "id": 840,
+        "id": 843,
         "leetcode_id": "1523",
         "title": "在区间范围内统计奇数数目",
         "url": "https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/",
@@ -6720,7 +6744,7 @@
         "frequency": 1
     },
     {
-        "id": 841,
+        "id": 844,
         "leetcode_id": "1566",
         "title": "重复至少 K 次且长度为 M 的模式",
         "url": "https://leetcode.cn/problems/detect-pattern-of-length-m-repeated-k-or-more-times/",
@@ -6728,7 +6752,7 @@
         "frequency": 1
     },
     {
-        "id": 842,
+        "id": 845,
         "leetcode_id": "1488",
         "title": "避免洪水泛滥",
         "url": "https://leetcode.cn/problems/avoid-flood-in-the-city/",
@@ -6736,7 +6760,7 @@
         "frequency": 1
     },
     {
-        "id": 843,
+        "id": 846,
         "leetcode_id": "1188",
         "title": "设计有限阻塞队列",
         "url": "https://leetcode.cn/problems/design-bounded-blocking-queue/",
@@ -6744,7 +6768,7 @@
         "frequency": 1
     },
     {
-        "id": 844,
+        "id": 847,
         "leetcode_id": "856",
         "title": "括号的分数",
         "url": "https://leetcode.cn/problems/score-of-parentheses/",
@@ -6752,7 +6776,7 @@
         "frequency": 1
     },
     {
-        "id": 845,
+        "id": 848,
         "leetcode_id": "面试题 16.01",
         "title": "交换数字",
         "url": "https://leetcode.cn/problems/swap-numbers-lcci/",
@@ -6760,7 +6784,7 @@
         "frequency": 1
     },
     {
-        "id": 846,
+        "id": 849,
         "leetcode_id": "659",
         "title": "分割数组为连续子序列",
         "url": "https://leetcode.cn/problems/split-array-into-consecutive-subsequences/",
@@ -6768,7 +6792,7 @@
         "frequency": 1
     },
     {
-        "id": 847,
+        "id": 850,
         "leetcode_id": "957",
         "title": "N 天后的牢房",
         "url": "https://leetcode.cn/problems/prison-cells-after-n-days/",
@@ -6776,7 +6800,7 @@
         "frequency": 1
     },
     {
-        "id": 848,
+        "id": 851,
         "leetcode_id": "750",
         "title": "角矩形的数量",
         "url": "https://leetcode.cn/problems/number-of-corner-rectangles/",
@@ -6784,7 +6808,7 @@
         "frequency": 1
     },
     {
-        "id": 849,
+        "id": 852,
         "leetcode_id": "1020",
         "title": "飞地的数量",
         "url": "https://leetcode.cn/problems/number-of-enclaves/",
@@ -6792,7 +6816,7 @@
         "frequency": 1
     },
     {
-        "id": 850,
+        "id": 853,
         "leetcode_id": "面试题 03.02",
         "title": "栈的最小值",
         "url": "https://leetcode.cn/problems/min-stack-lcci/",
@@ -6800,7 +6824,7 @@
         "frequency": 1
     },
     {
-        "id": 851,
+        "id": 854,
         "leetcode_id": "940",
         "title": "不同的子序列 II",
         "url": "https://leetcode.cn/problems/distinct-subsequences-ii/",
@@ -6808,7 +6832,7 @@
         "frequency": 1
     },
     {
-        "id": 852,
+        "id": 855,
         "leetcode_id": "面试题 01.03",
         "title": "URL化",
         "url": "https://leetcode.cn/problems/string-to-url-lcci/",
@@ -6816,7 +6840,7 @@
         "frequency": 1
     },
     {
-        "id": 853,
+        "id": 856,
         "leetcode_id": "244",
         "title": "最短单词距离 II",
         "url": "https://leetcode.cn/problems/shortest-word-distance-ii/",
@@ -6824,7 +6848,7 @@
         "frequency": 1
     },
     {
-        "id": 854,
+        "id": 857,
         "leetcode_id": "385",
         "title": "迷你语法分析器",
         "url": "https://leetcode.cn/problems/mini-parser/",
@@ -6832,7 +6856,7 @@
         "frequency": 1
     },
     {
-        "id": 855,
+        "id": 858,
         "leetcode_id": "LCP 09",
         "title": "最小跳跃次数",
         "url": "https://leetcode.cn/problems/zui-xiao-tiao-yue-ci-shu/",
@@ -6840,7 +6864,7 @@
         "frequency": 1
     },
     {
-        "id": 856,
+        "id": 859,
         "leetcode_id": "801",
         "title": "使序列递增的最小交换次数",
         "url": "https://leetcode.cn/problems/minimum-swaps-to-make-sequences-increasing/",
@@ -6848,7 +6872,7 @@
         "frequency": 1
     },
     {
-        "id": 857,
+        "id": 860,
         "leetcode_id": "1368",
         "title": "使网格图至少有一条有效路径的最小代价",
         "url": "https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/",
@@ -6856,7 +6880,7 @@
         "frequency": 1
     },
     {
-        "id": 858,
+        "id": 861,
         "leetcode_id": "650",
         "title": "只有两个键的键盘",
         "url": "https://leetcode.cn/problems/2-keys-keyboard/",
@@ -6864,7 +6888,7 @@
         "frequency": 1
     },
     {
-        "id": 859,
+        "id": 862,
         "leetcode_id": "1080",
         "title": "根到叶路径上的不足节点",
         "url": "https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/",
@@ -6872,7 +6896,7 @@
         "frequency": 1
     },
     {
-        "id": 860,
+        "id": 863,
         "leetcode_id": "357",
         "title": "计算各个位数不同的数字个数",
         "url": "https://leetcode.cn/problems/count-numbers-with-unique-digits/",
@@ -6880,7 +6904,7 @@
         "frequency": 1
     },
     {
-        "id": 861,
+        "id": 864,
         "leetcode_id": "1259",
         "title": "不相交的握手",
         "url": "https://leetcode.cn/problems/handshakes-that-dont-cross/",
@@ -6888,7 +6912,7 @@
         "frequency": 1
     },
     {
-        "id": 862,
+        "id": 865,
         "leetcode_id": "1145",
         "title": "二叉树着色游戏",
         "url": "https://leetcode.cn/problems/binary-tree-coloring-game/",
@@ -6896,7 +6920,7 @@
         "frequency": 1
     },
     {
-        "id": 863,
+        "id": 866,
         "leetcode_id": "436",
         "title": "寻找右区间",
         "url": "https://leetcode.cn/problems/find-right-interval/",
@@ -6904,7 +6928,7 @@
         "frequency": 1
     },
     {
-        "id": 864,
+        "id": 867,
         "leetcode_id": "667",
         "title": "优美的排列 II",
         "url": "https://leetcode.cn/problems/beautiful-arrangement-ii/",
@@ -6912,7 +6936,7 @@
         "frequency": 1
     },
     {
-        "id": 865,
+        "id": 868,
         "leetcode_id": "656",
         "title": "金币路径",
         "url": "https://leetcode.cn/problems/coin-path/",
@@ -6920,7 +6944,7 @@
         "frequency": 1
     },
     {
-        "id": 866,
+        "id": 869,
         "leetcode_id": "1584",
         "title": "连接所有点的最小费用",
         "url": "https://leetcode.cn/problems/min-cost-to-connect-all-points/",
@@ -6928,7 +6952,7 @@
         "frequency": 1
     },
     {
-        "id": 867,
+        "id": 870,
         "leetcode_id": "730",
         "title": "统计不同回文子序列",
         "url": "https://leetcode.cn/problems/count-different-palindromic-subsequences/",
@@ -6936,7 +6960,7 @@
         "frequency": 1
     },
     {
-        "id": 868,
+        "id": 871,
         "leetcode_id": "725",
         "title": "分隔链表",
         "url": "https://leetcode.cn/problems/split-linked-list-in-parts/",
@@ -6944,7 +6968,7 @@
         "frequency": 1
     },
     {
-        "id": 869,
+        "id": 872,
         "leetcode_id": "878",
         "title": "第 N 个神奇数字",
         "url": "https://leetcode.cn/problems/nth-magical-number/",
@@ -6952,7 +6976,7 @@
         "frequency": 1
     },
     {
-        "id": 870,
+        "id": 873,
         "leetcode_id": "1261",
         "title": "在受污染的二叉树中查找元素",
         "url": "https://leetcode.cn/problems/find-elements-in-a-contaminated-binary-tree/",
@@ -6960,7 +6984,7 @@
         "frequency": 1
     },
     {
-        "id": 871,
+        "id": 874,
         "leetcode_id": "374",
         "title": "猜数字大小",
         "url": "https://leetcode.cn/problems/guess-number-higher-or-lower/",
@@ -6968,7 +6992,7 @@
         "frequency": 1
     },
     {
-        "id": 872,
+        "id": 875,
         "leetcode_id": "面试题 04.02",
         "title": "最小高度树",
         "url": "https://leetcode.cn/problems/minimum-height-tree-lcci/",
@@ -6976,7 +7000,7 @@
         "frequency": 1
     },
     {
-        "id": 873,
+        "id": 876,
         "leetcode_id": "917",
         "title": "仅仅反转字母",
         "url": "https://leetcode.cn/problems/reverse-only-letters/",
@@ -6984,7 +7008,7 @@
         "frequency": 1
     },
     {
-        "id": 874,
+        "id": 877,
         "leetcode_id": "1376",
         "title": "通知所有员工所需的时间",
         "url": "https://leetcode.cn/problems/time-needed-to-inform-all-employees/",
@@ -6992,7 +7016,7 @@
         "frequency": 1
     },
     {
-        "id": 875,
+        "id": 878,
         "leetcode_id": "1373",
         "title": "二叉搜索子树的最大键值和",
         "url": "https://leetcode.cn/problems/maximum-sum-bst-in-binary-tree/",
@@ -7000,7 +7024,7 @@
         "frequency": 1
     },
     {
-        "id": 876,
+        "id": 879,
         "leetcode_id": "176",
         "title": "第二高的薪水",
         "url": "https://leetcode.cn/problems/second-highest-salary/",
@@ -7008,7 +7032,7 @@
         "frequency": 1
     },
     {
-        "id": 877,
+        "id": 880,
         "leetcode_id": "441",
         "title": "排列硬币",
         "url": "https://leetcode.cn/problems/arranging-coins/",
@@ -7016,7 +7040,7 @@
         "frequency": 1
     },
     {
-        "id": 878,
+        "id": 881,
         "leetcode_id": "1458",
         "title": "两个子序列的最大点积",
         "url": "https://leetcode.cn/problems/max-dot-product-of-two-subsequences/",
@@ -7024,7 +7048,7 @@
         "frequency": 1
     },
     {
-        "id": 879,
+        "id": 882,
         "leetcode_id": "843",
         "title": "猜猜这个单词",
         "url": "https://leetcode.cn/problems/guess-the-word/",
@@ -7032,7 +7056,7 @@
         "frequency": 1
     },
     {
-        "id": 880,
+        "id": 883,
         "leetcode_id": "1487",
         "title": "保证文件名唯一",
         "url": "https://leetcode.cn/problems/making-file-names-unique/",
@@ -7040,7 +7064,7 @@
         "frequency": 1
     },
     {
-        "id": 881,
+        "id": 884,
         "leetcode_id": "1685",
         "title": "有序数组中差绝对值之和",
         "url": "https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/",
@@ -7048,7 +7072,7 @@
         "frequency": 1
     },
     {
-        "id": 882,
+        "id": 885,
         "leetcode_id": "775",
         "title": "全局倒置与局部倒置",
         "url": "https://leetcode.cn/problems/global-and-local-inversions/",
@@ -7056,7 +7080,7 @@
         "frequency": 1
     },
     {
-        "id": 883,
+        "id": 886,
         "leetcode_id": "979",
         "title": "在二叉树中分配硬币",
         "url": "https://leetcode.cn/problems/distribute-coins-in-binary-tree/",
@@ -7064,7 +7088,7 @@
         "frequency": 1
     },
     {
-        "id": 884,
+        "id": 887,
         "leetcode_id": "774",
         "title": "最小化去加油站的最大距离",
         "url": "https://leetcode.cn/problems/minimize-max-distance-to-gas-station/",
@@ -7072,7 +7096,7 @@
         "frequency": 1
     },
     {
-        "id": 885,
+        "id": 888,
         "leetcode_id": "360",
         "title": "有序转化数组",
         "url": "https://leetcode.cn/problems/sort-transformed-array/",
@@ -7080,7 +7104,7 @@
         "frequency": 1
     },
     {
-        "id": 886,
+        "id": 889,
         "leetcode_id": "507",
         "title": "完美数",
         "url": "https://leetcode.cn/problems/perfect-number/",
@@ -7088,7 +7112,7 @@
         "frequency": 1
     },
     {
-        "id": 887,
+        "id": 890,
         "leetcode_id": "1330",
         "title": "翻转子数组得到最大的数组值",
         "url": "https://leetcode.cn/problems/reverse-subarray-to-maximize-array-value/",
@@ -7096,7 +7120,7 @@
         "frequency": 1
     },
     {
-        "id": 888,
+        "id": 891,
         "leetcode_id": "1058",
         "title": "最小化舍入误差以满足目标",
         "url": "https://leetcode.cn/problems/minimize-rounding-error-to-meet-target/",
@@ -7104,7 +7128,7 @@
         "frequency": 1
     },
     {
-        "id": 889,
+        "id": 892,
         "leetcode_id": "281",
         "title": "锯齿迭代器",
         "url": "https://leetcode.cn/problems/zigzag-iterator/",
@@ -7112,7 +7136,7 @@
         "frequency": 1
     },
     {
-        "id": 890,
+        "id": 893,
         "leetcode_id": "954",
         "title": "二倍数对数组",
         "url": "https://leetcode.cn/problems/array-of-doubled-pairs/",
@@ -7120,7 +7144,7 @@
         "frequency": 1
     },
     {
-        "id": 891,
+        "id": 894,
         "leetcode_id": "955",
         "title": "删列造序 II",
         "url": "https://leetcode.cn/problems/delete-columns-to-make-sorted-ii/",
@@ -7128,7 +7152,7 @@
         "frequency": 1
     },
     {
-        "id": 892,
+        "id": 895,
         "leetcode_id": "1218",
         "title": "最长定差子序列",
         "url": "https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/",
@@ -7136,7 +7160,7 @@
         "frequency": 1
     },
     {
-        "id": 893,
+        "id": 896,
         "leetcode_id": "993",
         "title": "二叉树的堂兄弟节点",
         "url": "https://leetcode.cn/problems/cousins-in-binary-tree/",
@@ -7144,7 +7168,7 @@
         "frequency": 1
     },
     {
-        "id": 894,
+        "id": 897,
         "leetcode_id": "1287",
         "title": "有序数组中出现次数超过25%的元素",
         "url": "https://leetcode.cn/problems/element-appearing-more-than-25-in-sorted-array/",
@@ -7152,7 +7176,7 @@
         "frequency": 1
     },
     {
-        "id": 895,
+        "id": 898,
         "leetcode_id": "1290",
         "title": "二进制链表转整数",
         "url": "https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/",
@@ -7160,7 +7184,7 @@
         "frequency": 1
     },
     {
-        "id": 896,
+        "id": 899,
         "leetcode_id": "184",
         "title": "部门工资最高的员工",
         "url": "https://leetcode.cn/problems/department-highest-salary/",
@@ -7168,7 +7192,7 @@
         "frequency": 1
     },
     {
-        "id": 897,
+        "id": 900,
         "leetcode_id": "196",
         "title": "删除重复的电子邮箱",
         "url": "https://leetcode.cn/problems/delete-duplicate-emails/",
@@ -7176,7 +7200,7 @@
         "frequency": 1
     },
     {
-        "id": 898,
+        "id": 901,
         "leetcode_id": "390",
         "title": "消除游戏",
         "url": "https://leetcode.cn/problems/elimination-game/",
@@ -7184,7 +7208,7 @@
         "frequency": 1
     },
     {
-        "id": 899,
+        "id": 902,
         "leetcode_id": "423",
         "title": "从英文中重建数字",
         "url": "https://leetcode.cn/problems/reconstruct-original-digits-from-english/",
@@ -7192,7 +7216,7 @@
         "frequency": 1
     },
     {
-        "id": 900,
+        "id": 903,
         "leetcode_id": "434",
         "title": "字符串中的单词数",
         "url": "https://leetcode.cn/problems/number-of-segments-in-a-string/",
@@ -7200,7 +7224,7 @@
         "frequency": 1
     },
     {
-        "id": 901,
+        "id": 904,
         "leetcode_id": "575",
         "title": "分糖果",
         "url": "https://leetcode.cn/problems/distribute-candies/",
@@ -7208,7 +7232,7 @@
         "frequency": 1
     },
     {
-        "id": 902,
+        "id": 905,
         "leetcode_id": "1074",
         "title": "元素和为目标值的子矩阵数量",
         "url": "https://leetcode.cn/problems/number-of-submatrices-that-sum-to-target/",
@@ -7216,7 +7240,7 @@
         "frequency": 1
     },
     {
-        "id": 903,
+        "id": 906,
         "leetcode_id": "197",
         "title": "上升的温度",
         "url": "https://leetcode.cn/problems/rising-temperature/",
@@ -7224,7 +7248,7 @@
         "frequency": 1
     },
     {
-        "id": 904,
+        "id": 907,
         "leetcode_id": "1542",
         "title": "找出最长的超赞子字符串",
         "url": "https://leetcode.cn/problems/find-longest-awesome-substring/",
@@ -7232,7 +7256,7 @@
         "frequency": 1
     },
     {
-        "id": 905,
+        "id": 908,
         "leetcode_id": "178",
         "title": "分数排名",
         "url": "https://leetcode.cn/problems/rank-scores/",
@@ -7240,7 +7264,7 @@
         "frequency": 1
     },
     {
-        "id": 906,
+        "id": 909,
         "leetcode_id": "177",
         "title": "第N高的薪水",
         "url": "https://leetcode.cn/problems/nth-highest-salary/",
@@ -7248,7 +7272,7 @@
         "frequency": 1
     },
     {
-        "id": 907,
+        "id": 910,
         "leetcode_id": "180",
         "title": "连续出现的数字",
         "url": "https://leetcode.cn/problems/consecutive-numbers/",
@@ -7256,7 +7280,7 @@
         "frequency": 1
     },
     {
-        "id": 908,
+        "id": 911,
         "leetcode_id": "181",
         "title": "超过经理收入的员工",
         "url": "https://leetcode.cn/problems/employees-earning-more-than-their-managers/",
@@ -7264,7 +7288,7 @@
         "frequency": 1
     },
     {
-        "id": 909,
+        "id": 912,
         "leetcode_id": "1096",
         "title": "花括号展开 II",
         "url": "https://leetcode.cn/problems/brace-expansion-ii/",
@@ -7272,7 +7296,7 @@
         "frequency": 1
     },
     {
-        "id": 910,
+        "id": 913,
         "leetcode_id": "面试题 17.12",
         "title": "BiNode",
         "url": "https://leetcode.cn/problems/binode-lcci/",
@@ -7280,7 +7304,7 @@
         "frequency": 1
     },
     {
-        "id": 911,
+        "id": 914,
         "leetcode_id": "605",
         "title": "种花问题",
         "url": "https://leetcode.cn/problems/can-place-flowers/",
@@ -7288,7 +7312,7 @@
         "frequency": 1
     },
     {
-        "id": 912,
+        "id": 915,
         "leetcode_id": "1480",
         "title": "一维数组的动态和",
         "url": "https://leetcode.cn/problems/running-sum-of-1d-array/",
@@ -7296,7 +7320,7 @@
         "frequency": 1
     },
     {
-        "id": 913,
+        "id": 916,
         "leetcode_id": "938",
         "title": "二叉搜索树的范围和",
         "url": "https://leetcode.cn/problems/range-sum-of-bst/",
@@ -7304,7 +7328,7 @@
         "frequency": 1
     },
     {
-        "id": 914,
+        "id": 917,
         "leetcode_id": "65",
         "title": "有效数字",
         "url": "https://leetcode.cn/problems/valid-number/",
@@ -7312,7 +7336,7 @@
         "frequency": 1
     },
     {
-        "id": 915,
+        "id": 918,
         "leetcode_id": "792",
         "title": "匹配子序列的单词数",
         "url": "https://leetcode.cn/problems/number-of-matching-subsequences/",
@@ -7320,7 +7344,7 @@
         "frequency": 1
     },
     {
-        "id": 916,
+        "id": 919,
         "leetcode_id": "308",
         "title": "二维区域和检索 - 可变",
         "url": "https://leetcode.cn/problems/range-sum-query-2d-mutable/",
@@ -7328,7 +7352,7 @@
         "frequency": 1
     },
     {
-        "id": 917,
+        "id": 920,
         "leetcode_id": "1087",
         "title": "字母切换",
         "url": "https://leetcode.cn/problems/brace-expansion/",
@@ -7336,7 +7360,7 @@
         "frequency": 1
     },
     {
-        "id": 918,
+        "id": 921,
         "leetcode_id": "1360",
         "title": "日期之间隔几天",
         "url": "https://leetcode.cn/problems/number-of-days-between-two-dates/",
@@ -7344,7 +7368,7 @@
         "frequency": 1
     },
     {
-        "id": 919,
+        "id": 922,
         "leetcode_id": "面试题 03.05",
         "title": "栈排序",
         "url": "https://leetcode.cn/problems/sort-of-stacks-lcci/",
@@ -7352,7 +7376,7 @@
         "frequency": 1
     },
     {
-        "id": 920,
+        "id": 923,
         "leetcode_id": "1690",
         "title": "石子游戏 VII",
         "url": "https://leetcode.cn/problems/stone-game-vii/",
@@ -7360,7 +7384,7 @@
         "frequency": 1
     },
     {
-        "id": 921,
+        "id": 924,
         "leetcode_id": "472",
         "title": "连接词",
         "url": "https://leetcode.cn/problems/concatenated-words/",
@@ -7368,7 +7392,7 @@
         "frequency": 1
     },
     {
-        "id": 922,
+        "id": 925,
         "leetcode_id": "389",
         "title": "找不同",
         "url": "https://leetcode.cn/problems/find-the-difference/",
@@ -7376,7 +7400,7 @@
         "frequency": 1
     },
     {
-        "id": 923,
+        "id": 926,
         "leetcode_id": "1000",
         "title": "合并石头的最低成本",
         "url": "https://leetcode.cn/problems/minimum-cost-to-merge-stones/",
@@ -7384,7 +7408,7 @@
         "frequency": 1
     },
     {
-        "id": 924,
+        "id": 927,
         "leetcode_id": "228",
         "title": "汇总区间",
         "url": "https://leetcode.cn/problems/summary-ranges/",
@@ -7392,7 +7416,7 @@
         "frequency": 1
     },
     {
-        "id": 925,
+        "id": 928,
         "leetcode_id": "666",
         "title": "路径和 IV",
         "url": "https://leetcode.cn/problems/path-sum-iv/",
@@ -7400,7 +7424,7 @@
         "frequency": 1
     },
     {
-        "id": 926,
+        "id": 929,
         "leetcode_id": "461",
         "title": "汉明距离",
         "url": "https://leetcode.cn/problems/hamming-distance/",
@@ -7408,7 +7432,7 @@
         "frequency": 1
     },
     {
-        "id": 927,
+        "id": 930,
         "leetcode_id": "1008",
         "title": "先序遍历构造二叉树",
         "url": "https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/",
@@ -7416,7 +7440,7 @@
         "frequency": 1
     },
     {
-        "id": 928,
+        "id": 931,
         "leetcode_id": "930",
         "title": "和相同的二元子数组",
         "url": "https://leetcode.cn/problems/binary-subarrays-with-sum/",
@@ -7424,7 +7448,7 @@
         "frequency": 1
     },
     {
-        "id": 929,
+        "id": 932,
         "leetcode_id": "95",
         "title": "不同的二叉搜索树 II",
         "url": "https://leetcode.cn/problems/unique-binary-search-trees-ii/",
@@ -7432,7 +7456,7 @@
         "frequency": 1
     },
     {
-        "id": 930,
+        "id": 933,
         "leetcode_id": "1248",
         "title": "统计「优美子数组」",
         "url": "https://leetcode.cn/problems/count-number-of-nice-subarrays/",
@@ -7440,7 +7464,7 @@
         "frequency": 1
     },
     {
-        "id": 931,
+        "id": 934,
         "leetcode_id": "1214",
         "title": "查找两棵二叉搜索树之和",
         "url": "https://leetcode.cn/problems/two-sum-bsts/",
@@ -7448,7 +7472,7 @@
         "frequency": 1
     },
     {
-        "id": 932,
+        "id": 935,
         "leetcode_id": "面试题 16.20",
         "title": "T9键盘",
         "url": "https://leetcode.cn/problems/t9-lcci/",
@@ -7456,7 +7480,7 @@
         "frequency": 1
     },
     {
-        "id": 933,
+        "id": 936,
         "leetcode_id": "1665",
         "title": "完成所有任务的最少初始能量",
         "url": "https://leetcode.cn/problems/minimum-initial-energy-to-finish-tasks/",
@@ -7464,7 +7488,7 @@
         "frequency": 1
     },
     {
-        "id": 934,
+        "id": 937,
         "leetcode_id": "面试题 02.04",
         "title": "分割链表",
         "url": "https://leetcode.cn/problems/partition-list-lcci/",
@@ -7472,7 +7496,7 @@
         "frequency": 1
     },
     {
-        "id": 935,
+        "id": 938,
         "leetcode_id": "1451",
         "title": "重新排列句子中的单词",
         "url": "https://leetcode.cn/problems/rearrange-words-in-a-sentence/",
@@ -7480,7 +7504,7 @@
         "frequency": 1
     },
     {
-        "id": 936,
+        "id": 939,
         "leetcode_id": "1524",
         "title": "和为奇数的子数组数目",
         "url": "https://leetcode.cn/problems/number-of-sub-arrays-with-odd-sum/",
@@ -7488,7 +7512,7 @@
         "frequency": 1
     },
     {
-        "id": 937,
+        "id": 940,
         "leetcode_id": "751",
         "title": "IP 到 CIDR",
         "url": "https://leetcode.cn/problems/ip-to-cidr/",
@@ -7496,7 +7520,7 @@
         "frequency": 1
     },
     {
-        "id": 938,
+        "id": 941,
         "leetcode_id": "849",
         "title": "到最近的人的最大距离",
         "url": "https://leetcode.cn/problems/maximize-distance-to-closest-person/",
@@ -7504,7 +7528,7 @@
         "frequency": 1
     },
     {
-        "id": 939,
+        "id": 942,
         "leetcode_id": "677",
         "title": "键值映射",
         "url": "https://leetcode.cn/problems/map-sum-pairs/",
@@ -7512,7 +7536,7 @@
         "frequency": 1
     },
     {
-        "id": 940,
+        "id": 943,
         "leetcode_id": "1361",
         "title": "验证二叉树",
         "url": "https://leetcode.cn/problems/validate-binary-tree-nodes/",
@@ -7520,7 +7544,7 @@
         "frequency": 1
     },
     {
-        "id": 941,
+        "id": 944,
         "leetcode_id": "1365",
         "title": "有多少小于当前数字的数字",
         "url": "https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/",
@@ -7528,7 +7552,7 @@
         "frequency": 1
     },
     {
-        "id": 942,
+        "id": 945,
         "leetcode_id": "剑指 Offer 30",
         "title": "包含min函数的栈",
         "url": "https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/",
@@ -7536,7 +7560,7 @@
         "frequency": 1
     },
     {
-        "id": 943,
+        "id": 946,
         "leetcode_id": "768",
         "title": "最多能完成排序的块 II",
         "url": "https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/",
@@ -7544,7 +7568,7 @@
         "frequency": 1
     },
     {
-        "id": 944,
+        "id": 947,
         "leetcode_id": "835",
         "title": "图像重叠",
         "url": "https://leetcode.cn/problems/image-overlap/",
@@ -7552,7 +7576,7 @@
         "frequency": 1
     },
     {
-        "id": 945,
+        "id": 948,
         "leetcode_id": "555",
         "title": "分割连接字符串",
         "url": "https://leetcode.cn/problems/split-concatenated-strings/",
@@ -7560,7 +7584,7 @@
         "frequency": 1
     },
     {
-        "id": 946,
+        "id": 949,
         "leetcode_id": "1282",
         "title": "用户分组",
         "url": "https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/",
@@ -7568,7 +7592,7 @@
         "frequency": 1
     },
     {
-        "id": 947,
+        "id": 950,
         "leetcode_id": "477",
         "title": "汉明距离总和",
         "url": "https://leetcode.cn/problems/total-hamming-distance/",
@@ -7576,7 +7600,7 @@
         "frequency": 1
     },
     {
-        "id": 948,
+        "id": 951,
         "leetcode_id": "1104",
         "title": "二叉树寻路",
         "url": "https://leetcode.cn/problems/path-in-zigzag-labelled-binary-tree/",
@@ -7584,7 +7608,7 @@
         "frequency": 1
     },
     {
-        "id": 949,
+        "id": 952,
         "leetcode_id": "面试题 16.10",
         "title": "生存人数",
         "url": "https://leetcode.cn/problems/living-people-lcci/",
@@ -7592,7 +7616,7 @@
         "frequency": 1
     },
     {
-        "id": 950,
+        "id": 953,
         "leetcode_id": "399",
         "title": "除法求值",
         "url": "https://leetcode.cn/problems/evaluate-division/",
@@ -7600,7 +7624,7 @@
         "frequency": 1
     },
     {
-        "id": 951,
+        "id": 954,
         "leetcode_id": "338",
         "title": "比特位计数",
         "url": "https://leetcode.cn/problems/counting-bits/",
@@ -7608,7 +7632,7 @@
         "frequency": 1
     },
     {
-        "id": 952,
+        "id": 955,
         "leetcode_id": "1343",
         "title": "大小为 K 且平均值大于等于阈值的子数组数目",
         "url": "https://leetcode.cn/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/",
@@ -7616,7 +7640,7 @@
         "frequency": 1
     },
     {
-        "id": 953,
+        "id": 956,
         "leetcode_id": "1552",
         "title": "两球之间的磁力",
         "url": "https://leetcode.cn/problems/magnetic-force-between-two-balls/",
@@ -7624,7 +7648,7 @@
         "frequency": 1
     },
     {
-        "id": 954,
+        "id": 957,
         "leetcode_id": "612",
         "title": "平面上的最近距离",
         "url": "https://leetcode.cn/problems/shortest-distance-in-a-plane/",
@@ -7632,7 +7656,7 @@
         "frequency": 1
     },
     {
-        "id": 955,
+        "id": 958,
         "leetcode_id": "1504",
         "title": "统计全 1 子矩形",
         "url": "https://leetcode.cn/problems/count-submatrices-with-all-ones/",
@@ -7640,7 +7664,7 @@
         "frequency": 1
     },
     {
-        "id": 956,
+        "id": 959,
         "leetcode_id": "1222",
         "title": "可以攻击国王的皇后",
         "url": "https://leetcode.cn/problems/queens-that-can-attack-the-king/",
@@ -7648,7 +7672,7 @@
         "frequency": 1
     },
     {
-        "id": 957,
+        "id": 960,
         "leetcode_id": "1647",
         "title": "字符频次唯一的最小删除次数",
         "url": "https://leetcode.cn/problems/minimum-deletions-to-make-character-frequencies-unique/",
@@ -7656,7 +7680,7 @@
         "frequency": 1
     },
     {
-        "id": 958,
+        "id": 961,
         "leetcode_id": "710",
         "title": "黑名单中的随机数",
         "url": "https://leetcode.cn/problems/random-pick-with-blacklist/",
@@ -7664,7 +7688,7 @@
         "frequency": 1
     },
     {
-        "id": 959,
+        "id": 962,
         "leetcode_id": "218",
         "title": "天际线问题",
         "url": "https://leetcode.cn/problems/the-skyline-problem/",
@@ -7672,7 +7696,7 @@
         "frequency": 1
     },
     {
-        "id": 960,
+        "id": 963,
         "leetcode_id": "1232",
         "title": "缀点成线",
         "url": "https://leetcode.cn/problems/check-if-it-is-a-straight-line/",
@@ -7680,7 +7704,7 @@
         "frequency": 1
     },
     {
-        "id": 961,
+        "id": 964,
         "leetcode_id": "566",
         "title": "重塑矩阵",
         "url": "https://leetcode.cn/problems/reshape-the-matrix/",
@@ -7688,7 +7712,7 @@
         "frequency": 1
     },
     {
-        "id": 962,
+        "id": 965,
         "leetcode_id": "补充题15",
         "title": "自然数数组的排序",
         "url": null,
@@ -7696,7 +7720,7 @@
         "frequency": 1
     },
     {
-        "id": 963,
+        "id": 966,
         "leetcode_id": "面试题 02.03",
         "title": "删除中间节点",
         "url": "https://leetcode.cn/problems/delete-middle-node-lcci/",
@@ -7704,7 +7728,7 @@
         "frequency": 1
     },
     {
-        "id": 964,
+        "id": 967,
         "leetcode_id": "面试题 16.26",
         "title": "计算器",
         "url": "https://leetcode.cn/problems/calculator-lcci/",
@@ -7712,7 +7736,7 @@
         "frequency": 1
     },
     {
-        "id": 965,
+        "id": 968,
         "leetcode_id": "面试题 04.06",
         "title": "后继者",
         "url": "https://leetcode.cn/problems/successor-lcci/",
@@ -7720,7 +7744,7 @@
         "frequency": 1
     },
     {
-        "id": 966,
+        "id": 969,
         "leetcode_id": "1003",
         "title": "检查替换后的词是否有效",
         "url": "https://leetcode.cn/problems/check-if-word-is-valid-after-substitutions/",
@@ -7728,7 +7752,7 @@
         "frequency": 1
     },
     {
-        "id": 967,
+        "id": 970,
         "leetcode_id": "1166",
         "title": "设计文件系统",
         "url": "https://leetcode.cn/problems/design-file-system/",
@@ -7736,7 +7760,7 @@
         "frequency": 1
     },
     {
-        "id": 968,
+        "id": 971,
         "leetcode_id": "490",
         "title": "迷宫",
         "url": "https://leetcode.cn/problems/the-maze/",
@@ -7744,7 +7768,7 @@
         "frequency": 1
     },
     {
-        "id": 969,
+        "id": 972,
         "leetcode_id": "299",
         "title": "猜数字游戏",
         "url": "https://leetcode.cn/problems/bulls-and-cows/",
@@ -7752,7 +7776,7 @@
         "frequency": 1
     },
     {
-        "id": 970,
+        "id": 973,
         "leetcode_id": "648",
         "title": "单词替换",
         "url": "https://leetcode.cn/problems/replace-words/",
@@ -7760,7 +7784,7 @@
         "frequency": 1
     },
     {
-        "id": 971,
+        "id": 974,
         "leetcode_id": "1024",
         "title": "视频拼接",
         "url": "https://leetcode.cn/problems/video-stitching/",
@@ -7768,7 +7792,7 @@
         "frequency": 1
     },
     {
-        "id": 972,
+        "id": 975,
         "leetcode_id": "323",
         "title": "无向图中连通分量的数目",
         "url": "https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/",
@@ -7776,7 +7800,7 @@
         "frequency": 1
     },
     {
-        "id": 973,
+        "id": 976,
         "leetcode_id": "932",
         "title": "漂亮数组",
         "url": "https://leetcode.cn/problems/beautiful-array/",
@@ -7784,7 +7808,7 @@
         "frequency": 1
     },
     {
-        "id": 974,
+        "id": 977,
         "leetcode_id": "689",
         "title": "三个无重叠子数组的最大和",
         "url": "https://leetcode.cn/problems/maximum-sum-of-3-non-overlapping-subarrays/",
@@ -7792,7 +7816,7 @@
         "frequency": 1
     },
     {
-        "id": 975,
+        "id": 978,
         "leetcode_id": "126",
         "title": "单词接龙 II",
         "url": "https://leetcode.cn/problems/word-ladder-ii/",
@@ -7800,7 +7824,7 @@
         "frequency": 1
     },
     {
-        "id": 976,
+        "id": 979,
         "leetcode_id": "934",
         "title": "最短的桥",
         "url": "https://leetcode.cn/problems/shortest-bridge/",
@@ -7808,7 +7832,7 @@
         "frequency": 1
     },
     {
-        "id": 977,
+        "id": 980,
         "leetcode_id": "417",
         "title": "太平洋大西洋水流问题",
         "url": "https://leetcode.cn/problems/pacific-atlantic-water-flow/",
@@ -7816,7 +7840,7 @@
         "frequency": 1
     },
     {
-        "id": 978,
+        "id": 981,
         "leetcode_id": "1367",
         "title": "二叉树中的列表",
         "url": "https://leetcode.cn/problems/linked-list-in-binary-tree/",
@@ -7824,7 +7848,7 @@
         "frequency": 1
     },
     {
-        "id": 979,
+        "id": 982,
         "leetcode_id": "1456",
         "title": "定长子串中元音的最大数目",
         "url": "https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
@@ -7832,7 +7856,7 @@
         "frequency": 1
     },
     {
-        "id": 980,
+        "id": 983,
         "leetcode_id": "777",
         "title": "在LR字符串中交换相邻字符",
         "url": "https://leetcode.cn/problems/swap-adjacent-in-lr-string/",
@@ -7840,7 +7864,7 @@
         "frequency": 1
     },
     {
-        "id": 981,
+        "id": 984,
         "leetcode_id": "1277",
         "title": "统计全为 1 的正方形子矩阵",
         "url": "https://leetcode.cn/problems/count-square-submatrices-with-all-ones/",
@@ -7848,7 +7872,7 @@
         "frequency": 1
     },
     {
-        "id": 982,
+        "id": 985,
         "leetcode_id": "458",
         "title": "可怜的小猪",
         "url": "https://leetcode.cn/problems/poor-pigs/",
@@ -7856,7 +7880,7 @@
         "frequency": 1
     },
     {
-        "id": 983,
+        "id": 986,
         "leetcode_id": "313",
         "title": "超级丑数",
         "url": "https://leetcode.cn/problems/super-ugly-number/",
@@ -7864,7 +7888,7 @@
         "frequency": 1
     },
     {
-        "id": 984,
+        "id": 987,
         "leetcode_id": "1247",
         "title": "交换字符使得字符串相同",
         "url": "https://leetcode.cn/problems/minimum-swaps-to-make-strings-equal/",
@@ -7872,7 +7896,7 @@
         "frequency": 1
     },
     {
-        "id": 985,
+        "id": 988,
         "leetcode_id": "1135",
         "title": "最低成本联通所有城市",
         "url": "https://leetcode.cn/problems/connecting-cities-with-minimum-cost/",
@@ -7880,7 +7904,7 @@
         "frequency": 1
     },
     {
-        "id": 986,
+        "id": 989,
         "leetcode_id": "296",
         "title": "最佳的碰头地点",
         "url": "https://leetcode.cn/problems/best-meeting-point/",
@@ -7888,7 +7912,7 @@
         "frequency": 1
     },
     {
-        "id": 987,
+        "id": 990,
         "leetcode_id": "646",
         "title": "最长数对链",
         "url": "https://leetcode.cn/problems/maximum-length-of-pair-chain/",
@@ -7896,7 +7920,7 @@
         "frequency": 1
     },
     {
-        "id": 988,
+        "id": 991,
         "leetcode_id": "888",
         "title": "公平的糖果交换",
         "url": "https://leetcode.cn/problems/fair-candy-swap/",
@@ -7904,7 +7928,7 @@
         "frequency": 1
     },
     {
-        "id": 989,
+        "id": 992,
         "leetcode_id": "854",
         "title": "相似度为 K 的字符串",
         "url": "https://leetcode.cn/problems/k-similar-strings/",
@@ -7912,7 +7936,7 @@
         "frequency": 1
     },
     {
-        "id": 990,
+        "id": 993,
         "leetcode_id": "219",
         "title": "存在重复元素 II",
         "url": "https://leetcode.cn/problems/contains-duplicate-ii/",
@@ -7920,7 +7944,7 @@
         "frequency": 1
     },
     {
-        "id": 991,
+        "id": 994,
         "leetcode_id": "216",
         "title": "组合总和 III",
         "url": "https://leetcode.cn/problems/combination-sum-iii/",
@@ -7928,7 +7952,7 @@
         "frequency": 1
     },
     {
-        "id": 992,
+        "id": 995,
         "leetcode_id": "736",
         "title": "Lisp 语法解析",
         "url": "https://leetcode.cn/problems/parse-lisp-expression/",
@@ -7936,7 +7960,7 @@
         "frequency": 1
     },
     {
-        "id": 993,
+        "id": 996,
         "leetcode_id": "1328",
         "title": "破坏回文串",
         "url": "https://leetcode.cn/problems/break-a-palindrome/",
@@ -7944,7 +7968,7 @@
         "frequency": 1
     },
     {
-        "id": 994,
+        "id": 997,
         "leetcode_id": "897",
         "title": "递增顺序查找树",
         "url": "https://leetcode.cn/problems/increasing-order-search-tree/",
@@ -7952,7 +7976,7 @@
         "frequency": 1
     },
     {
-        "id": 995,
+        "id": 998,
         "leetcode_id": "997",
         "title": "找到小镇的法官",
         "url": "https://leetcode.cn/problems/find-the-town-judge/",
@@ -7960,7 +7984,7 @@
         "frequency": 1
     },
     {
-        "id": 996,
+        "id": 999,
         "leetcode_id": "746",
         "title": "使用最小花费爬楼梯",
         "url": "https://leetcode.cn/problems/min-cost-climbing-stairs/",
@@ -7968,7 +7992,7 @@
         "frequency": 1
     },
     {
-        "id": 997,
+        "id": 1000,
         "leetcode_id": "861",
         "title": "翻转矩阵后的得分",
         "url": "https://leetcode.cn/problems/score-after-flipping-matrix/",
@@ -7976,7 +8000,7 @@
         "frequency": 1
     },
     {
-        "id": 998,
+        "id": 1001,
         "leetcode_id": "1410",
         "title": "HTML 实体解析器",
         "url": "https://leetcode.cn/problems/html-entity-parser/",
@@ -7984,7 +8008,7 @@
         "frequency": 1
     },
     {
-        "id": 999,
+        "id": 1002,
         "leetcode_id": "1446",
         "title": "连续字符",
         "url": "https://leetcode.cn/problems/consecutive-characters/",
@@ -7992,7 +8016,7 @@
         "frequency": 1
     },
     {
-        "id": 1000,
+        "id": 1003,
         "leetcode_id": "941",
         "title": "有效的山脉数组",
         "url": "https://leetcode.cn/problems/valid-mountain-array/",
@@ -8000,7 +8024,7 @@
         "frequency": 1
     },
     {
-        "id": 1001,
+        "id": 1004,
         "leetcode_id": "844",
         "title": "比较含退格的字符串",
         "url": "https://leetcode.cn/problems/backspace-string-compare/",
@@ -8008,7 +8032,7 @@
         "frequency": 1
     },
     {
-        "id": 1002,
+        "id": 1005,
         "leetcode_id": "1675",
         "title": "数组的最小偏移量",
         "url": "https://leetcode.cn/problems/minimize-deviation-in-array/",
@@ -8016,7 +8040,7 @@
         "frequency": 1
     },
     {
-        "id": 1003,
+        "id": 1006,
         "leetcode_id": "589",
         "title": "N叉树的前序遍历",
         "url": "https://leetcode.cn/problems/n-ary-tree-preorder-traversal/",
@@ -8024,7 +8048,7 @@
         "frequency": 1
     },
     {
-        "id": 1004,
+        "id": 1007,
         "leetcode_id": "999",
         "title": "可以被一步捕获的棋子数",
         "url": "https://leetcode.cn/problems/available-captures-for-rook/",
@@ -8032,7 +8056,7 @@
         "frequency": 1
     },
     {
-        "id": 1005,
+        "id": 1008,
         "leetcode_id": "950",
         "title": "按递增顺序显示卡牌",
         "url": "https://leetcode.cn/problems/reveal-cards-in-increasing-order/",
@@ -8040,7 +8064,7 @@
         "frequency": 1
     },
     {
-        "id": 1006,
+        "id": 1009,
         "leetcode_id": "1567",
         "title": "乘积为正数的最长子数组长度",
         "url": "https://leetcode.cn/problems/maximum-length-of-subarray-with-positive-product/",
@@ -8048,7 +8072,7 @@
         "frequency": 1
     },
     {
-        "id": 1007,
+        "id": 1010,
         "leetcode_id": "570",
         "title": "至少有5名直接下属的经理",
         "url": "https://leetcode.cn/problems/managers-with-at-least-5-direct-reports/",
@@ -8056,7 +8080,7 @@
         "frequency": 1
     },
     {
-        "id": 1008,
+        "id": 1011,
         "leetcode_id": "355",
         "title": "设计推特",
         "url": "https://leetcode.cn/problems/design-twitter/",
@@ -8064,7 +8088,7 @@
         "frequency": 1
     },
     {
-        "id": 1009,
+        "id": 1012,
         "leetcode_id": "1475",
         "title": "商品折扣后的最终价格",
         "url": "https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/",
@@ -8072,7 +8096,7 @@
         "frequency": 1
     },
     {
-        "id": 1010,
+        "id": 1013,
         "leetcode_id": "1209",
         "title": "删除字符串中的所有相邻重复项 II",
         "url": "https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/",
@@ -8080,7 +8104,7 @@
         "frequency": 1
     },
     {
-        "id": 1011,
+        "id": 1014,
         "leetcode_id": "493",
         "title": "翻转对",
         "url": "https://leetcode.cn/problems/reverse-pairs/",
@@ -8088,7 +8112,7 @@
         "frequency": 1
     },
     {
-        "id": 1012,
+        "id": 1015,
         "leetcode_id": "LCP 17",
         "title": "速算机器人",
         "url": "https://leetcode.cn/problems/nGK0Fy/",
@@ -8096,7 +8120,7 @@
         "frequency": 1
     },
     {
-        "id": 1013,
+        "id": 1016,
         "leetcode_id": "927",
         "title": "三等分",
         "url": "https://leetcode.cn/problems/three-equal-parts/",
@@ -8104,7 +8128,7 @@
         "frequency": 1
     },
     {
-        "id": 1014,
+        "id": 1017,
         "leetcode_id": "496",
         "title": "下一个更大元素 I",
         "url": "https://leetcode.cn/problems/next-greater-element-i/",
@@ -8112,7 +8136,7 @@
         "frequency": 1
     },
     {
-        "id": 1015,
+        "id": 1018,
         "leetcode_id": "1186",
         "title": "删除一次得到子数组最大和",
         "url": "https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/",
@@ -8120,7 +8144,7 @@
         "frequency": 1
     },
     {
-        "id": 1016,
+        "id": 1019,
         "leetcode_id": "1405",
         "title": "最长快乐字符串",
         "url": "https://leetcode.cn/problems/longest-happy-string/",
@@ -8128,15 +8152,7 @@
         "frequency": 1
     },
     {
-        "id": 1017,
-        "leetcode_id": "1219",
-        "title": "黄金矿工",
-        "url": "https://leetcode.cn/problems/path-with-maximum-gold/",
-        "level": "medium",
-        "frequency": 1
-    },
-    {
-        "id": 1018,
+        "id": 1020,
         "leetcode_id": "1306",
         "title": "跳跃游戏 III",
         "url": "https://leetcode.cn/problems/jump-game-iii/",
@@ -8144,7 +8160,7 @@
         "frequency": 1
     },
     {
-        "id": 1019,
+        "id": 1021,
         "leetcode_id": "367",
         "title": "有效的完全平方数",
         "url": "https://leetcode.cn/problems/valid-perfect-square/",
@@ -8152,7 +8168,7 @@
         "frequency": 1
     },
     {
-        "id": 1020,
+        "id": 1022,
         "leetcode_id": "面试题 03.03",
         "title": "堆盘子",
         "url": "https://leetcode.cn/problems/stack-of-plates-lcci/",
@@ -8160,7 +8176,7 @@
         "frequency": 1
     },
     {
-        "id": 1021,
+        "id": 1023,
         "leetcode_id": "1116",
         "title": "打印零与奇偶数",
         "url": "https://leetcode.cn/problems/print-zero-even-odd/",
@@ -8168,7 +8184,7 @@
         "frequency": 1
     },
     {
-        "id": 1022,
+        "id": 1024,
         "leetcode_id": "LCP 04",
         "title": "覆盖",
         "url": "https://leetcode.cn/problems/broken-board-dominoes/",
@@ -8176,7 +8192,7 @@
         "frequency": 1
     },
     {
-        "id": 1023,
+        "id": 1025,
         "leetcode_id": "1168",
         "title": "水资源分配优化",
         "url": "https://leetcode.cn/problems/optimize-water-distribution-in-a-village/",
@@ -8184,7 +8200,7 @@
         "frequency": 1
     },
     {
-        "id": 1024,
+        "id": 1026,
         "leetcode_id": "1341",
         "title": "电影评分",
         "url": "https://leetcode.cn/problems/movie-rating/",
@@ -8192,7 +8208,7 @@
         "frequency": 1
     },
     {
-        "id": 1025,
+        "id": 1027,
         "leetcode_id": "514",
         "title": "自由之路",
         "url": "https://leetcode.cn/problems/freedom-trail/",
@@ -8200,7 +8216,7 @@
         "frequency": 1
     },
     {
-        "id": 1026,
+        "id": 1028,
         "leetcode_id": "1570",
         "title": "两个稀疏向量的点积",
         "url": "https://leetcode.cn/problems/dot-product-of-two-sparse-vectors/",
@@ -8208,7 +8224,7 @@
         "frequency": 1
     },
     {
-        "id": 1027,
+        "id": 1029,
         "leetcode_id": "1615",
         "title": "最大网络秩",
         "url": "https://leetcode.cn/problems/maximal-network-rank/",
@@ -8216,7 +8232,7 @@
         "frequency": 1
     },
     {
-        "id": 1028,
+        "id": 1030,
         "leetcode_id": "643",
         "title": "子数组最大平均数 I",
         "url": "https://leetcode.cn/problems/maximum-average-subarray-i/",
@@ -8224,7 +8240,7 @@
         "frequency": 1
     },
     {
-        "id": 1029,
+        "id": 1031,
         "leetcode_id": "258",
         "title": "各位相加",
         "url": "https://leetcode.cn/problems/add-digits/",
@@ -8232,7 +8248,7 @@
         "frequency": 1
     },
     {
-        "id": 1030,
+        "id": 1032,
         "leetcode_id": "598",
         "title": "范围求和 II",
         "url": "https://leetcode.cn/problems/range-addition-ii/",
@@ -8240,7 +8256,7 @@
         "frequency": 1
     },
     {
-        "id": 1031,
+        "id": 1033,
         "leetcode_id": "765",
         "title": "情侣牵手",
         "url": "https://leetcode.cn/problems/couples-holding-hands/",
@@ -8248,7 +8264,7 @@
         "frequency": 1
     },
     {
-        "id": 1032,
+        "id": 1034,
         "leetcode_id": "397",
         "title": "整数替换",
         "url": "https://leetcode.cn/problems/integer-replacement/",
@@ -8256,7 +8272,7 @@
         "frequency": 1
     },
     {
-        "id": 1033,
+        "id": 1035,
         "leetcode_id": "728",
         "title": "自除数",
         "url": "https://leetcode.cn/problems/self-dividing-numbers/",
@@ -8264,7 +8280,7 @@
         "frequency": 1
     },
     {
-        "id": 1034,
+        "id": 1036,
         "leetcode_id": "1107",
         "title": "每日新用户统计",
         "url": "https://leetcode.cn/problems/new-users-daily-count/",
@@ -8272,7 +8288,7 @@
         "frequency": 1
     },
     {
-        "id": 1035,
+        "id": 1037,
         "leetcode_id": "面试题 02.08",
         "title": "环路检测",
         "url": "https://leetcode.cn/problems/linked-list-cycle-lcci/",
@@ -8280,7 +8296,7 @@
         "frequency": 1
     },
     {
-        "id": 1036,
+        "id": 1038,
         "leetcode_id": "1420",
         "title": "生成数组",
         "url": "https://leetcode.cn/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/",
@@ -8288,7 +8304,7 @@
         "frequency": 1
     },
     {
-        "id": 1037,
+        "id": 1039,
         "leetcode_id": "717",
         "title": "1比特与2比特字符",
         "url": "https://leetcode.cn/problems/1-bit-and-2-bit-characters/",
@@ -8296,7 +8312,7 @@
         "frequency": 1
     },
     {
-        "id": 1038,
+        "id": 1040,
         "leetcode_id": "1563",
         "title": "石子游戏 V",
         "url": "https://leetcode.cn/problems/stone-game-v/",
@@ -8304,7 +8320,7 @@
         "frequency": 1
     },
     {
-        "id": 1039,
+        "id": 1041,
         "leetcode_id": "588",
         "title": "设计内存文件系统",
         "url": "https://leetcode.cn/problems/design-in-memory-file-system/",
@@ -8312,7 +8328,7 @@
         "frequency": 1
     },
     {
-        "id": 1040,
+        "id": 1042,
         "leetcode_id": "361",
         "title": "轰炸敌人",
         "url": "https://leetcode.cn/problems/bomb-enemy/",
@@ -8320,7 +8336,7 @@
         "frequency": 1
     },
     {
-        "id": 1041,
+        "id": 1043,
         "leetcode_id": "1518",
         "title": "换酒问题",
         "url": "https://leetcode.cn/problems/water-bottles/",
@@ -8328,7 +8344,7 @@
         "frequency": 1
     },
     {
-        "id": 1042,
+        "id": 1044,
         "leetcode_id": "549",
         "title": "二叉树中最长的连续序列",
         "url": "https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii/",
@@ -8336,7 +8352,7 @@
         "frequency": 1
     },
     {
-        "id": 1043,
+        "id": 1045,
         "leetcode_id": "609",
         "title": "在系统中查找重复文件",
         "url": "https://leetcode.cn/problems/find-duplicate-file-in-system/",
@@ -8344,7 +8360,7 @@
         "frequency": 1
     },
     {
-        "id": 1044,
+        "id": 1046,
         "leetcode_id": "面试题 17.21",
         "title": "直方图的水量",
         "url": "https://leetcode.cn/problems/volume-of-histogram-lcci/",
@@ -8352,7 +8368,7 @@
         "frequency": 1
     },
     {
-        "id": 1045,
+        "id": 1047,
         "leetcode_id": "1019",
         "title": "链表中的下一个更大节点",
         "url": "https://leetcode.cn/problems/next-greater-node-in-linked-list/",
@@ -8360,7 +8376,7 @@
         "frequency": 1
     },
     {
-        "id": 1046,
+        "id": 1048,
         "leetcode_id": "569",
         "title": "员工薪水中位数",
         "url": "https://leetcode.cn/problems/median-employee-salary/",
@@ -8368,7 +8384,7 @@
         "frequency": 1
     },
     {
-        "id": 1047,
+        "id": 1049,
         "leetcode_id": "307",
         "title": "区域和检索 - 数组可修改",
         "url": "https://leetcode.cn/problems/range-sum-query-mutable/",
@@ -8376,7 +8392,7 @@
         "frequency": 1
     },
     {
-        "id": 1048,
+        "id": 1050,
         "leetcode_id": "1498",
         "title": "满足条件的子序列数目",
         "url": "https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/",
@@ -8384,7 +8400,7 @@
         "frequency": 1
     },
     {
-        "id": 1049,
+        "id": 1051,
         "leetcode_id": "904",
         "title": "水果成篮",
         "url": "https://leetcode.cn/problems/fruit-into-baskets/",
@@ -8392,7 +8408,7 @@
         "frequency": 1
     },
     {
-        "id": 1050,
+        "id": 1052,
         "leetcode_id": "929",
         "title": "独特的电子邮件地址",
         "url": "https://leetcode.cn/problems/unique-email-addresses/",
@@ -8400,7 +8416,7 @@
         "frequency": 1
     },
     {
-        "id": 1051,
+        "id": 1053,
         "leetcode_id": "1314",
         "title": "矩阵区域和",
         "url": "https://leetcode.cn/problems/matrix-block-sum/",
@@ -8408,7 +8424,7 @@
         "frequency": 1
     },
     {
-        "id": 1052,
+        "id": 1054,
         "leetcode_id": "919",
         "title": "完全二叉树插入器",
         "url": "https://leetcode.cn/problems/complete-binary-tree-inserter/",
@@ -8416,7 +8432,7 @@
         "frequency": 1
     },
     {
-        "id": 1053,
+        "id": 1055,
         "leetcode_id": "865",
         "title": "具有所有最深结点的最小子树",
         "url": "https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/",
@@ -8424,7 +8440,7 @@
         "frequency": 1
     },
     {
-        "id": 1054,
+        "id": 1056,
         "leetcode_id": "956",
         "title": "最高的广告牌",
         "url": "https://leetcode.cn/problems/tallest-billboard/",
@@ -8432,7 +8448,7 @@
         "frequency": 1
     },
     {
-        "id": 1055,
+        "id": 1057,
         "leetcode_id": "277",
         "title": "搜寻名人",
         "url": "https://leetcode.cn/problems/find-the-celebrity/",
@@ -8440,7 +8456,7 @@
         "frequency": 1
     },
     {
-        "id": 1056,
+        "id": 1058,
         "leetcode_id": "255",
         "title": "验证前序遍历序列二叉搜索树",
         "url": "https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/",
@@ -8448,7 +8464,7 @@
         "frequency": 1
     },
     {
-        "id": 1057,
+        "id": 1059,
         "leetcode_id": "562",
         "title": "矩阵中最长的连续1线段",
         "url": "https://leetcode.cn/problems/longest-line-of-consecutive-one-in-matrix/",
@@ -8456,7 +8472,7 @@
         "frequency": 1
     },
     {
-        "id": 1058,
+        "id": 1060,
         "leetcode_id": "1147",
         "title": "段式回文",
         "url": "https://leetcode.cn/problems/longest-chunked-palindrome-decomposition/",
@@ -8464,7 +8480,7 @@
         "frequency": 1
     },
     {
-        "id": 1059,
+        "id": 1061,
         "leetcode_id": "515",
         "title": "在每个树行中找最大值",
         "url": "https://leetcode.cn/problems/find-largest-value-in-each-tree-row/",
@@ -8472,7 +8488,7 @@
         "frequency": 1
     },
     {
-        "id": 1060,
+        "id": 1062,
         "leetcode_id": "636",
         "title": "函数的独占时间",
         "url": "https://leetcode.cn/problems/exclusive-time-of-functions/",
@@ -8480,7 +8496,7 @@
         "frequency": 1
     },
     {
-        "id": 1061,
+        "id": 1063,
         "leetcode_id": "1464",
         "title": "数组中两元素的最大乘积",
         "url": "https://leetcode.cn/problems/maximum-product-of-two-elements-in-an-array/",
@@ -8488,7 +8504,7 @@
         "frequency": 1
     },
     {
-        "id": 1062,
+        "id": 1064,
         "leetcode_id": "431",
         "title": "将 N 叉树编码为二叉树",
         "url": "https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/",
