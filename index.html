@@ -86,52 +86,80 @@
             'Endpoint or bearer not provided. Use local storage instead.'
           );
           storage = localStorage.getItem('storage');
-        } else {
-          console.log('Endpoint or bearer provided. Use online storage.');
-          const response = await fetch(
-            `https://${endpoint}.kv.vercel-storage.com/get/storage`,
-            {
-              headers: {
-                Authorization: `Bearer ${bearer}`,
-              },
-            }
-          )
-            .then((response) => {
-              if (response.ok) {
-                return response.json();
-              }
-              throw new Error(response.status);
-            })
-            .catch((error) => {
-              alert('Error fetching online storage ' + error);
-            });
-          storage = response['result'];
+
+          if (storage === null) {
+            storage = {};
+            console.log('Local storage empty');
+          } else {
+            storage = JSON.parse(storage);
+            console.log('Load local storage', storage);
+          }
+          return storage;
         }
 
-        if (storage === null) {
-          storage = {};
-          console.log('Storage empty');
+        console.log('Endpoint or bearer provided. Use online storage.');
+        const response = await fetch(
+          `https://${endpoint}.kv.vercel-storage.com/hgetall/storage`,
+          {
+            headers: {
+              Authorization: `Bearer ${bearer}`,
+            },
+          }
+        )
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error(response.status);
+          })
+          .catch((error) => {
+            alert('Error fetching online storage ' + error);
+          });
+
+        const array = response['result'];
+        storage = Object.fromEntries(
+          [...Array(array.length / 2).keys()].map((i) => [
+            array[2 * i],
+            parseInt(array[2 * i + 1]),
+          ])
+        );
+        if (Object.keys(storage).length === 0) {
+          console.log('Online storage empty');
         } else {
-          storage = JSON.parse(storage);
-          console.log('Load storage', storage);
+          console.log('Load online storage', storage);
         }
         return storage;
       }
 
-      function saveStorage(storage) {
+      /**
+       * @param {object} storage The full data to sava
+       * @param {string} key The currently changed key
+       */
+      function saveStorage({ storage, key }) {
         if (endpoint === null || bearer == null) {
           localStorage.setItem('storage', JSON.stringify(storage));
         } else {
-          fetch(`https://${endpoint}.kv.vercel-storage.com/set/storage`, {
+          fetch(`https://${endpoint}.kv.vercel-storage.com/`, {
             headers: {
               Authorization: `Bearer ${bearer}`,
             },
-            body: JSON.stringify(storage),
+            body: JSON.stringify(['HSET', 'storage', key, storage[key]]),
             method: 'POST',
           });
         }
       }
-      const saveStorageDebounced = _.debounce(saveStorage, 1000);
+
+      // https://stackoverflow.com/questions/28787436/debounce-a-function-with-argument
+      const debounceByParam = (targetFunc, resolver, ...debounceParams) =>
+        _.wrap(
+          _.memoize(() => _.debounce(targetFunc, ...debounceParams), resolver),
+          (getMemoizedFunc, ...params) => getMemoizedFunc(...params)(...params)
+        );
+      const saveStorageDebounced = debounceByParam(
+        saveStorage,
+        _.property('key'),
+        1000
+      );
 
       function setStyle(element, status) {
         const indeterminateMap = { 0: false, 1: true, 2: false };
@@ -170,7 +198,7 @@
               storage[key] = (storage[key] + 1) % 3;
               console.log(`Set ${key} to ${storage[key]}`);
               setStyle(element, storage[key]);
-              saveStorageDebounced(storage);
+              saveStorageDebounced({ storage, key });
             });
           });
 
