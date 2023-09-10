@@ -57,8 +57,8 @@
       }
 
       .checkbox-lg {
-        transform: scale(1.15);
-        -webkit-transform: scale(1.15);
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
       }
 
       .custom-popover {
@@ -68,10 +68,59 @@
         --bs-popover-body-padding-y: 0.5em;
       }
     </style>
+
+    <style>
+      .lds-ring {
+        margin: 10rem auto;
+        position: relative;
+        width: 60px;
+        height: 60px;
+      }
+
+      .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin: 6px;
+        border: 6px solid #fff;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #888 transparent transparent transparent;
+      }
+
+      .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <table id="table"></table>
       <footer class="py-4">
         <p class="text-center py-3 border-top" style="font-size: 0.9em">
@@ -262,6 +311,8 @@
         } else {
           pageNumber = parseInt(pageNumber);
         }
+
+        $('.lds-ring').remove();
         $('#table').bootstrapTable({
           pagination: true,
           search: true,
@@ -270,6 +321,7 @@
           pageList: [20, 50, 100, 200, 'All'],
           classes: 'table table-bordered table-hover table-striped',
           searchHighlight: true,
+          formatSearch: () => 'Search (Ctrl+F)',
           columns: [
             {
               field: 'id',
