@@ -204,11 +204,24 @@
 
         const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
 
+        let pageSize = localStorage.getItem('pageSize');
+        if (pageSize === null) {
+          pageSize = 50;
+        } else if (pageSize !== 'All') {
+          pageSize = parseInt(pageSize);
+        }
+        let pageNumber = localStorage.getItem('pageNumber');
+        if (pageNumber === null) {
+          pageNumber = 1;
+        } else {
+          pageNumber = parseInt(pageNumber);
+        }
         $('#table').bootstrapTable({
           pagination: true,
           search: true,
-          pageSize: 50,
-          pageList: [20, 50, 100, 200, 'all'],
+          pageSize,
+          pageNumber,
+          pageList: [20, 50, 100, 200, 'All'],
           classes: 'table table-bordered table-hover table-striped',
           searchHighlight: true,
           columns: [
@@ -243,6 +256,15 @@
             // set the status of checkboxes in `arrive('input.form-check-input', ....`
             doneHTML: `<input class="form-check-input" type="checkbox" data-key="${e.leetcode_id}. ${e.title}">`,
           })),
+          onPageChange: function (number, size) {
+            const input = document.querySelector(
+              'div.bootstrap-table div.fixed-table-toolbar input.search-input'
+            );
+            if (input.value === '' && document.activeElement !== input) {
+              localStorage.setItem('pageSize', size);
+              localStorage.setItem('pageNumber', number);
+            }
+          },
         });
       });
 
