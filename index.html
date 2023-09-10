@@ -39,7 +39,7 @@
       }
 
       .table {
-        --bs-table-striped-bg: rgba(0, 0, 0, 0.03);
+        --bs-table-striped-bg: rgba(0, 0, 0, 0.02);
         text-align: center;
       }
 
@@ -52,12 +52,39 @@
           font-size: 14px;
         }
       }
+
+      .fixed-table-container {
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+
+      .checkbox-lg {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
       <table id="table"></table>
+      <footer class="py-4">
+        <p class="text-center py-3 border-top" style="font-size: 0.9em">
+          <span id="stat">统计中...</span>
+          <br />
+          数据源：<a
+            target="_blank"
+            class="link-dark"
+            href="https://codetop.cc/"
+            >https://codetop.cc/</a
+          >，代码：<a
+            target="_blank"
+            class="link-dark"
+            href="https://github.com/yusanshi/codetop"
+            >yusanshi/codetop</a
+          >
+        </p>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -78,10 +105,11 @@
       const params = new URL(document.location).searchParams;
       const endpoint = params.get('endpoint');
       const bearer = params.get('bearer');
+      const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
 
       async function loadStorage() {
         let storage;
-        if (endpoint === null || bearer == null) {
+        if (endpoint === null || bearer === null) {
           console.log(
             'Endpoint or bearer not provided. Use local storage instead.'
           );
@@ -136,7 +164,7 @@
        * @param {string} key The currently changed key
        */
       function saveStorage({ storage, key }) {
-        if (endpoint === null || bearer == null) {
+        if (endpoint === null || bearer === null) {
           localStorage.setItem('storage', JSON.stringify(storage));
         } else {
           fetch(`https://${endpoint}.kv.vercel-storage.com/`, {
@@ -158,7 +186,7 @@
       const saveStorageDebounced = debounceByParam(
         saveStorage,
         _.property('key'),
-        1000
+        500
       );
 
       function setStyle(element, status) {
@@ -170,7 +198,7 @@
         element.checked = checkedMap[status];
         const rowElement = element.parentNode.parentNode;
         rowElement.querySelectorAll('td').forEach((td) => {
-          if (td.querySelectorAll('input').length == 0) {
+          if (td.querySelectorAll('input').length === 0) {
             td.style.opacity = opacityMap[status];
           }
         });
@@ -183,6 +211,7 @@
         const storage = await loadStoragePromise;
         const data = await loadDataPromise;
 
+        updateStat(storage, data);
         document
           .querySelector('#table')
           .arrive('input.form-check-input', (element) => {
@@ -199,10 +228,9 @@
               console.log(`Set ${key} to ${storage[key]}`);
               setStyle(element, storage[key]);
               saveStorageDebounced({ storage, key });
+              updateStat(storage, data);
             });
           });
-
-        const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
 
         let pageSize = localStorage.getItem('pageSize');
         if (pageSize === null) {
@@ -254,7 +282,7 @@
                 ? `<a target="_blank" class="link-dark" href="${e.url}">${e.leetcode_id}. ${e.title}</a>`
                 : `<span class="link-dark">${e.leetcode_id}. ${e.title}</span>`,
             // set the status of checkboxes in `arrive('input.form-check-input', ....`
-            doneHTML: `<input class="form-check-input" type="checkbox" data-key="${e.leetcode_id}. ${e.title}">`,
+            doneHTML: `<input class="form-check-input checkbox-lg" type="checkbox" data-key="${e.leetcode_id}. ${e.title}">`,
           })),
           onPageChange: function (number, size) {
             const input = document.querySelector(
@@ -281,6 +309,29 @@
           input.select();
         }
       });
+
+      function updateStat(storage, data) {
+        const countStatus = (d) => {
+          const statuses = d
+            .map((e) => storage[`${e.leetcode_id}. ${e.title}`])
+            .map((e) => (e === undefined ? 0 : e));
+
+          const count = [0, 1, 2].map(
+            (i) => statuses.filter((x) => x === i).length
+          );
+          return JSON.stringify(count).replaceAll(',', ', ');
+        };
+
+        document.querySelector('#stat').innerHTML = [
+          ...Object.entries(levelMap).map(
+            ([a, b]) =>
+              `<span class="${a}">${b}</span>: ${countStatus(
+                data.filter((e) => e.level === a)
+              )}`
+          ),
+          `合计: ${countStatus(data)}`,
+        ].join(', ');
+      }
     </script>
   </body>
 </html>
