@@ -67,11 +67,16 @@
         --bs-popover-body-padding-x: 0.5em;
         --bs-popover-body-padding-y: 0.5em;
       }
+
+      button.btn {
+        --bs-btn-padding-x: 0.4rem;
+        --bs-btn-padding-y: 0.2rem;
+      }
     </style>
 
     <style>
       .lds-ring {
-        margin: 10rem auto;
+        margin: 8rem auto;
         position: relative;
         width: 60px;
         height: 60px;
@@ -129,7 +134,7 @@
             data-bs-toggle="popover"
             data-bs-trigger="hover"
             data-bs-custom-class="custom-popover"
-            data-bs-content="格式: [未完成数量, 初步完成数量, 完成数量]"
+            data-bs-content="格式: [未完成数量, 初步完成数量, 已完成数量]"
           >
             <svg
               width="16"
@@ -158,7 +163,7 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"
@@ -278,7 +283,6 @@
         const storage = await loadStoragePromise;
         const data = await loadDataPromise;
 
-        updateStat(storage, data);
         document
           .querySelector('#table')
           .arrive('input.form-check-input', (element) => {
@@ -322,6 +326,9 @@
           classes: 'table table-bordered table-hover table-striped',
           searchHighlight: true,
           formatSearch: () => 'Search (Ctrl+F)',
+          formatShowingRows: (pageFrom, pageTo, totalRows) =>
+            `(${pageFrom}~${pageTo}) / ${totalRows}&nbsp;&nbsp;`,
+          formatRecordsPerPage: (pageNumber) => `每页显示 ${pageNumber} 行`,
           columns: [
             {
               field: 'id',
@@ -362,8 +369,11 @@
               localStorage.setItem('pageSize', size);
               localStorage.setItem('pageNumber', number);
             }
+            updateStat(storage, data);
           },
         });
+
+        updateStat(storage, data);
 
         // Initialize popovers
         const popoverTriggerList = document.querySelectorAll(
@@ -408,6 +418,9 @@
               )}`
           ),
           `合计: ${countStatus(data)}`,
+          `本页: ${countStatus(
+            $('#table').bootstrapTable('getData', { useCurrentPage: true })
+          )}`,
         ].join(', ');
       }
     </script>
