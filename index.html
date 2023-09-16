@@ -58,12 +58,11 @@
 
       .checkbox-lg {
         transform: scale(1.1);
-        -webkit-transform: scale(1.1);
       }
 
       .custom-popover {
         --bs-popover-font-size: 0.9em;
-        --bs-popover-max-width: 300px;
+        --bs-popover-max-width: 350px;
         --bs-popover-body-padding-x: 0.5em;
         --bs-popover-body-padding-y: 0.5em;
       }
@@ -71,6 +70,14 @@
       button.btn {
         --bs-btn-padding-x: 0.4rem;
         --bs-btn-padding-y: 0.2rem;
+      }
+
+      textarea.form-control {
+        font-size: 1em;
+      }
+
+      tr.detail-view > td {
+        padding: 0.3rem;
       }
     </style>
 
@@ -220,7 +227,7 @@
         storage = Object.fromEntries(
           [...Array(array.length / 2).keys()].map((i) => [
             array[2 * i],
-            parseInt(array[2 * i + 1]),
+            JSON.parse(array[2 * i + 1]),
           ])
         );
         if (Object.keys(storage).length === 0) {
@@ -228,6 +235,7 @@
         } else {
           console.log('Load online storage', storage);
         }
+        localStorage.setItem('storage-local-backup', JSON.stringify(storage));
         return storage;
       }
 
@@ -236,6 +244,7 @@
        * @param {string} key The currently changed key
        */
       function saveStorage({ storage, key }) {
+        console.log(`Save ${key} to ${JSON.stringify(storage[key])}`);
         if (endpoint === null || bearer === null) {
           localStorage.setItem('storage', JSON.stringify(storage));
         } else {
@@ -243,7 +252,12 @@
             headers: {
               Authorization: `Bearer ${bearer}`,
             },
-            body: JSON.stringify(['HSET', 'storage', key, storage[key]]),
+            body: JSON.stringify([
+              'HSET',
+              'storage',
+              key,
+              JSON.stringify(storage[key]),
+            ]),
             method: 'POST',
           });
         }
@@ -268,12 +282,12 @@
 
         element.indeterminate = indeterminateMap[status];
         element.checked = checkedMap[status];
-        const rowElement = element.parentNode.parentNode;
-        rowElement.querySelectorAll('td').forEach((td) => {
-          if (td.querySelectorAll('input').length === 0) {
+        const rowElement = element.parentElement.parentElement;
+        Array.from(rowElement.querySelectorAll('td'))
+          .slice(0, -1)
+          .forEach((td) => {
             td.style.opacity = opacityMap[status];
-          }
-        });
+          });
       }
 
       const loadStoragePromise = loadStorage();
@@ -282,24 +296,81 @@
       window.addEventListener('DOMContentLoaded', async () => {
         const storage = await loadStoragePromise;
         const data = await loadDataPromise;
+        const id2key = Object.fromEntries(
+          data.map((e) => [e.id, `${e.leetcode_id}. ${e.title}`])
+        );
 
         document
           .querySelector('#table')
           .arrive('input.form-check-input', (element) => {
             // load and set status from storage
-            const key = element.getAttribute('data-key');
-            setStyle(element, storage[key] === undefined ? 0 : storage[key]);
+            const key =
+              id2key[element.parentElement.parentElement.dataset.uniqueid];
+            setStyle(
+              element,
+              storage[key]?.status === undefined ? 0 : storage[key].status
+            );
 
             element.addEventListener('click', () => {
               // save status change into storage
               if (storage[key] === undefined) {
-                storage[key] = 0;
+                storage[key] = { status: 0, note: '' };
               }
-              storage[key] = (storage[key] + 1) % 3;
-              console.log(`Set ${key} to ${storage[key]}`);
-              setStyle(element, storage[key]);
+              storage[key].status = (storage[key].status + 1) % 3;
+              console.log(`Set status of ${key} to ${storage[key].status}`);
+              setStyle(element, storage[key].status);
               saveStorageDebounced({ storage, key });
               updateStat(storage, data);
+            });
+          });
+
+        document
+          .querySelector('#table')
+          .arrive('textarea.form-control', (element) => {
+            // load and set note from storage
+            const key =
+              id2key[
+                element.parentElement.parentElement.previousElementSibling
+                  .dataset.uniqueid
+              ];
+            element.value =
+              storage[key]?.note === undefined ? '' : storage[key].note;
+
+            element.addEventListener('input', () => {
+              // save note change into storage
+              if (storage[key] === undefined) {
+                storage[key] = { status: 0, note: '' };
+              }
+              storage[key].note = element.value;
+              console.log(`Set note of ${key} to ${storage[key].note}`);
+              saveStorageDebounced({ storage, key });
+            });
+          });
+
+        document
+          .querySelector('#table')
+          .arrive('tbody > tr[data-uniqueid]', (element) => {
+            element.addEventListener('click', (event) => {
+              if (['a', 'input'].includes(event.target.tagName.toLowerCase())) {
+                return;
+              }
+              if (window.getSelection().toString() !== '') {
+                return;
+              }
+              const hasExpanded =
+                element.nextElementSibling?.classList.contains('detail-view');
+              if (hasExpanded)
+                $('#table').bootstrapTable(
+                  'collapseRowByUniqueId',
+                  element.dataset.uniqueid
+                );
+              else {
+                $('#table').bootstrapTable('collapseAllRows');
+                $('#table').bootstrapTable(
+                  'expandRowByUniqueId',
+                  element.dataset.uniqueid
+                );
+              }
             });
           });
 
@@ -329,6 +400,11 @@
           formatShowingRows: (pageFrom, pageTo, totalRows) =>
             `(${pageFrom}~${pageTo}) / ${totalRows}&nbsp;&nbsp;`,
           formatRecordsPerPage: (pageNumber) => `每页显示 ${pageNumber} 行`,
+          uniqueId: 'id',
+          detailView: true,
+          detailViewIcon: false,
+          detailFormatter: () =>
+            `<textarea class="form-control" rows="5"></textarea>`,
           columns: [
             {
               field: 'id',
@@ -359,7 +435,7 @@
                 ? `<a target="_blank" class="link-dark" href="${e.url}">${e.leetcode_id}. ${e.title}</a>`
                 : `<span class="link-dark">${e.leetcode_id}. ${e.title}</span>`,
             // set the status of checkboxes in `arrive('input.form-check-input', ....`
-            doneHTML: `<input class="form-check-input checkbox-lg" type="checkbox" data-key="${e.leetcode_id}. ${e.title}">`,
+            doneHTML: `<input class="form-check-input checkbox-lg" type="checkbox">`,
           })),
           onPageChange: function (number, size) {
             const input = document.querySelector(
@@ -402,7 +478,7 @@
         const countStatus = (d) => {
           const statuses = d
             .map((e) => storage[`${e.leetcode_id}. ${e.title}`])
-            .map((e) => (e === undefined ? 0 : e));
+            .map((e) => (e?.status === undefined ? 0 : e.status));
 
           const count = [0, 1, 2].map(
             (i) => statuses.filter((x) => x === i).length
