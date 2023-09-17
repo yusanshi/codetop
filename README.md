@@ -4,7 +4,7 @@
 
 A wrapper website for reviewing and tracking problems at <https://codetop.cc/>.
 
-![image](https://github.com/yusanshi/codetop/assets/36265606/e3468724-2ac6-4c2b-a56a-bf3f675e49e0)
+![image](https://github.com/yusanshi/codetop/assets/36265606/e5ac323f-e137-431a-9563-d8da8c901c93)
 
 
 ## Tracking status locally
