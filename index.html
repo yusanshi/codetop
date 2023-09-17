@@ -22,6 +22,10 @@
       integrity="sha256-7Oajx7nIkYTg7DngGkbQPeZYOGF2y0Q3R24+vhzH/2M="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vditor@3.9.5/dist/index.css"
+    />
 
     <style>
       .easy {
@@ -37,7 +41,10 @@
       }
 
       .table {
-        --bs-table-striped-bg: rgba(0, 0, 0, 0.02);
+        --bs-table-striped-bg: rgba(0, 0, 0, 0.03);
+      }
+
+      table tr:not(.detail-view) {
         text-align: center;
       }
 
@@ -72,12 +79,25 @@
         --bs-btn-padding-y: 0.2rem;
       }
 
-      textarea.form-control {
-        font-size: 1em;
+      tr.detail-view > td {
+        padding: 0.25rem;
       }
 
-      tr.detail-view > td {
-        padding: 0.3rem;
+      .vditor {
+        border: none;
+      }
+
+      .vditor-toolbar {
+        display: none;
+      }
+
+      .markdown-editor {
+        min-height: 150px;
+        max-height: 400px;
+      }
+
+      .vditor-reset {
+        font-size: 1em;
       }
     </style>
 
@@ -179,6 +199,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/arrive@2.4.1/minified/arrive.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-min.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vditor@3.9.5/dist/index.min.js"></script>
 
     <script>
       const params = new URL(document.location).searchParams;
@@ -278,7 +299,7 @@
       function setStyle(element, status) {
         const indeterminateMap = { 0: false, 1: true, 2: false };
         const checkedMap = { 0: false, 1: false, 2: true };
-        const opacityMap = { 0: 1, 1: 0.4, 2: 0.15 };
+        const opacityMap = { 0: 1, 1: 0.4, 2: 0.2 };
 
         element.indeterminate = indeterminateMap[status];
         element.checked = checkedMap[status];
@@ -326,24 +347,31 @@
 
         document
           .querySelector('#table')
-          .arrive('textarea.form-control', (element) => {
+          .arrive('div.markdown-editor', (element) => {
             // load and set note from storage
             const key =
               id2key[
                 element.parentElement.parentElement.previousElementSibling
                   .dataset.uniqueid
               ];
-            element.value =
-              storage[key]?.note === undefined ? '' : storage[key].note;
-
-            element.addEventListener('input', () => {
-              // save note change into storage
-              if (storage[key] === undefined) {
-                storage[key] = { status: 0, note: '' };
-              }
-              storage[key].note = element.value;
-              console.log(`Set note of ${key} to ${storage[key].note}`);
-              saveStorageDebounced({ storage, key });
+            const editor = new Vditor(element, {
+              cache: {
+                enable: false,
+              },
+              value: storage[key]?.note === undefined ? '' : storage[key].note,
+              mode: 'ir',
+              toolbar: [],
+              placeholder: '点击输入笔记，支持 Markdown 语法。',
+              input: (value) => {
+                // save note change into storage
+                if (storage[key] === undefined) {
+                  storage[key] = { status: 0, note: '' };
+                }
+                storage[key].note = value;
+                console.log(`Set note of ${key} to ${storage[key].note}`);
+                // don't need to debounce since the input event is already debounced
+                saveStorage({ storage, key });
+              },
             });
           });
 
@@ -403,8 +431,7 @@
           uniqueId: 'id',
           detailView: true,
           detailViewIcon: false,
-          detailFormatter: () =>
-            `<textarea class="form-control" rows="5"></textarea>`,
+          detailFormatter: () => `<div class="markdown-editor"></div>`,
           columns: [
             {
               field: 'id',
