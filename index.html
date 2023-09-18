@@ -187,7 +187,8 @@
           数据源:
           <a target="_blank" class="link-dark" href="https://codetop.cc/"
             >https://codetop.cc/</a
-          >, 代码:
+          >
+          (版本: <span id="data-version">?</span>), 代码:
           <a
             target="_blank"
             class="link-dark"
@@ -320,7 +321,11 @@
       }
 
       const loadStoragePromise = loadStorage();
-      const loadDataPromise = fetch('data.json').then((r) => r.json());
+      let lastModified;
+      const loadDataPromise = fetch('data.json').then((r) => {
+        lastModified = r.headers.get('Last-Modified');
+        return r.json();
+      });
 
       window.addEventListener('DOMContentLoaded', async () => {
         const storage = await loadStoragePromise;
@@ -328,6 +333,9 @@
         const id2key = Object.fromEntries(
           data.map((e) => [e.id, `${e.leetcode_id}. ${e.title}`])
         );
+
+        const dataVersion = new Date(lastModified).toISOString().slice(0, 10);
+        document.querySelector('#data-version').innerHTML = dataVersion;
 
         document
           .querySelector('#table')
