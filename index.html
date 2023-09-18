@@ -58,6 +58,10 @@
         }
       }
 
+      .fixed-table-toolbar {
+        margin-top: 6px;
+      }
+
       .fixed-table-container {
         margin-top: 6px;
         margin-bottom: 6px;
@@ -93,7 +97,7 @@
 
       .markdown-editor {
         min-height: 150px;
-        max-height: 400px;
+        max-height: 600px;
       }
 
       .vditor-reset {
@@ -104,8 +108,13 @@
         background-image: none;
       }
 
-      .vditor-reset .vditor-ir__node[data-type='code-block'] {
-        margin-top: -12px;
+      .vditor-reset div.vditor-ir__node {
+        margin-top: -16px;
+      }
+
+      .bootstrap-table .fixed-table-container .table tr.detail-view table td,
+      .bootstrap-table .fixed-table-container .table tr.detail-view table th {
+        padding: 6px 13px;
       }
     </style>
 
