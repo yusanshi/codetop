@@ -116,6 +116,15 @@
       .bootstrap-table .fixed-table-container .table tr.detail-view table th {
         padding: 6px 13px;
       }
+
+      @keyframes green {
+        to {
+          background-color: #7aad7b10;
+        }
+      }
+      .flash {
+        animation: green 0.3s 2 alternate ease-in-out;
+      }
     </style>
 
     <style>
@@ -224,10 +233,11 @@
       const endpoint = params.get('endpoint');
       const bearer = params.get('bearer');
       const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
+      const useLocalStorage = endpoint === null || bearer === null;
 
       async function loadStorage() {
         let storage;
-        if (endpoint === null || bearer === null) {
+        if (useLocalStorage) {
           console.log(
             'Endpoint or bearer not provided. Use local storage instead.'
           );
@@ -284,7 +294,7 @@
        */
       function saveStorage({ storage, key }) {
         console.log(`Save ${key} to ${JSON.stringify(storage[key])}`);
-        if (endpoint === null || bearer === null) {
+        if (useLocalStorage) {
           localStorage.setItem('storage', JSON.stringify(storage));
         } else {
           fetch(`https://${endpoint}.kv.vercel-storage.com/`, {
@@ -298,6 +308,12 @@
               JSON.stringify(storage[key]),
             ]),
             method: 'POST',
+          }).then(() => {
+            // flash to indicate the success
+            document.body.classList.add('flash');
+            setTimeout(() => {
+              document.body.classList.remove('flash');
+            }, 1000);
           });
         }
       }
@@ -311,7 +327,7 @@
       const saveStorageDebounced = debounceByParam(
         saveStorage,
         _.property('key'),
-        500
+        300
       );
 
       function setStyle(element, status) {
@@ -365,7 +381,12 @@
               storage[key].status = (storage[key].status + 1) % 3;
               console.log(`Set status of ${key} to ${storage[key].status}`);
               setStyle(element, storage[key].status);
-              saveStorageDebounced({ storage, key });
+              if (useLocalStorage) {
+                saveStorage({ storage, key });
+              } else {
+                // debounce the network request
+                saveStorageDebounced({ storage, key });
+              }
               updateStat(storage, data);
             });
           });
