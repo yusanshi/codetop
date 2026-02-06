@@ -231,6 +231,7 @@
     <script src="https://cdn.jsdelivr.net/npm/arrive@2.4.1/minified/arrive.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-min.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vditor@3.9.5/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pulltorefreshjs@0.1.22/dist/index.umd.min.js"></script>
 
     <script>
       const params = new URL(document.location).searchParams;
@@ -580,6 +581,18 @@
           )}`,
         ].join(', ');
       }
+
+      window.addEventListener('DOMContentLoaded', async () => {
+        PullToRefresh.init({
+          mainElement: 'body',
+          onRefresh() {
+            window.location.reload();
+          },
+          distThreshold: 90,
+          distMax: 120,
+          distReload: 75,
+        });
+      });
     </script>
   </body>
 </html>
