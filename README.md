@@ -15,10 +15,10 @@ If you visit <https://codetop.yusanshi.com/> directly, the status will be tracke
 
 By using a remote storage server, you can sync your status across different devices:
 
-1. Create an account at <https://vercel.com/>. Go to <https://vercel.com/dashboard/stores> and create a KV database (the free plan is enough).
+1. Create an account at <https://vercel.com/>. Go to <https://vercel.com/marketplace/upstash> and create an *Upstash for Redis* database (the free plan is enough).
 
 2. Copy `endpoint` and `bearer` as shown below:
-![image](https://github.com/yusanshi/codetop/assets/36265606/62cd7610-5938-45cb-8e57-c9d523441167)
+![image](https://github.com/user-attachments/assets/13e9ba59-0f57-4a87-8ab2-2f7fe7776b7e)
 
 3. Go to `https://codetop.yusanshi.com/?endpoint={endpoint}&bearer={bearer}` (replace `{endpoint}` and `{bearer}` with the corresponding values).
 

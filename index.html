@@ -259,7 +259,7 @@
 
         console.log('Endpoint or bearer provided. Use online storage.');
         const response = await fetch(
-          `https://${endpoint}.kv.vercel-storage.com/hgetall/storage`,
+          `https://${endpoint}.upstash.io/hgetall/storage`,
           {
             headers: {
               Authorization: `Bearer ${bearer}`,
@@ -301,7 +301,7 @@
         if (useLocalStorage) {
           localStorage.setItem('storage', JSON.stringify(storage));
         } else {
-          fetch(`https://${endpoint}.kv.vercel-storage.com/`, {
+          fetch(`https://${endpoint}.upstash.io/`, {
             headers: {
               Authorization: `Bearer ${bearer}`,
             },
