@@ -235,17 +235,29 @@
 
     <script>
       const params = new URL(document.location).searchParams;
+      // for upstash redis
       const endpoint = params.get('endpoint');
       const bearer = params.get('bearer');
+      // for webdis
+      const host = params.get('host')?.replace(/\/+$/, '');
+      const username = params.get('username');
+      const password = params.get('password');
+
       const levelMap = { easy: '简单', medium: '中等', hard: '困难' };
-      const useLocalStorage = endpoint === null || bearer === null;
+
+      let storageService;
+      if (endpoint) {
+        storageService = 'upstash';
+      } else if (host) {
+        storageService = 'webdis';
+      } else {
+        storageService = 'local';
+      }
 
       async function loadStorage() {
         let storage;
-        if (useLocalStorage) {
-          console.log(
-            'Endpoint or bearer not provided. Use local storage instead.'
-          );
+        if (storageService === 'local') {
+          console.log('Online service not provided. Use local storage.');
           storage = localStorage.getItem('storage');
 
           if (storage === null) {
@@ -258,39 +270,73 @@
           return storage;
         }
 
-        console.log('Endpoint or bearer provided. Use online storage.');
-        const response = await fetch(
-          `https://${endpoint}.upstash.io/hgetall/storage`,
-          {
-            headers: {
-              Authorization: `Bearer ${bearer}`,
-            },
-          }
-        )
-          .then((response) => {
-            if (response.ok) {
-              return response.json();
+        if (storageService === 'upstash') {
+          console.log('Endpoint provided. Use upstash storage.');
+          const response = await fetch(
+            `https://${endpoint}.upstash.io/hgetall/codetop-storage`,
+            {
+              headers: {
+                Authorization: `Bearer ${bearer}`,
+              },
             }
-            throw new Error(response.status);
-          })
-          .catch((error) => {
-            alert('Error fetching online storage ' + error);
-          });
+          )
+            .then((response) => {
+              if (response.ok) {
+                return response.json();
+              }
+              throw new Error(response.status);
+            })
+            .catch((error) => {
+              alert('Error fetching upstash storage ' + error);
+            });
 
-        const array = response['result'];
-        storage = Object.fromEntries(
-          [...Array(array.length / 2).keys()].map((i) => [
-            array[2 * i],
-            JSON.parse(array[2 * i + 1]),
-          ])
-        );
-        if (Object.keys(storage).length === 0) {
-          console.log('Online storage empty');
-        } else {
-          console.log('Load online storage', storage);
+          const array = response['result'];
+          storage = Object.fromEntries(
+            [...Array(array.length / 2).keys()].map((i) => [
+              array[2 * i],
+              JSON.parse(array[2 * i + 1]),
+            ])
+          );
+          if (Object.keys(storage).length === 0) {
+            console.log('Upstash storage empty');
+          } else {
+            console.log('Load upstash storage', storage);
+          }
+          localStorage.setItem('storage-local-backup', JSON.stringify(storage));
+          return storage;
         }
-        localStorage.setItem('storage-local-backup', JSON.stringify(storage));
-        return storage;
+
+        if (storageService === 'webdis') {
+          console.log('Host provided. Use webdis storage.');
+          const response = await fetch(`${host}/HGETALL/codetop-storage`, {
+            headers: {
+              Authorization: 'Basic ' + btoa(`${username}:${password}`),
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                return response.json();
+              }
+              throw new Error(response.status);
+            })
+            .catch((error) => {
+              alert('Error fetching webdis storage ' + error);
+            });
+
+          storage = Object.fromEntries(
+            Object.entries(response['HGETALL']).map(([key, value]) => [
+              key,
+              JSON.parse(value),
+            ])
+          );
+          if (Object.keys(storage).length === 0) {
+            console.log('Webdis storage empty');
+          } else {
+            console.log('Load webdis storage', storage);
+          }
+          localStorage.setItem('storage-local-backup', JSON.stringify(storage));
+          return storage;
+        }
       }
 
       /**
@@ -299,31 +345,49 @@
        */
       function saveStorage({ storage, key }) {
         console.log(`Save ${key} to ${JSON.stringify(storage[key])}`);
-        if (useLocalStorage) {
+
+        if (storageService === 'local') {
           localStorage.setItem('storage', JSON.stringify(storage));
-        } else {
+          return;
+        }
+
+        const flashOnSuccess = () => {
+          // flash to indicate the success
+          if (document.body.classList.contains('flash')) {
+            document.body.classList.remove('flash');
+            setTimeout(() => {
+              document.body.classList.add('flash');
+            }, 100);
+          } else {
+            document.body.classList.add('flash');
+          }
+        };
+
+        if (storageService === 'upstash') {
           fetch(`https://${endpoint}.upstash.io/`, {
             headers: {
               Authorization: `Bearer ${bearer}`,
             },
             body: JSON.stringify([
               'HSET',
-              'storage',
+              'codetop-storage',
               key,
               JSON.stringify(storage[key]),
             ]),
             method: 'POST',
-          }).then(() => {
-            // flash to indicate the success
-            if (document.body.classList.contains('flash')) {
-              document.body.classList.remove('flash');
-              setTimeout(() => {
-                document.body.classList.add('flash');
-              }, 100);
-            } else {
-              document.body.classList.add('flash');
-            }
-          });
+          }).then(flashOnSuccess);
+          return;
+        }
+
+        if (storageService === 'webdis') {
+          fetch(host, {
+            headers: {
+              Authorization: 'Basic ' + btoa(`${username}:${password}`),
+            },
+            body: `HSET/codetop-storage/${encodeURIComponent(key)}/${encodeURIComponent(JSON.stringify(storage[key]))}`,
+            method: 'POST',
+          }).then(flashOnSuccess);
+          return;
         }
       }
 
@@ -390,7 +454,7 @@
               storage[key].status = (storage[key].status + 1) % 3;
               console.log(`Set status of ${key} to ${storage[key].status}`);
               setStyle(element, storage[key].status);
-              if (useLocalStorage) {
+              if (storageService === 'local') {
                 saveStorage({ storage, key });
               } else {
                 // debounce the network request
